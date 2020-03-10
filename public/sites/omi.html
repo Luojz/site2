@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Omi in One Minute</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/omi"></script>
+    <script>
+        const { WeElement, h, render, define } = Omi
+
+        class LikeButton extends WeElement {
+            install() {
+                this.data = { liked: false }
+            }
+
+            render() {
+                if (this.data.liked) {
+                    return 'You liked this.'
+                }
+
+                return h(
+                    'button',
+                    {
+                        onClick: () => {
+                            this.data.liked = true
+                            this.update()
+                        }
+                    },
+                    'Like'
+                )
+            }
+        }
+
+        define('like-button', LikeButton)
+
+        render(h('like-button'), 'body')
+    </script>
+</body>
+
+</html>
+
+<!-- 作者：当耐特
+链接：https://juejin.im/post/5bc823d46fb9a05d1d2e3fc9
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 -->

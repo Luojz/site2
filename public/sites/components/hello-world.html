@@ -1,0 +1,33 @@
+<template>
+    <h1 class="title">你好</h1>
+
+    <style>
+        .title {
+            color: red;
+        }
+    </style>
+</template>
+
+
+<script>
+    (function (component) {
+        const doc = document.currentScript.ownerDocument;
+        const tmpl = doc.querySelector('template').content;
+        const ele = Object.create(HTMLElement.prototype);
+        // 初始化创建的时候回调
+        ele.createdCallback = function () {
+            const clone = document.importNode(tmpl, true);
+            // 开启shadow的子根节点，这样才能 this.shadowRoot.querySelector('.title')获取到h1
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+
+            shadowRoot.appendChild(clone);
+        }
+        // 属性改变的时候触发的回调
+        ele.attributeChangedCallback = function (attr, oldVal, newVal) {
+            this.shadowRoot.querySelector('.title').innerText = newVal;
+        }
+        document.registerElement(component, {
+            prototype: ele
+        })
+    }('hello-world'));
+</script>

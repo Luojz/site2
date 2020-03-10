@@ -1,0 +1,54 @@
+li {
+    list-style-type: none;
+}
+
+.scroll_tit {
+    overflow  : hidden;
+    background: #ff8644;
+    margin    : .3rem .3rem 0;
+}
+
+.scroll_tit li {
+    float      : left;
+    height     : .72rem;
+    line-height: .72rem;
+    color      : #fff;
+    width      : 33.33%;
+}
+
+.scroll_tit li:nth-child(1),
+.scroll_content li span:nth-child(1) {
+    padding-left: .3rem;
+}
+
+.scroll_tit li:nth-child(2),
+.scroll_content li span:nth-child(2) {
+    text-align: center;
+}
+
+.scroll_tit li:nth-child(3),
+.scroll_content li span:nth-child(3) {
+    text-align   : right;
+    padding-right: .3rem;
+}
+
+.scroll_content {
+    background: #fff;
+    border    : 1px solid #ff8644;
+    padding   : .1rem 0;
+    margin    : 0 .3rem;
+    overflow  : hidden;
+}
+
+.scroll_content li {
+    overflow   : hidden;
+    height     : .54rem;
+    line-height: .54rem;
+    font-size  : .26rem;
+    color      : #333;
+}
+
+.scroll_content li span {
+    float: left;
+    width: 33.33%;
+}

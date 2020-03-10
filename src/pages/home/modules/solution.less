@@ -1,0 +1,119 @@
+@baseFont: 100;
+.our-solution {
+    margin-top: 88rem / @baseFont;
+    &>ul>li{
+        border-bottom: 2rem / @baseFont solid #e6e7ec;
+        cursor: pointer;
+        .our-solution-hd{
+            display: flex;
+            line-height: 144rem / @baseFont;
+            img{
+                width: 65rem / @baseFont;
+                height: 65rem / @baseFont;
+                margin: 39.5rem / @baseFont 30rem / @baseFont 39.5rem / @baseFont 34rem / @baseFont; 
+            }
+            span{
+                flex: 1;
+                font-size: 26rem / @baseFont;
+                color: #9094a5;
+            }
+            
+            .showIntro{
+                width: 72rem / @baseFont;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 18.39rem / @baseFont;
+                    height: 18.39rem / @baseFont;
+                    border-left: 4rem / @baseFont solid #9094a5;
+                    border-top: 4rem / @baseFont solid #9094a5;
+                    transform: rotate(-135deg);
+                    padding: -13rem / @baseFont 0 0 -13rem / @baseFont;
+                }
+            }
+            .closeIntro{
+                width: 72rem / @baseFont;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 18.39rem / @baseFont;
+                    height: 18.39rem / @baseFont;
+                    border-left: 4rem / @baseFont solid #9094a5;
+                    border-top: 4rem / @baseFont solid #9094a5;
+                    transform: rotate(45deg);
+                    padding: -13rem / @baseFont 0 0 -13rem / @baseFont;
+                }
+            }
+        }
+
+        .our-solution-bd{
+            background-color: #f6f7fb;
+            padding-bottom: 20rem / @baseFont;
+            &>ul{
+                margin: 0 27rem / @baseFont 0 / @baseFont;
+                li{
+                    display: flex;
+                    width: 100%;
+                    margin-top: 35rem / @baseFont;
+                    div:nth-child(1){
+                        width: 75rem / @baseFont;
+                        img{
+                            width: 50rem / @baseFont;
+                            height: 50rem / @baseFont;
+                            padding-left: 4rem / @baseFont;
+                        }
+                    }
+                    div:nth-child(2){
+                        flex: 1;
+                        h3{
+                            line-height:  36rem / @baseFont;
+                            font-size: 24rem / @baseFont;
+                            color: #333;
+                        }
+                        p{
+                            margin-top: 24rem / @baseFont;
+                            color: #666;
+                            font-size: 22rem / @baseFont;
+                        }
+                    }
+                    .showMore{
+                        font-size: 22rem / @baseFont;
+                        color: #2f88ff;
+                        position: relative;
+                        display: inline-block;
+                        width: 140rem / @baseFont;
+                        margin-left: 7rem / @baseFont;
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 7rem / @baseFont;
+                            left: 110rem / @baseFont;
+                            width: 14.85rem / @baseFont;
+                            height: 14.85rem / @baseFont;
+                            border-left: 4rem / @baseFont solid #2f88ff;
+                            border-top: 4rem / @baseFont solid #2f88ff;
+                            transform: rotate(-135deg);
+                        }
+                    }
+                    
+                }
+            }
+            &>h3{
+                padding: 57rem / @baseFont 0 0 34rem / @baseFont;
+                font-size: 26rem / @baseFont;
+            }
+        }
+    }
+    ul > li:nth-child(1) .our-solution-hd span{
+        color: #2f88ff;
+    }
+}

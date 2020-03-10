@@ -1,0 +1,35 @@
+.drawer {
+    ::-webkit-details-marker {
+        display: none;
+    }
+
+    ::-moz-list-bullet {
+        font-size: 0;
+    }
+
+    .drawer-details[open]>.drawer-summary>.icon-arrow {
+        transform: rotate(180deg);
+    }
+
+    .drawer-details {
+        >.drawer-summary {
+            display        : flex;
+            justify-content: space-between;
+            padding        : 0 .64rem 0 .32rem;
+            outline        : none;
+
+            >.icon-arrow {
+                width              : .5rem;
+                line-height        : .5rem;
+                background-image   : url(/icons/arrow-right-blue.png);
+                background-repeat  : no-repeat;
+                background-size    : contain;
+                background-position: center;
+                transition         : transform .2s;
+            }
+        }
+
+        >.drawer-content {
+        }
+    }
+}

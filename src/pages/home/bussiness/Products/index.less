@@ -1,0 +1,132 @@
+#home-products {
+    color: #9094A5;
+
+    >ul {
+        margin-top: -.4rem;
+    }
+
+    details {
+        border-bottom: .02rem solid #e6e7ec;
+
+        summary {
+            align-items    : center;
+            justify-content: space-between;
+            outline        : none;
+            overflow       : hidden;
+            height         : 1.04rem;
+
+            >img {
+                float : left;
+                height: .65rem;
+                margin: .195rem .26rem .195rem .34rem;
+            }
+
+            >span {
+                float      : left;
+                align-items: center;
+                font-size  : .26rem;
+                line-height: 1.04rem;
+            }
+
+            >div {
+                float              : right;
+                width              : .5rem;
+                height             : .5rem;
+                background-image   : url(/icons/arrow-down.png);
+                background-repeat  : no-repeat;
+                background-size    : contain;
+                background-position: center;
+                transition         : transform .2s;
+                margin             : .27rem 0;
+            }
+        }
+
+        .content {
+            font-family: PingFangSC-Regular;
+            font-size  : .28rem;
+            background : #F6F7FB;
+            padding    : .12rem 0 .8rem 0;
+
+            li {
+                padding: .48rem 0 0 .32rem;
+
+                h3 {
+                    font-family: PingFangSC-Regular;
+                    color      : #222;
+                    font-size  : .28rem;
+                }
+
+                p {
+                    display        : flex;
+                    justify-content: space-between;
+                    line-height    : 1.5;
+                    font-size      : .28rem;
+                    margin-top     : .16rem;
+
+                    span {
+                        font-family: PingFangSC-Regular;
+                        font-size  : .28rem;
+                        color      : #9094A5;
+                    }
+
+                    a {
+                        display            : inline-block;
+                        margin-right       : .32rem;
+                        padding-right      : .4rem;
+                        line-height        : .52rem;
+                        font-size          : .24rem;
+                        color              : #2F88FF;
+                        background-image   : url(/icons/arrow-right-blue.png);
+                        background-size    : contain;
+                        background-repeat  : no-repeat;
+                        background-position: right 40%;
+                    }
+                }
+
+                >a {
+                    display    : inline-block;
+                    width      : 1.8rem;
+                    text-align : center;
+                    font-size  : .26rem;
+                    line-height: .6rem;
+                    color      : #2F88FF;
+                    border     : .02rem solid #2F88FF;
+                    margin-top : .16rem;
+                }
+            }
+
+            >span {
+                display            : inline-block;
+                margin             : .52rem 0 0 .32rem;
+                padding-right      : .5rem;
+                color              : #2F88FF;
+                background-image   : url(/icons/arrow-down-blue.png);
+                background-size    : contain;
+                background-repeat  : no-repeat;
+                background-position: right;
+            }
+        }
+    }
+
+    ::-webkit-details-marker {
+        display: none;
+    }
+
+    ::-moz-list-bullet {
+        font-size: 0;
+    }
+
+    details[open] {
+        border-bottom: 0;
+
+        summary {
+            span {
+                color: #2F88FF;
+            }
+
+            div {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

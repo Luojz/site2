@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 作者：偏右悄悄地
+    链接：https://www.zhihu.com/question/65369583/answer/230552852
+    来源：知乎
+    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 -->
+
+    <!-- // Dialog 简单对话框 -->
+    <script>
+        alert('message');
+    </script>
+
+    <!-- // Dialog 带输入框的对话框 -->
+    <script>
+        prompt('message');
+    </script>
+
+    <!-- // Dialog 自定义内容 -->
+    <dialog open>
+        <p>Greetings, one and all!</p>
+    </dialog>
+
+    <!-- // Tooltip 提示文本 -->
+    <span title="xxx">text</span>
+
+    <!-- // InputNumber 数字输入 -->
+    <input type="numer" />
+
+    <!-- // Slider or Range 滑块选择器 -->
+    <input type="range" />
+
+    <!-- // ColorPicker 取色器 -->
+    <input type="color" />
+
+    <!-- // Checkbox 多选 -->
+    <input type="checkbox" />
+
+    <!-- // Radio 单选 -->
+    <input type="radio" />
+
+    <!-- // DatePicker 时间选择器 -->
+    <input type="date" />
+
+    <!-- // Select 选择器 -->
+    <select>
+        <option>选项</option>
+        <option>选项</option>
+    </select>
+
+    <!-- // Progress 进度条 -->
+    <progress value="70" max="100" />
+
+    <!-- // Collpase 折叠 -->
+    <details>
+        <summary>Show/Hide me</summary>
+        <p>Pellentesque habitant</p>
+    </details>
+
+    <!-- // AutoComplete 自动完成 -->
+    <input list="browsers" name="myBrowser" />
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+    </datalist>
+
+    <!-- // 右键菜单 -->
+    <div contextmenu="popup-menu">
+        Right-click to see the adjusted context menu
+    </div>
+    <menu type="context" id="popup-menu">
+        <menuitem type="checkbox" onclick="toggleOption()" checked="true">Checkbox</menuitem>
+        <menuitem type="command" label="Command" icon="icon.png" onclick="doSomething()">Checkbox</menuitem>
+        <menuitem type="radio" name="group1" onclick="option()" checked="true">Radio button 1</menuitem>
+        <menuitem type="radio" name="group1" onclick="option()">Radio button 2</menuitem>
+    </menu>
+</body>
+
+</html>

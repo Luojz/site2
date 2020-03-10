@@ -1,0 +1,31 @@
+.slide {
+    overflow    : hidden;
+    padding-left: .3rem;
+
+    .slide-item {
+        list-style   : none;
+        width        : 120%;
+        border-bottom: 1px solid #ddd;
+
+        p {
+            overflow          : hidden;
+            height            : .88rem;
+            line-height       : .88rem;
+            -webkit-transition: all 0.3s linear;
+            transition        : all 0.3s linear;
+
+            i {
+                float     : right;
+                width     : 15%;
+                text-align: center;
+                background: #E2421B;
+                color     : #fff;
+            }
+        }
+    }
+
+    .swipeleft {
+        transform        : translateX(-15%);
+        -webkit-transform: translateX(-15%);
+    }
+}

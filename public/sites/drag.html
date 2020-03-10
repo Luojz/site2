@@ -1,0 +1,79 @@
+<!-- from: https://www.jb51.net/article/138406.htm -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原生js实现拖拽功能基本思路详解</title>
+    <style>
+        .calculator {
+            position: absolute;
+            /*设置绝对定位，脱离文档流，便于拖拽*/
+            display: block;
+            width: 218px;
+            height: 280px;
+            cursor: move;
+            /*鼠标呈拖拽状*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator" id="drag">**********</div>
+    <script>
+        (function drag(selector) {
+            //拖拽功能(主要是触发三个事件：onmousedown\onmousemove\onmouseup) 
+            const dragger = document.querySelector(selector);
+            let diffX = 0
+            let diffY = 0
+            //点击某物体时，用dragger对象即可，move和up是全局区域，也就是整个文档通用，应该使用document对象而不是dragger对象(否则，采用dragger对象时物体只能往右方或下方移动) 
+            dragger.onmousedown = (e = window.event) => {
+                console.log(e)
+                // var e = e || window.event; //兼容ie浏览器 
+                diffX = e.clientX - dragger.offsetLeft; //鼠标点击物体那一刻相对于物体左侧边框的距离=点击时的位置相对于浏览器最左边的距离-物体左边框相对于浏览器最左边的距离 
+                diffY = e.clientY - dragger.offsetTop;
+                /*低版本ie bug:物体被拖出浏览器可是窗口外部时，还会出现滚动条， 
+                  解决方法是采用ie浏览器独有的2个方法setCapture()\releaseCapture(),这两个方法， 
+                  可以让鼠标滑动到浏览器外部也可以捕获到事件，而我们的bug就是当鼠标移出浏览器的时候， 
+                  限制超过的功能就失效了。用这个方法，即可解决这个问题。注：这两个方法用于onmousedown和onmouseup中*/
+                if (typeof dragger.setCapture != 'undefined') {
+                    dragger.setCapture();
+                }
+
+                dragger.onmousemove = (e = window.event) => {
+                    // var e = e || window.event; //兼容ie浏览器 
+                    //控制拖拽物体的范围只能在浏览器视窗内，不允许出现滚动条 
+                    let left = e.clientX - diffX;
+                    if (left < 0) {
+                        left = 0;
+                    } else if (left > window.innerWidth - dragger.offsetWidth) {
+                        left = window.innerWidth - dragger.offsetWidth;
+                    }
+                    let top = e.clientY - diffY;
+                    if (top < 0) {
+                        top = 0;
+                    } else if (top > window.innerHeight - dragger.offsetHeight) {
+                        top = window.innerHeight - dragger.offsetHeight;
+                    }
+                    //移动时重新得到物体的距离，解决拖动时出现晃动的现象 
+                    dragger.style.left = left + 'px';
+                    dragger.style.top = top + 'px';
+                };
+
+                dragger.onmouseup = (e) => { //当鼠标弹起来的时候不再移动 
+                    dragger.onmousemove = null;
+                    dragger.onmouseup = null; //预防鼠标弹起来后还会循环（即预防鼠标放上去的时候还会移动） 
+                    //修复低版本ie bug 
+                    if (typeof dragger.releaseCapture != 'undefined') {
+                        dragger.releaseCapture();
+                    }
+                };
+            };
+        }('#drag'))
+    </script>
+</body>
+
+</html>
