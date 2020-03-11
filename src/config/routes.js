@@ -1,5 +1,5 @@
 import Home from '../pages/home'
-import ProductPage from '../pages/product/_page'
+import ProductPage from '../pages/product/'
 import SolutionPage from '../pages/solution/_page'
 // import ErrorPage from '../layouts/errorPage'
 // import Redirect from '../layouts/redirect'
