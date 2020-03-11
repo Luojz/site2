@@ -1,0 +1,147 @@
+{
+    "blocks": [
+        {
+            "id":"1",
+            "type":"section11",
+            "dataType":"group",
+            "data":{
+                "title": "产品信息",
+                "tabs": [
+                    {
+                        "name": "简介"
+                    },
+                    {
+                        "name": "概述"
+                    },
+                    {
+                        "name": "功能"
+                    },
+                    {
+                        "name": "实例类型"
+                    }
+                ]
+
+            },
+            "panels":[
+                {
+                    "id":"",
+                    "blocks":[
+                        {
+                            "id":"",
+                            "type":"text",
+                            "data":{
+                                "raw":{
+                                    "entityMap":{},
+                                    "blocks":[
+                                        {
+                                            "key":"",
+                                            "text":"云服务器（Cloud Virtual Machine，CVM）为您提供稳定高效的弹性计算服务，只需动动手指，片刻等待，您就可以在云端获取属于自己的CVM，满足您的计算需求。随着业务需求的变化，您可以自由扩展或缩减计算资源。",
+                                            "type":"unstyled",
+                                            "depth":0
+                                        }
+                                    ]
+                                }
+                            }
+                        },{
+                            "id":"",
+                            "type":"text",
+                            "data":{
+                                "raw":{
+                                    "entityMap":{},
+                                    "blocks":[
+                                        {
+                                            "key":"",
+                                            "text":"云服务器1（Cloud Virtual Machine，CVM）为您提供稳定高效的弹性计算服务，只需动动手指，片刻等待，您就可以在云端获取属于自己的CVM，满足您的计算需求。随着业务需求的变化，您可以自由扩展或缩减计算资源。",
+                                            "type":"unstyled",
+                                            "depth":0
+                                        }
+                                    ]
+                                }
+                            }
+                        },{
+                            "id":"",
+                            "type":"text",
+                            "data":{
+                                "raw":{
+                                    "entityMap":{},
+                                    "blocks":[
+                                        {
+                                            "key":"",
+                                            "text":"云服务器2（Cloud Virtual Machine，CVM）为您提供稳定高效的弹性计算服务，只需动动手指，片刻等待，您就可以在云端获取属于自己的CVM，满足您的计算需求。随着业务需求的变化，您可以自由扩展或缩减计算资源。",
+                                            "type":"unstyled",
+                                            "depth":0
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                        
+
+                    ]
+                }
+            ]
+        },{
+            "id":"2",
+            "type":"section8",
+            "dataType":"single",
+            "data":{
+                "title": "产品特性",
+                "list":[
+                    {
+                        "title":"多样化配置",
+                        "desc":{
+                            "blocks":[
+                                {"text":"提供类型丰富的实例类型、操作系统版本和软件包；"},
+                                {"text":"CPU、内存、硬盘和带宽均可灵活调整，随时升降配置。"}
+                            ]
+                        }
+                    },
+                    {
+                        "title":"稳定可靠",
+                        "desc":{
+                            "blocks":[
+                                {"text":"服务可用性99.95%、数据可靠性 99.9999999%；"},
+                                {"text":"提供三副本存储策略，保证在任一副本异常时自动迁移和恢复；"},
+                                {"text":"先进的网络架构保证服务高可用。"}
+                            ]
+                        }
+                    }
+
+                ]
+            }
+        },{
+            "id":"3",
+            "type":"section4",
+            "dataType":"single",
+            "data":{
+                "title":"相关产品推荐",
+                "list":[
+                    {
+                        "title":"云硬盘",
+                        "imgUrl":"",
+                        "linkUrl":"",
+                        "key":""
+                    },
+                    {
+                        "title":"虚拟专用网络",
+                        "imgUrl":"",
+                        "linkUrl":"",
+                        "key":""
+                    },
+                    {
+                        "title":"云监控",
+                        "imgUrl":"",
+                        "linkUrl":"",
+                        "key":""
+                    },
+                    {
+                        "title":"容器服务",
+                        "imgUrl":"",
+                        "linkUrl":"",
+                        "key":""
+                    }
+                ]
+            }
+        }
+    ]
+}
