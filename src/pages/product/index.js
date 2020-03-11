@@ -12,8 +12,8 @@ export default ({ location }) => {
 
     useEffect(() => {
         const url = location.pathname;
-        const api = `${url}/${url.substring(url.lastIndexOf("/")+1,url.length)}.json`;
-        const bannerDataApi = `${url}/banner.json`;
+        const api = location.search ? `${url}${location.search.replace("?!", "_")}.json` : `${url}.json`;
+        const bannerDataApi = `${url}_banner.json`;
         setLoading(true)
         asyncData(api)
             .then((res) => {
@@ -25,7 +25,7 @@ export default ({ location }) => {
                 }
             })
             .catch((err) => {
-                 window.location.href = '/';
+                //  window.location.href = '/';
             })
         asyncData(bannerDataApi)
             .then((res) => {
@@ -37,7 +37,7 @@ export default ({ location }) => {
                 }
             })
             .catch((err) => {
-                 window.location.href = '/';
+                //  window.location.href = '/';
             })
     }, [])
     return (
