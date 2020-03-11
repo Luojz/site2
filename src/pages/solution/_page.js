@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { asyncData } from '../../plugins/axios';
 import Layout from '../../layouts/default';
+import adapter from './adapter';
 
 
 export default ({ location }) => {
-    const [data, setData] = useState({})
+    const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
@@ -16,15 +17,15 @@ export default ({ location }) => {
                     window.location.href = res.redirect
                 } else {
                     setLoading(false)
-                    setData(res)
+                    setData(adapter(res.block.root.childBlocks))
                 }
             })
-            .catch((err) => { window.location.href = '/' })
+            // .catch((err) => { window.location.href = '/' })
     }, [])
 
     return (
         <Layout hidden={loading}>
-            {JSON.stringify(data)}
+            {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
         </Layout>
     )
 }

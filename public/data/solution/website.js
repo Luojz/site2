@@ -1,4 +1,12 @@
-export default {
+const fs = require('fs')
+
+function convert2Json(dst, data) {
+    fs.writeFile(dst, JSON.stringify(data), (err, res) => {})
+}
+
+const dst = './website.json'
+
+const data = {
     block: {
         root: {
             id: 'root',
@@ -25,7 +33,7 @@ export default {
                 },
                 {
                     id: '',
-                    type: 'protocolHTML',
+                    type: 'ProtocolHTML',
                     data: {
                         mod: 'protocolHTML',
                         title: '方案简介',
@@ -185,3 +193,5 @@ export default {
         }
     }
 }
+
+convert2Json(dst, data)
