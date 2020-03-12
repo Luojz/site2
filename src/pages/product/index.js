@@ -42,8 +42,10 @@ export default ({ location }) => {
     }, [])
     return (
         <Layout hidden={loading}>
-            {bannerData && <Banner data={bannerData} />}
-            {data && data.map(({ id, Component, data }) => <Component data={data} key={id} />)}
+            <div className="product-body">
+                {bannerData && <Banner data={bannerData} />}
+                {data && data.map(({ id, Component, data }) => <Component data={data} key={id} />)}
+            </div>
         </Layout>
     )
 }
