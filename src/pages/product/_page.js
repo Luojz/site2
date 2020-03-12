@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { asyncData } from '../../plugins/axios';
 import Layout from '../../layouts/default';
 
-import Banner from './modules/Banner';
+import Banner from './modules/Banner/index';
 import adapter from './adapter'
 
 export default ({ location }) => {
