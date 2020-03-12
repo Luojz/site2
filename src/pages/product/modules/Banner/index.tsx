@@ -6,7 +6,6 @@ const Banner = (props:any) => {
     console.log(props)
     return (
         <div className="c-hero-section J-pdBanner">
-
             <div className="c-hero-section-body">
                 <div className="c-hero-section-inner">
                     <div className="c-hero-section-ct">
