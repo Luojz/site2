@@ -1,1 +1,1 @@
-数据结构参看public/data/solution/website.js
+数据结构参看public/data/solution/website.json
