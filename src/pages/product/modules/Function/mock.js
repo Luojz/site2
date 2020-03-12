@@ -2,7 +2,7 @@ export default {
     "id":"67q7vnnr42m", "type":"section10", "dataType":"single",
     "data":{
         "title":"产品功能1",
-        "frature":{
+        "feature":{
             "list":[
                 {
                     "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions1.png",
@@ -22,7 +22,7 @@ export default {
                     },
                     "linkText" :"多种集群类型"
                 },{
-                    "iconUr1":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
+                    "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
                     "title":"Kubernetes功能增强",
                     "desc":{
                         "entityMap":{},
@@ -40,7 +40,7 @@ export default {
                     },
                     "linkText":"Kubernetes功能增强"
                 },{
-                    "iconUr1":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
+                    "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
                     "title":"丰富的调度策略,集成负载均衡",
                     "desc":{
                         "entityMap":{},
