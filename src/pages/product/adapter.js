@@ -27,7 +27,7 @@ const components = {
             return data
         }
     },
-    section10: {    //功能(新版)
+    section10: {    //产品功能(新版)
         Component: Section10,
         convert(data) {
             return data;

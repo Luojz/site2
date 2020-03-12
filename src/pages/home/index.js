@@ -9,7 +9,7 @@ export default ({ location }) => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-        const api = location.pathname === '/preview' ? '/preview!_index.json' : '/_index.json'
+        const api = location.search.includes('preview') ? '/preview!_index.json' : '/_index.json'
         setLoading(true)
         asyncData(api)
             .then((res) => {
