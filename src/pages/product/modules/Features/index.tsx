@@ -1,10 +1,10 @@
 import React from 'react';
-// import mock from './mock.js'
-import './index.less'
+import mock from './mock.js';
+import './index.less';
 
-const Features = (props:any) => {
+const Features = ({data = mock}) => {
 
-    console.log(props.data);
+    console.log(data);
     return (
         <div>Features</div>
     )

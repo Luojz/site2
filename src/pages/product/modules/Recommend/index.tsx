@@ -1,10 +1,10 @@
 import React from 'react';
-// import mock from './mock.js'
-import './index.less'
+import mock from './mock.js';
+import './index.less';
 
-const Recommend = (props:any) => {
+const Recommend = ({data = mock}) => {
 
-    console.log(props.data);
+    console.log(data);
     return (
         <div>Recommend</div>
     )
