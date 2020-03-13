@@ -4,5 +4,7 @@ import './index.less'
 
 
 export default ({data}) => (
-    <div className="solution-tabsIndustry-frameWorkIntro">tabsIndustry-frameWorkIntro</div>
+    <div className="solution-tabsIndustry-frameWorkIntro">
+        tabsIndustry-frameWorkIntro
+    </div>
 )
