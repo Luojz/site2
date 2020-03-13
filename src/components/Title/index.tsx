@@ -9,7 +9,7 @@ interface Props {
 function Title ({title}:Props) {
 
     return (
-        <div className="module-head">
+        <div className="module-hd">
             <h3>{title}</h3>
         </div>
     )

@@ -1,0 +1,83 @@
+@baseFont:100;
+.function .function-list{
+    margin-top: -28rem / @baseFont;
+    li{
+        .function-hd{
+            height: 180rem / @baseFont;
+            padding-top: 28rem / @baseFont;
+            display: flex;
+            cursor: pointer;
+            img{
+                margin: 0 24rem / @baseFont;
+                width: 96rem / @baseFont;
+                height: 96rem / @baseFont;
+            }
+            &>div{
+                flex: 1;
+                p{
+                    height: 46rem / @baseFont;
+                    line-height: 46rem / @baseFont;
+                    color: #222;
+                    font-size: 32rem / @baseFont;
+                }
+                div{
+                    margin-top: 16rem / @baseFont;
+                    font-size: 24rem / @baseFont;
+                    line-height: 34rem / @baseFont;
+                    color: #9094A5;
+                }
+            }
+            .showIntro{
+                width: 74rem / @baseFont;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 40rem / @baseFont;
+                    right: 27rem / @baseFont;
+                    width: 18.39rem / @baseFont;
+                    height: 18.39rem / @baseFont;
+                    border-left: 4rem / @baseFont solid #9094a5;
+                    border-top: 4rem / @baseFont solid #9094a5;
+                    transform: rotate(45deg);
+                    padding: -13rem / @baseFont 0 0 -13rem / @baseFont;
+                }
+            }
+            .closeIntro{
+                width: 74rem / @baseFont;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 40rem / @baseFont;
+                    right: 27rem / @baseFont;
+                    width: 18.39rem / @baseFont;
+                    height: 18.39rem / @baseFont;
+                    border-left: 4rem / @baseFont solid #9094a5;
+                    border-top: 4rem / @baseFont solid #9094a5;
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+        .function-bd{
+            background-color: #f6f7f8;
+            ul{
+                padding: 60rem / @baseFont 32rem / @baseFont 80rem / @baseFont;
+                li{
+                    p{
+                        font-size: 28rem / @baseFont;
+                        color: #222;
+                    }
+                    div{
+                        font-size: 28rem / @baseFont;
+                        color: #9094A5;
+                        text-align: justify;
+                        margin-left: 20rem / @baseFont;
+                    }
+                }
+            }
+        }
+    }
+}

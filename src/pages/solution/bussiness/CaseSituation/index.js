@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.less";
 // import mock from './mock.js'
-import Icon from '@/components/Icon'
 import {protocol} from '@/config/apis'
 
 export default ({ data }) => (
@@ -9,8 +8,8 @@ export default ({ data }) => (
     <h3>{data.title}</h3>
     <ul>
       {data.list.map(({ title, desc, iconUrl }) => (
-        <li>
-          <Icon src={`${protocol}${iconUrl}`} />
+        <li key={title}>
+          <img src={`${protocol}${iconUrl}`} />
           <h3>{title}</h3>
           <p>{desc}</p>
         </li>
