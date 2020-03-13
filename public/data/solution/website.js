@@ -52,7 +52,27 @@ const data = {
                                 iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_scenario17.png',
                                 title: '域名注册',
                                 desc: '完成网站域名选购'
-                            }
+                            },
+                            {
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_scenario7.png',
+                                title: '产品选购',
+                                desc: '在建行云申请建站所需云产品，包括安全产品、网络产品（如负载均衡）、计算产品、存储产品、数据库产品等。'
+                            },
+                            {
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_scenario14.png',
+                                title: '网站建设',
+                                desc: '完成网站部署搭建。'
+                            },
+                            {
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_scenario16.png',
+                                title: '域名解析',
+                                desc: '完成域名解析服务申请与配置。'
+                            },
+                            {
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_scenario13.png',
+                                title: '网站备案',
+                                desc: '根据我国相关法律法规，为经营性互联网信息服务取得经营许可，为非经营性互联网信息服务完成备案'
+                            },
                         ]
                     }
                 },
