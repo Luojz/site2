@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Title from '../../../../components/Title/index';
 import mock from './mock.js';
@@ -6,7 +6,17 @@ import './index.less';
 
 const Function = ({data = mock}) => {
 
-    console.log("Function",data);
+    const [isShow, setIsShow] = useState<Boolean>(true);
+    const [showId, setShowId] = useState<Number>(0);
+
+    const show = (clickId:Number) => {
+        if(clickId===showId){
+            setIsShow(!isShow);
+        }else{
+            setShowId(clickId);
+            setIsShow(true);
+        }
+    }
     return (
         <div className="function">
             <Title title={data.data.title} />
@@ -14,7 +24,7 @@ const Function = ({data = mock}) => {
                 {
                     data.data.feature.list.map((item,index)=>{
                         return (
-                            <li key={index}>
+                            <li key={index} style={{"borderBottom":index===showId && isShow ? "0":".02rem solid #e6e7ec"}} onClick={()=>show(index)}>
                                 <div className="function-hd">
                                     <img src={item.iconUrl} alt=""/>
                                     <div>
@@ -23,9 +33,10 @@ const Function = ({data = mock}) => {
                                             {item.desc.blocks[0].text}
                                         </div>
                                     </div>
-                                    <i>></i>
+                                    <i className={index===showId && isShow ?"showIntro":"closeIntro"}></i>
                                 </div>
-                                <div className="function-bd">
+                                
+                                <div className="function-bd" style={{"display":index===showId && isShow ?"block":"none"}} onClick={(e)=>e.stopPropagation()}>
                                     <ul>
                                         {
                                             data.data.announcement.list.filter(child=>child.title===item.linkText).map((item,index)=>{
@@ -39,6 +50,7 @@ const Function = ({data = mock}) => {
                                         }
                                     </ul>
                                 </div>
+                                   
                             </li>
                         )
                     })
