@@ -54,7 +54,7 @@ const Features = ({data = mock}) => {
                                 </div>
                                 <div className="c-media-body">
                                     <h4 className="c-media-heading">
-                                        多存储类型
+                                        多样化配置
                                     </h4>
                                     <p className="c-media-info">
                                         提供普通、SSD两种云硬盘卷类型，采用SSD类型的CBS，单盘最大提供24000随机IOPS，260MB/s吞吐，轻松支撑业务侧高吞吐量DB访问。
