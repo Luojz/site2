@@ -40,7 +40,7 @@ const components = {
     TabsIndustry: {
         Component: TabsIndustry,
         convert(data, childBlocks) {
-            return {...data, children: childBlocks[0].childBlocks}
+            return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
         }
     },
 }

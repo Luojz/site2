@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { devide } from '../../utils/Array';
+import { devide } from '@/utils/Array';
 import './index.less';
 
 

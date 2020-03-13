@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { debounce } from '../../utils/Function.js'
+import { debounce } from '@/utils/Function.js'
 import './index.less'
 
 
