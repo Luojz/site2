@@ -4,7 +4,7 @@ function convert2Json(dst, data) {
     fs.writeFile(dst, JSON.stringify(data), (err, res) => {})
 }
 
-const dst = './website.json'
+const dst = `${__dirname}/website.json`
 
 const data = {
     block: {
@@ -21,10 +21,10 @@ const data = {
                     data: {
                         title: '网站解决方案',
                         desc: '安全建站，弹性扩容，轻松应对每一次来访',
-                        bgUrl: '',
+                        bgUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_banner.jpg',
                         btn1Title: '服务咨询',
                         btn1Icon: 'default',
-                        btn1Link: '',
+                        btn1Link: '//yun.ccb.com/contactUs/contact_us.html',
                         btn2Title: '服务咨询',
                         btn2Icon: 'default',
                         btn2Link: '',
@@ -49,7 +49,7 @@ const data = {
                         title: '应用场景',
                         list: [
                             {
-                                iconUrl: '',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_scenario17.png',
                                 title: '域名注册',
                                 desc: '完成网站域名选购'
                             }
@@ -73,7 +73,7 @@ const data = {
                                 title: '小型网站',
                                 scene_title: '',
                                 scene_desc: '',
-                                iconUrl: '',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_tabsarchitecture10.png',
                             }
                         ]
                     },
@@ -88,7 +88,7 @@ const data = {
                                     type: 'FrameWorkIntro',
                                     data: {
                                         title: '架构介绍',
-                                        content: '日均访问量高于'
+                                        content: '日均访问量低于1万 需要一定的安全防护措施 '
                                     }
                                 },
                                 {
@@ -100,64 +100,64 @@ const data = {
                                         desc: null,
                                         list: [
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
                                                 title: '私有网络',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/vpc1'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/product/product_yfwq.png',
                                                 title: '云服务器',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/cvm'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_memory4.png',
                                                 title: '文件存储',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/productcfs'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_cloud.png',
                                                 title: '云硬盘',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/productcbs'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_ysjkM.png',
                                                 title: '云数据库Mysql',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/productmysql'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long.png',
                                                 title: '龙御',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/productwaf'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long1.png',
                                                 title: '龙卫士',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/producthids'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_balance.png',
                                                 title: '弹性负载均衡',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/elb'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_NAT.png',
                                                 title: 'NAT网关',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/nat'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct4.png',
                                                 title: '云数据库Redis',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/productredis'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_object.png',
                                                 title: '对象存储',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/productcos'
                                             },
                                             {
-                                                iconUrl: '',
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_CDN.png',
                                                 title: 'CDN服务',
-                                                moreUrl: ''
+                                                moreUrl: '//yun.ccb.com/product/cdn'
                                             },
                                         ]
                                     }
@@ -228,12 +228,12 @@ const data = {
                         desc: null,
                         list: [
                             {
-                                iconUrl: '',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_challenge4.png',
                                 title: '安全挑战日益严峻',
                                 desc: '缺乏专业的安全团队和安全策略，难以应付不断增长的安全威胁'
                             },
                             {
-                                iconUrl: '',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_challenge1.png',
                                 title: '弹性不足',
                                 desc: '难以应付可能出现的突发大量入访流量'
                             },
@@ -250,12 +250,12 @@ const data = {
                         desc: null,
                         list: [
                             {
-                                iconUrl: '',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_advantage.png',
                                 title: '安全可靠',
                                 desc: '从主机安全到流量清洗，建行云确保您的网站稳定对外服务'
                             },
                             {
-                                iconUrl: '',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_advantage.png',
                                 title: '弹性扩展',
                                 desc: '快速扩展计算、存储、网络资源以应对交易洪峰；并随时释放多余资源，以降低运营成本'
                             }
