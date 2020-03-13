@@ -94,10 +94,367 @@ const data = {
                                 scene_title: '租户数据云端备份',
                                 scene_desc: '将重要数据备份至建行云，无需进行存储用量规划，弹性扩充数据备份空间，保证极端情况下的数据安全。',
                                 iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_tabsarchitecture10.png',
+                            },
+                            {
+                                id: '',
+                                key: '',
+                                parentId: 'default_root',
+                                parentTitle: '空',
+                                title: '大型网站',
+                                scene_title: '租户数据云端备份',
+                                scene_desc: '将重要数据备份至建行云，无需进行存储用量规划，弹性扩充数据备份空间，保证极端情况下的数据安全。',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_tabsarchitecture10.png',
+                            },
+                            {
+                                id: '',
+                                key: '',
+                                parentId: 'default_root',
+                                parentTitle: '空',
+                                title: '大型网站',
+                                scene_title: '租户数据云端备份',
+                                scene_desc: '将重要数据备份至建行云，无需进行存储用量规划，弹性扩充数据备份空间，保证极端情况下的数据安全。',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_tabsarchitecture10.png',
+                            },
+                            {
+                                id: '',
+                                key: '',
+                                parentId: 'default_root',
+                                parentTitle: '空',
+                                title: '大型网站',
+                                scene_title: '租户数据云端备份',
+                                scene_desc: '将重要数据备份至建行云，无需进行存储用量规划，弹性扩充数据备份空间，保证极端情况下的数据安全。',
+                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_tabsarchitecture10.png',
                             }
                         ]
                     },
                     childBlocks: [
+                        {
+                            id: '',
+                            type: 'Container',
+                            data: {},
+                            childBlocks: [
+                                {
+                                    id: '',
+                                    type: 'FrameWorkIntro',
+                                    data: {
+                                        title: '架构介绍',
+                                        content: '日均访问量低于1万 需要一定的安全防护措施 '
+                                    }
+                                },
+                                {
+                                    id: '',
+                                    type: 'FrameWorkCloud',
+                                    data: {
+                                        column: null,
+                                        title: '产品推荐',
+                                        desc: null,
+                                        list: [
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                                                title: '私有网络',
+                                                moreUrl: '//yun.ccb.com/product/vpc1'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/product/product_yfwq.png',
+                                                title: '云服务器',
+                                                moreUrl: '//yun.ccb.com/product/cvm'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_memory4.png',
+                                                title: '文件存储',
+                                                moreUrl: '//yun.ccb.com/product/productcfs'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_cloud.png',
+                                                title: '云硬盘',
+                                                moreUrl: '//yun.ccb.com/product/productcbs'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_ysjkM.png',
+                                                title: '云数据库Mysql',
+                                                moreUrl: '//yun.ccb.com/product/productmysql'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long.png',
+                                                title: '龙御',
+                                                moreUrl: '//yun.ccb.com/product/productwaf'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long1.png',
+                                                title: '龙卫士',
+                                                moreUrl: '//yun.ccb.com/product/producthids'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_balance.png',
+                                                title: '弹性负载均衡',
+                                                moreUrl: '//yun.ccb.com/product/elb'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_NAT.png',
+                                                title: 'NAT网关',
+                                                moreUrl: '//yun.ccb.com/product/nat'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct4.png',
+                                                title: '云数据库Redis',
+                                                moreUrl: '//yun.ccb.com/product/productredis'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_object.png',
+                                                title: '对象存储',
+                                                moreUrl: '//yun.ccb.com/product/productcos'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_CDN.png',
+                                                title: 'CDN服务',
+                                                moreUrl: '//yun.ccb.com/product/cdn'
+                                            },
+                                        ]
+                                    }
+                                },
+                                {
+                                    id: '',
+                                    type: 'FrameWorkConfig',
+                                    data: {
+                                        column: null,
+                                        title: '推荐配置',
+                                        desc: null,
+                                        list: [
+                                            {
+                                                title: '云服务器16台',
+                                                desc: '4C8G, 100G系统盘，500G数据盘'
+                                            },
+                                            {
+                                                title: '云数据库3套',
+                                                desc: 'MYSQL4C16G 500G数据空间\nRedis 4C16G 48G数据空间'
+                                            },
+                                            {
+                                                title: '其他配置',
+                                                desc: '公网IP2个，ELB2台，NAT网关1台，VPN网关1台，专线网关1台，文件存储1T，对象存储5T，50M公网带宽，200Mb CDN带宽'
+                                            },
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            id: '',
+                            type: 'Container',
+                            data: {},
+                            childBlocks: [
+                                {
+                                    id: '',
+                                    type: 'FrameWorkIntro',
+                                    data: {
+                                        title: '架构介绍',
+                                        content: '日均访问量低于1万 需要一定的安全防护措施 '
+                                    }
+                                },
+                                {
+                                    id: '',
+                                    type: 'FrameWorkCloud',
+                                    data: {
+                                        column: null,
+                                        title: '产品推荐',
+                                        desc: null,
+                                        list: [
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                                                title: '私有网络',
+                                                moreUrl: '//yun.ccb.com/product/vpc1'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/product/product_yfwq.png',
+                                                title: '云服务器',
+                                                moreUrl: '//yun.ccb.com/product/cvm'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_memory4.png',
+                                                title: '文件存储',
+                                                moreUrl: '//yun.ccb.com/product/productcfs'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_cloud.png',
+                                                title: '云硬盘',
+                                                moreUrl: '//yun.ccb.com/product/productcbs'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_ysjkM.png',
+                                                title: '云数据库Mysql',
+                                                moreUrl: '//yun.ccb.com/product/productmysql'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long.png',
+                                                title: '龙御',
+                                                moreUrl: '//yun.ccb.com/product/productwaf'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long1.png',
+                                                title: '龙卫士',
+                                                moreUrl: '//yun.ccb.com/product/producthids'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_balance.png',
+                                                title: '弹性负载均衡',
+                                                moreUrl: '//yun.ccb.com/product/elb'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_NAT.png',
+                                                title: 'NAT网关',
+                                                moreUrl: '//yun.ccb.com/product/nat'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct4.png',
+                                                title: '云数据库Redis',
+                                                moreUrl: '//yun.ccb.com/product/productredis'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_object.png',
+                                                title: '对象存储',
+                                                moreUrl: '//yun.ccb.com/product/productcos'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_CDN.png',
+                                                title: 'CDN服务',
+                                                moreUrl: '//yun.ccb.com/product/cdn'
+                                            },
+                                        ]
+                                    }
+                                },
+                                {
+                                    id: '',
+                                    type: 'FrameWorkConfig',
+                                    data: {
+                                        column: null,
+                                        title: '推荐配置',
+                                        desc: null,
+                                        list: [
+                                            {
+                                                title: '云服务器16台',
+                                                desc: '4C8G, 100G系统盘，500G数据盘'
+                                            },
+                                            {
+                                                title: '云数据库3套',
+                                                desc: 'MYSQL4C16G 500G数据空间\nRedis 4C16G 48G数据空间'
+                                            },
+                                            {
+                                                title: '其他配置',
+                                                desc: '公网IP2个，ELB2台，NAT网关1台，VPN网关1台，专线网关1台，文件存储1T，对象存储5T，50M公网带宽，200Mb CDN带宽'
+                                            },
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            id: '',
+                            type: 'Container',
+                            data: {},
+                            childBlocks: [
+                                {
+                                    id: '',
+                                    type: 'FrameWorkIntro',
+                                    data: {
+                                        title: '架构介绍',
+                                        content: '日均访问量低于1万 需要一定的安全防护措施 '
+                                    }
+                                },
+                                {
+                                    id: '',
+                                    type: 'FrameWorkCloud',
+                                    data: {
+                                        column: null,
+                                        title: '产品推荐',
+                                        desc: null,
+                                        list: [
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                                                title: '私有网络',
+                                                moreUrl: '//yun.ccb.com/product/vpc1'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/product/product_yfwq.png',
+                                                title: '云服务器',
+                                                moreUrl: '//yun.ccb.com/product/cvm'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_memory4.png',
+                                                title: '文件存储',
+                                                moreUrl: '//yun.ccb.com/product/productcfs'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_cloud.png',
+                                                title: '云硬盘',
+                                                moreUrl: '//yun.ccb.com/product/productcbs'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_ysjkM.png',
+                                                title: '云数据库Mysql',
+                                                moreUrl: '//yun.ccb.com/product/productmysql'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long.png',
+                                                title: '龙御',
+                                                moreUrl: '//yun.ccb.com/product/productwaf'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_long1.png',
+                                                title: '龙卫士',
+                                                moreUrl: '//yun.ccb.com/product/producthids'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_balance.png',
+                                                title: '弹性负载均衡',
+                                                moreUrl: '//yun.ccb.com/product/elb'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_NAT.png',
+                                                title: 'NAT网关',
+                                                moreUrl: '//yun.ccb.com/product/nat'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct4.png',
+                                                title: '云数据库Redis',
+                                                moreUrl: '//yun.ccb.com/product/productredis'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/solution_object.png',
+                                                title: '对象存储',
+                                                moreUrl: '//yun.ccb.com/product/productcos'
+                                            },
+                                            {
+                                                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_CDN.png',
+                                                title: 'CDN服务',
+                                                moreUrl: '//yun.ccb.com/product/cdn'
+                                            },
+                                        ]
+                                    }
+                                },
+                                {
+                                    id: '',
+                                    type: 'FrameWorkConfig',
+                                    data: {
+                                        column: null,
+                                        title: '推荐配置',
+                                        desc: null,
+                                        list: [
+                                            {
+                                                title: '云服务器16台',
+                                                desc: '4C8G, 100G系统盘，500G数据盘'
+                                            },
+                                            {
+                                                title: '云数据库3套',
+                                                desc: 'MYSQL4C16G 500G数据空间\nRedis 4C16G 48G数据空间'
+                                            },
+                                            {
+                                                title: '其他配置',
+                                                desc: '公网IP2个，ELB2台，NAT网关1台，VPN网关1台，专线网关1台，文件存储1T，对象存储5T，50M公网带宽，200Mb CDN带宽'
+                                            },
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
                         {
                             id: '',
                             type: 'Container',
