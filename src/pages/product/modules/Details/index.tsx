@@ -6,7 +6,7 @@ const Details = ({data = mock}) => {
 
     console.log(data);
     return (
-        <div>Details</div>
+        <div>产品信息</div>
     )
 }
 
