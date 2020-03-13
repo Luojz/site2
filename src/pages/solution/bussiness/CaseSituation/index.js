@@ -8,7 +8,7 @@ export default ({ data }) => (
     <h3>{data.title}</h3>
     <ul>
       {data.list.map(({ title, desc, iconUrl }) => (
-        <li>
+        <li key={title}>
           <img src={`${protocol}${iconUrl}`} />
           <h3>{title}</h3>
           <p>{desc}</p>
