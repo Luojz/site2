@@ -1,9 +1,9 @@
 import React from 'react'
-import Headline from '../../../../components/Headline'
-import Squares from '../../../../components/Squares'
+import Headline from '@/components/Headline'
+import Squares from '@/components/Squares'
 import './index.less'
 import mock from './mock.js'
-import { protocol } from '../../../../config/apis'
+import { protocol } from '@/config/apis'
 
 
 function Slot({ data }) {

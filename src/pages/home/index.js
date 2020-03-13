@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../../layouts/default';
-import { asyncData } from '../../plugins/axios';
+import Layout from '@/layouts/default';
+import { asyncData } from '@/plugins/axios';
 import adapter from './adapter'
 
 

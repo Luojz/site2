@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import IndustryPlugs from '../../../../components/Industry'; 
-import Headline from '../../../../components/Headline'
+import IndustryPlugs from '@/components/Industry'; 
+import Headline from '@/components/Headline'
 import mock from './mock.js'
 
 import './index.less';

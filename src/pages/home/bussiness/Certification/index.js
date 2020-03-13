@@ -1,7 +1,7 @@
 import React from 'react'
-import Figure from '../../../../components/Figure'
-import Squares from '../../../../components/Squares'
-import Headline from '../../../../components/Headline'
+import Figure from '@/components/Figure'
+import Squares from '@/components/Squares'
+import Headline from '@/components/Headline'
 import mock from './mock.js'
 
 

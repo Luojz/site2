@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerPlugs from '../../../../components/Banner';
+import BannerPlugs from '@/components/Banner';
 import './index.less'
 import mock from './mock.js'
 

@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
-import Headline from '../../../../components/Headline'
-import { cutStr } from '../../../../utils/String'
+import Headline from '@/components/Headline'
+import { cutStr } from '@/utils/String'
 import './index.less'
 import mock from './mock.js'
 import purchase from './purchase'
-import { protocol } from '../../../../config/apis'
+import { protocol } from '@/config/apis'
 
 
 function Parent({ iconUrl, title }) {

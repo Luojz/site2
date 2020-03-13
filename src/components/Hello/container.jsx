@@ -1,5 +1,5 @@
 // import React from 'react';
-import { container } from '../../helpers'
+import { container } from '@/helpers'
 import component from './index';
 import reducer from './reducer'
 import { INCREMENT_ENTHUSIASM, DECREMENT_ENTHUSIASM } from './constants'

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./index.less";
 // import mock from './mock.js'
-import Icon from '../../../../components/Icon'
-import {protocol} from '../../../../config/apis'
+import Icon from '@/components/Icon'
+import {protocol} from '@/config/apis'
 
 export default ({ data }) => (
   <ul id="solution-caseSituation">
