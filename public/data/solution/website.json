@@ -62,9 +62,9 @@
                                 "key": "",
                                 "parentId": "default_root",
                                 "parentTitle": "空",
-                                "title": "小型网站",
-                                "scene_title": "",
-                                "scene_desc": "",
+                                "title": "大型网站",
+                                "scene_title": "租户数据云端备份",
+                                "scene_desc": "将重要数据备份至建行云，无需进行存储用量规划，弹性扩充数据备份空间，保证极端情况下的数据安全。",
                                 "iconUrl": "//imagecachexxfb.yun.ccb.com/static/solution/solution_tabsarchitecture10.png"
                             }
                         ]
