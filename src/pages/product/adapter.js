@@ -1,5 +1,4 @@
 import SceneContent from './modules/Scene/SceneContent';
-import DetailsText from './modules/Details/DetailsText';
 import Scene from './modules/Scene/index';
 import Recommend from './modules/Recommend/index';
 import Features from './modules/Features/index';
@@ -39,12 +38,12 @@ const components = {
             // return {...data,panels};
         }
     }, 
-    text: {     //产品详细信息-子项(新版)
-        Component: DetailsText,
-        convert(data) {
-            // return data
-        }
-    },
+    // text: {     //产品详细信息-子项(新版)
+    //     Component: DetailsText,
+    //     convert(data) {
+    //         // return data
+    //     }
+    // },
     section4: {     //相关云产品(新版)
         Component: Recommend,
         convert(data) {

@@ -47,6 +47,23 @@ const Features = ({data = mock}) => {
                             </div>
                         </div>
 
+                        <div className="J-section2Item">
+                            <div className="c-media">
+                                <div className="c-media-img">
+                                    <img src="//imagecachexxfb.yun.ccb.com/static/product/product_character2.png" />
+                                </div>
+                                <div className="c-media-body">
+                                    <h4 className="c-media-heading">
+                                        多存储类型
+                                    </h4>
+                                    <p className="c-media-info">
+                                        提供普通、SSD两种云硬盘卷类型，采用SSD类型的CBS，单盘最大提供24000随机IOPS，260MB/s吞吐，轻松支撑业务侧高吞吐量DB访问。
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
