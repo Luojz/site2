@@ -1,32 +1,45 @@
-import * as React from "react";
+import React, { useEffect } from 'react';
 import "./index.less";
-import Swiper from "react-image-swiper"
+import Swiper from "swiper"
 import mock from './mock.js'
 
-const options = {
-    showPot: true,  //是否显示下方pot 默认为true
-    timeGap: 3000,   //时间间隔 默认3000
-    autoplay: true  //默认为true
-};
-
 export default ({ data = mock }) => {
-    console.log('Banner-------------')
-    console.log(data)
+
+    useEffect(() => {
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+
+            },
+            preventClicksPropagation: true,
+        })
+    });
+
     return (
-        <Swiper options={options}>
-            {
-                data.map((item, index) => {
-                    return <div className="slider-item components-banner" key={index}>
-                        <a href={item["herfUrl"] ? item["herfUrl"] : ''}>
-                            <img src={item.images} loop={true} />
-                        </a>
-                        <div className='banner-copywriter'>
-                            <h3>{item["title"] ? item["title"] : ""}</h3>
-                            <p>{item["desc"] ? item["desc"] : ""}</p>
-                        </div>
-                    </div>
-                })
-            }
-        </Swiper>
-    )
+        <div className="swiper-container">
+            <div className="swiper-wrapper">
+                {
+                    data.map((item, index) => {
+                        return (
+                            <div className="swiper-slide components-banner" key={index}>
+                                <a href={item["herfUrl"] ? item["herfUrl"] : ''}>
+                                    <img src={item.images} />
+                                </a>
+                                <div className='banner-copywriter'>
+                                    <h3>{item["title"] ? item["title"] : ""}</h3>
+                                    <p>{item["desc"] ? item["desc"] : ""}</p>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className="swiper-pagination"></div>
+        </div>
+    );
 };

@@ -1,37 +1,73 @@
-.components-banner {
-    text-align: center;
-    height: 4rem;
+.swiper-container {
     width: 100%;
-    position: relative;
-
-    img {
-        height: 4rem;
-        width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 4rem;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      border-radius: 4px;
+      width        : 10px;
+      height       : 2px;
+      opacity      : .9;
+      background   : rgba(255, 255, 255, 0.6);
     }
-
-    .banner-copywriter {
-        position: absolute;
-        left: 0;
-        top: 1.2rem;
-        z-index: 999;
-        width: 60%;
-        height: 30%;
-        margin-left: 30px;
-
-        h3 {
-            text-align: left;
-            font-size: 0.4rem;
-            font-weight: normal;
-            font-family: HiraginoSansGB-W3;
-            color: #ffffff;
-            margin-bottom: 5px;
-        }
-
-        p {
-            text-align: left;
-            color: #ffffff;
-            font-size: 0.20rem;
-        }
-
-    }
-}
+  }
+  
+  .components-banner {
+      text-align: center;
+      height: 4rem;
+      width: 100%;
+      position: relative;
+  
+      img {
+          height: 4rem;
+          width: 100%;
+      }
+  
+      .banner-copywriter {
+          position: absolute;
+          left: 0;
+          top: 1.2rem;
+          z-index: 999;
+          width: 60%;
+          height: 30%;
+          margin-left: 30px;
+  
+          h3 {
+              text-align: left;
+              font-size: 0.4rem;
+              font-weight: normal;
+              font-family: HiraginoSansGB-W3;
+              color: #ffffff;
+              margin-bottom: 5px;
+          }
+  
+          p {
+              text-align: left;
+              color: #ffffff;
+              font-size: 0.20rem;
+          }
+  
+      }
+  }
+  
