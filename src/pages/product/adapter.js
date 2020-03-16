@@ -23,7 +23,7 @@ const components = {
     section8: {     //产品特性(新版)
         Component: Features,
         convert(data) {
-            // return data
+             return data
         }
     },
     section10: {    //产品功能(新版)
