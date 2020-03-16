@@ -5,9 +5,7 @@ import Icon from "@/components/Icon";
 
 export default ({ data }) => {
   const [current, setCurrent] = useState(0);
-  useEffect(() => {
-
-  })
+  useEffect(() => {});
   return (
     <ul id="solution-tabsScene">
       <h3 className="solution-tabsScene-title">应用场景</h3>
@@ -27,14 +25,28 @@ export default ({ data }) => {
                 }
               />
             </h4>
-            <div className="solution-tabsScene-container-content" style={{display: current === idx ? 'block' : 'none'}}>
-              <div className="solution-tabsScene-container-content-img" style={{backgroundImage: `url(${protocol}${iconUrl})`}}>
+            <div
+              className="solution-tabsScene-container-content"
+              style={{ display: current === idx ? "block" : "none" }}
+            >
+              <div
+                className="solution-tabsScene-container-content-img"
+                style={{ backgroundImage: `url(${protocol}${iconUrl})` }}
+              >
                 <h3>{scene_title}</h3>
                 <p>{scene_desc}</p>
               </div>
               <pre className="solution-tabsScene-container-content-text">
-                  {data.children[idx][0].data.content.split('\n').map(line => line.trim().match(/[\:\：]$/) ? <h3>{line}</h3> : <p>{line}</p>)}
-            </pre>
+                {data.children[idx][0].data.content
+                  .split("\n")
+                  .map((line, idx2) =>
+                    line.trim().match(/[\:\：]$/) ? (
+                      <h3 key={idx2}>{line}</h3>
+                    ) : (
+                      <p key={idx2}>{line}</p>
+                    )
+                  )}
+              </pre>
             </div>
           </li>
         ))}
