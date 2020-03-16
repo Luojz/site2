@@ -4,5 +4,5 @@ import './index.less'
 
 
 export default ({data}) => (
-    <div id="solution-bussinessChallenge">bussinessChallenge</div>
+<div id="solution-bussinessChallenge">{data.title}</div>
 )
