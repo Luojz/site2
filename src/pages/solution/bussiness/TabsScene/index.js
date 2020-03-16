@@ -32,7 +32,9 @@ export default ({ data }) => {
                 <h3>{scene_title}</h3>
                 <p>{scene_desc}</p>
               </div>
-              <pre className="solution-tabsScene-container-content-text">{data.children[idx][0].data.content}</pre>
+              <pre className="solution-tabsScene-container-content-text">
+                  {data.children[idx][0].data.content.split('\n').map(line => line.trim().match(/[\:\：]$/) ? <h3>{line}</h3> : <p>{line}</p>)}
+            </pre>
             </div>
           </li>
         ))}
