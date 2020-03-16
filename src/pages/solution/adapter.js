@@ -1,6 +1,7 @@
 import Banner from './bussiness/Banner';
 import BussinessChallenge from './bussiness/BussinessChallenge';
 import CaseSituation from './bussiness/CaseSituation';
+import TabsScene from './bussiness/TabsScene';
 import PlatformAdv from './bussiness/PlatformAdv';
 import ProtocolHTML from "./bussiness/ProtocolHTML";
 import TabsIndustry from "./bussiness/TabsIndustry";
@@ -23,6 +24,12 @@ const components = {
         Component: CaseSituation,
         convert(data) {
             return data
+        }
+    },
+    TabsScene: {
+        Component: TabsScene,
+        convert(data, childBlocks) {
+            return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
         }
     },
     PlatformAdv: {

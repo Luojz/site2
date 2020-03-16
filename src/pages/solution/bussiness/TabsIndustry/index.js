@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./index.less";
-// import mock from './mock.js'
 import adapter from "./adapter";
 import { protocol } from "@/config/apis";
 import Icon from '@/components/Icon'
