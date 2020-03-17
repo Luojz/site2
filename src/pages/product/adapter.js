@@ -35,7 +35,7 @@ const components = {
     section11: {    //产品详细信息(新版)
         Component: Details,
         convert(data,panels) {
-            // return {...data,panels};
+            return {...data,panels};
         }
     }, 
     // text: {     //产品详细信息-子项(新版)
