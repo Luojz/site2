@@ -94,7 +94,8 @@
                                 {"text":"提供类型丰富的实例类型、操作系统版本和软件包；"},
                                 {"text":"CPU、内存、硬盘和带宽均可灵活调整，随时升降配置。"}
                             ]
-                        }
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character1.png"
                     },
                     {
                         "title":"稳定可靠",
@@ -104,7 +105,48 @@
                                 {"text":"提供三副本存储策略，保证在任一副本异常时自动迁移和恢复；"},
                                 {"text":"先进的网络架构保证服务高可用。"}
                             ]
-                        }
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character2.png"
+                    },
+                    {
+                        "title":"管理简单",
+                        "desc":{
+                            "blocks":[
+                                {"text":"提供控制台、命令行等管理方式；"},
+                                {"text":"提供配置修改、重启等管理操作。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character3.png"
+                    },
+                    {
+                        "title":"安全网络",
+                        "desc":{
+                            "blocks":[
+                                {"text":"提供ACL和安全组等多种网络控制策略；"},
+                                {"text":"提供逻辑隔离的私有网络确保云上资源安全。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character4.png"
+                    },
+                    {
+                        "title":"全面防护",
+                        "desc":{
+                            "blocks":[
+                                {"text":"提供木马检测、暴力破解防护、主机配置检测和系统漏洞检测等防护功能；"},
+                                {"text":"提供多层次DDoS防护。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character5.png"
+                    },
+                    {
+                        "title":"可扩展性",
+                        "desc":{
+                            "blocks":[
+                                {"text":"与建行云各种丰富云产品无缝对接；"},
+                                {"text":"可持续为业务发展提供完整的计算、网络、存储等解决方案。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character6.png"
                     }
 
                 ]

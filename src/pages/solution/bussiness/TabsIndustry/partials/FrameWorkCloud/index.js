@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './index.less'
-// import mock from './mock.js'
 import Icon from '@/components/Icon'
 import {protocol} from '@/config/apis'
 

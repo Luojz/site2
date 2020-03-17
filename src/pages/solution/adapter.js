@@ -1,9 +1,10 @@
 import Banner from './bussiness/Banner';
-import BussinessChallenge from './bussiness/BussinessChallenge';
 import CaseSituation from './bussiness/CaseSituation';
-import PlatformAdv from './bussiness/PlatformAdv';
+import TabsScene from './bussiness/TabsScene';
 import ProtocolHTML from "./bussiness/ProtocolHTML";
 import TabsIndustry from "./bussiness/TabsIndustry";
+import Traffic from './bussiness/Traffic';
+import PlatForm from './bussiness/Platform';
 
 
 const components = {
@@ -13,20 +14,32 @@ const components = {
             return data
         }
     },
-    BussinessChallenge: {
-        Component: BussinessChallenge,
-        convert(data) {
-            return data
-        }
-    }, 
     CaseSituation: {
         Component: CaseSituation,
         convert(data) {
             return data
         }
     },
+    /**
+     * 业务挑战
+     */
+    BussinessChallenge: {
+        Component: Traffic,
+        convert(data) {
+            return data
+        }
+    },
+    TabsScene: {
+        Component: TabsScene,
+        convert(data, childBlocks) {
+            return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
+        }
+    },
+    /**
+     * 平台优势
+     */
     PlatformAdv: {
-        Component: PlatformAdv,
+        Component: PlatForm,
         convert(data) {
             return data
         }
