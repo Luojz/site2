@@ -6,7 +6,6 @@ import './index.less';
 
 const Recommend = ({data = mock}) => {
 
-    console.log("recomend",data);
     return (
         <div className="recommend">
             <Title title={data.data.title} />
