@@ -6,12 +6,8 @@ import './index.less';
 
 const Details = ({data = mock}) => {
 
-    console.log(data);
     return (
         <div className="c-section c-p-y-tall function-mod">
-
-
-
             <div className="c-section-inner">
                 <div className="c-section-hd">
                     <h3 className="c-section-tit">产品信息</h3>
