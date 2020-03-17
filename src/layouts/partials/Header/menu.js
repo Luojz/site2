@@ -9,7 +9,6 @@ class Menu extends Component {
         this.state = {
             isShow: false,
         }
-        console.log("topMenuData:", topMenuData);
     }
     showMask=()=>{
         this.props.showMaskFun(false)

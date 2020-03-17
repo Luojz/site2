@@ -3,7 +3,6 @@ import mock from './mock.js';
 import './index.less';
 
 const Banner = ({data = mock}) => {
-    console.log("banner data: ", data)
     return (
         <div className="c-hero-section J-pdBanner">
             <div className="c-hero-section-body">

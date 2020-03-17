@@ -1,7 +1,7 @@
 function setRootFontSize() {
     let width = document.documentElement.clientWidth || document.body.clientWidth;
-    if (width > 750) {
-        width = 750;
+    if (width > 540) {
+        width = 540;
     }
     if (width < 320){
         width = 320;

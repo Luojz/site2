@@ -1,33 +1,38 @@
 .solution-tabsIndustry-frameWorkCloud {
     >h3 {
-        margin: .14rem 0;
-        font-family: PingFangSC-Medium;
-        font-size: .32rem;
-        color: #666666;
+        margin: 0.8rem 0;
+        text-align: center;
+		font-size: 0.4rem;
+		color: #333;
+		line-height: 0.56rem;
+		font-family: 'PingFangSC-Regular';
+		font-weight: normal;
     }
     >ul {
         display: flex;
-        justify-content: space-around;       
+        display: -webkit-flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
 
         >li {
-            margin: .2rem 0;       
-
+            flex: 0 0 25%;
             >a {
-                display: flex;
-                align-items: center;
-                padding: .08rem .15rem;
-                width: 2.6rem;
-                height: .8rem;
-                border: .02rem solid #2F88FF;
-
+                display: block;
+                text-align: center;
+                width: 1.32rem;
+                height:1.32rem;
+                margin: 0 auto 0.2rem;
+                >i{
+                    width: 1rem;
+                    height: 1rem;
+                }
                 >span {
-                    font-family: PingFangSC-Regular;
-                    font-size: .28rem;
-                    color: #9094A5;
+                    font-size: 0.2rem;
+                    line-height: 0.28rem;
+                    color: #222;
                     letter-spacing: 0;
-                    padding-left: .05rem;
-                    text-align: start;
+                    display: block;
+                    margin-top: 0.16rem;
                 }
             }
         }
