@@ -13,7 +13,7 @@ export default ({ data = mock }) => {
             autoplay: {
                 delay: 3000,
                 stopOnLastSlide: false,
-                disableOnInteraction: true,
+                disableOnInteraction: false,
 
             },
             preventClicksPropagation: true,
