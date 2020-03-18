@@ -639,6 +639,28 @@ const data = {
                         ]
                     }
                 },
+                {
+                    "id": "",
+                    "type": "AboutProduct",
+                    "data": {
+                        "column": null,
+                        "mod": "aboutProduct",
+                        "title": "推荐产品",
+                        "desc": null,
+                        "list": [
+                            {
+                                "iconUrl": "//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png",
+                                "title": "云服务器",
+                                "moreUrl": "//yun.ccb.com/product/cvm"
+                            },
+                            {
+                                "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_rqfw.png",
+                                "title": "容器服务",
+                                "moreUrl": "//yun.ccb.com/product/tke"
+                            }
+                        ]
+                    }
+                }
             ]
         }
     }
