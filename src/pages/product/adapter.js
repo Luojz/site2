@@ -27,7 +27,7 @@ const components = {
     section11: {    //产品详细信息(新版)
         Component: Details,
         convert(data,panels) {
-            // return {...data,panels};
+            return {...data,panels};
         }
     },
     section4: {     //相关云产品(新版)
