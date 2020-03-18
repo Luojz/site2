@@ -96,7 +96,7 @@
                     "title":"裸金属服务（BMS）",
                     "slug":"productbms",
                     "type":"menuItem",
-                    "link":"//yun.ccb.com/product/productbms",
+                    "link":"//localhost:3000/product/productbms",
                     "weight":1,
                     "visible":1,
                     "status":1,
