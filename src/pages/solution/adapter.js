@@ -33,7 +33,19 @@ const components = {
     TabsScene: {
         Component: TabsScene,
         convert(data, childBlocks) {
-            return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
+            return {
+                ...data, 
+                children: childBlocks.map(({childBlocks}) => {
+                    let r = []
+                    const Situation = childBlocks.filter(({type}) => type === 'Situation')[0]
+                    if (Situation) {
+                        r = Situation.data.content
+                                .split("\n")
+                                .map(line => line.trim())
+                                .filter(line => line)
+                    }
+                    return r
+                })}
         }
     },
     /**

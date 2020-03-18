@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./index.less";
 import { protocol } from "@/config/apis";
 import Icon from "@/components/Icon";
 
 export default ({ data }) => {
   const [current, setCurrent] = useState(0);
-  useEffect(() => {});
   return (
     <ul id="solution-tabsScene">
       <h3 className="solution-tabsScene-title">应用场景</h3>
       <ul className="solution-tabsScene-container">
-        {data.tabs.map(({ title, scene_title, scene_desc, iconUrl }, idx) => (
+        {data.tabs.map(({ title, scene_title, scene_desc, iconUrl }, i) => (
           <li key={title}>
             <h4
               className="solution-tabsScene-container-summary"
-              onClick={() => setCurrent(current === idx ? -1 : idx)}
+              onClick={() => setCurrent(current === i ? -1 : i)}
             >
               {title}
               <Icon
                 src={
-                  current === idx
+                  current === i
                     ? "/icons/arrow-up.png"
                     : "/icons/arrow-down.png"
                 }
@@ -27,7 +26,7 @@ export default ({ data }) => {
             </h4>
             <div
               className="solution-tabsScene-container-content"
-              style={{ display: current === idx ? "block" : "none" }}
+              style={{ display: current === i ? "block" : "none" }}
             >
               <div
                 className="solution-tabsScene-container-content-img"
@@ -37,13 +36,11 @@ export default ({ data }) => {
                 <p>{scene_desc}</p>
               </div>
               <pre className="solution-tabsScene-container-content-text">
-                {data.children[idx][0].data.content
-                  .split("\n")
-                  .map((line, idx2) =>
-                    line.trim().match(/[\:\：]$/) ? (
-                      <h3 key={idx2}>{line}</h3>
+                {data.children[i].map((line, j) =>
+                    line.match(/[\:\：]$/) ? (
+                      <h3 key={j}>{line}</h3>
                     ) : (
-                      <p key={idx2}>{line}</p>
+                      <p key={j}>{line}</p>
                     )
                   )}
               </pre>
