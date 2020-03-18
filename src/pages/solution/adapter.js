@@ -5,6 +5,7 @@ import ProtocolHTML from "./bussiness/ProtocolHTML";
 import TabsFrameWork from "./bussiness/TabsFrameWork";
 import Traffic from './bussiness/Traffic';
 import PlatForm from './bussiness/Platform';
+import AboutProduct from './bussiness/AboutProduct';
 
 
 const components = {
@@ -54,6 +55,12 @@ const components = {
         Component: TabsFrameWork,
         convert(data, childBlocks) {
             return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
+        }
+    },
+    AboutProduct: {
+        Component: AboutProduct,
+        convert(data) {
+            return data
         }
     },
 }

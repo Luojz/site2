@@ -269,6 +269,16 @@ const data = {
                 iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
                 title: '虚拟私有网络',
                 moreUrl: '//yun.ccb.com/product/vpc1'
+              },
+              {
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                title: '虚拟私有网络',
+                moreUrl: '//yun.ccb.com/product/vpc1'
+              },
+              {
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                title: '虚拟私有网络',
+                moreUrl: '//yun.ccb.com/product/vpc1'
               }
             ]
           }
