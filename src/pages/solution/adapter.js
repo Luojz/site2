@@ -2,7 +2,7 @@ import Banner from './bussiness/Banner';
 import CaseSituation from './bussiness/CaseSituation';
 import TabsScene from './bussiness/TabsScene';
 import ProtocolHTML from "./bussiness/ProtocolHTML";
-import TabsIndustry from "./bussiness/TabsIndustry";
+import TabsFrameWork from "./bussiness/TabsFrameWork";
 import Traffic from './bussiness/Traffic';
 import PlatForm from './bussiness/Platform';
 
@@ -51,7 +51,7 @@ const components = {
         }
     },
     TabsIndustry: {
-        Component: TabsIndustry,
+        Component: TabsFrameWork,
         convert(data, childBlocks) {
             return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
         }
