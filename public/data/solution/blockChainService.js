@@ -256,19 +256,19 @@ const data = {
             desc: null,
             list: [
               {
-                iconUrl: '',
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
                 title: '云监控',
-                moreUrl: ''
+                moreUrl: '//yun.ccb.com/product/vpc1'
               },
               {
-                iconUrl: '',
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
                 title: '云硬盘',
-                moreUrl: ''
+                moreUrl: '//yun.ccb.com/product/vpc1'
               },
               {
-                iconUrl: '',
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
                 title: '虚拟私有网络',
-                moreUrl: ''
+                moreUrl: '//yun.ccb.com/product/vpc1'
               }
             ]
           }
