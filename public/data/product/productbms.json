@@ -114,35 +114,36 @@
                 "tabs":[
                     {"name":"通用型场景","panelId":"eyfa4iafgkw","key":"eyfa4iafgkw"},
                     {"name":"密集、高速的并行计算和浮点计算场景","panelId":"pj658mu3rle", "key":"pj658mu3r1e"},
-                    {"name":"大数据计算场景","panelId":"6rxz5qh13p", "key":"6rxz5qh13p"}
+                    {"name":"大数据计算场景","panelId":"6rxz5qhl3p", "key":"6rxz5qhl3p"}
                 ],
                 "title":"应用场景"
             },
             "panels":[
                 {
                     "id":"eyfa4iafgkw","blocks":[
-                        {"id":"sx062hm7nk", "type":"aside", "dataType":"single","data":{
-                            "content":{"raw":{
-                                "entityMap":{}, "blocks":[
-                                    {"key":"5h3iv", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
-                                    {"key":"eemnh", "text":"标准服务器", "type": "unstvled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                    {"key":"5r2cd", "text":"上云建议", "type": "header- three", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                    {"key":"737bp", "text":"裸金属服务器是-种物理裸机租赁服务 ，是可按需申请的服务;相较于自建数据中心，使用裸金属服务器可以更快地搭计算环境，并由建行云提供数据中心私有网络、负载均衡、NAT网关、 专线互联、运维支持、基础监控、安全防护等能",
+                    {"id":"sx062hm7nk", "type":"aside", "dataType":"single","data":{
+                        "content":{"raw":{
+                            "entityMap":{}, "blocks":[
+                                {"key":"5h3iv", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                                {"key":"eemnh", "text":"标准服务器", "type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"5r2cd", "text":"上云建议", "type": "header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"737bp", "text":"裸金属服务器是一种物理裸机租赁服务，是可按需申请的服务；相较于自建数据中心，使用裸金属服务器可以更快地搭计算环境，并由建行云提供数据中心私有网络、负载均衡、NAT网关、专线互联、运维支持、基础监控、安全防护等能力。只需选择服务器配置和数量，部署、交付时间将被缩短至半小时左右。如果业务是性能敏感型的，推荐使用裸金属服务器，因为它提供了物理机的计算能力，而几乎没有性能损耗。对服务器的计算性能、 稳定性、 实时性等要求很高的计算场景。可以选择裸金属标准服务器。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
                                     "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
-                                ]
-                            }}
+                            ]
                         }}
-                    ]
+                    }}
+                ]
                 },{
                     "id":"pj658mu3rle", "blocks":[{"id":"insvvjdyee","type":"aside", "dataType":"single", "data":{
                         "content":{
                             "raw":{
                                 "entityMap":{},"blocks":[
-                                    {"key":"f7pn2","text":"GPU服务器。", "type":"unsty1ed","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                    {"key":"367o7", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                                    {"key":"f7pn2","text":"GPU服务器。", "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
                                     {"key":"fjboh","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
                                     {"key":"rjig",
-                                    "text":"GPU服务器是基于GPU 的快速、稳定、弹性的物理计算服务，主要应用于深度学习训练\\推理、图形图像处理以及科学计算等场景。GPU 物理服务器通过其强大的快速处理海量数据的计算性能，有效解放计算压力,提升业务处理",
-                                    "type":"unstyled", "depth":0, "inlineStyleRanges":[],"entityRanges":[], "data":{}}
+                                        "text":"GPU 服务器是基于 GPU 的快速、稳定、弹性的物理计算服务，主要应用于深度学习训练\\推理、图形图像处理以及科学计算等场景。 GPU 物理服务器通过其强大的快速处理海量数据的计算性能，有效解放计算压力，提升业务处理效率与竞争力。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
+                                        "type":"unstyled", "depth":0, "inlineStyleRanges":[],"entityRanges":[], "data":{}}
                                 ]
                             }
                         }
@@ -150,22 +151,21 @@
                 },{
                     "id":"6rxz5qhl3p", "blocks":[
                         {"id": "viskedds4p", "type":"aside", "dataType": "single", "data":{"content":{"raw":{"entityMap":{}, "blocks":[
-                            {"key":"5oi7k", "text": "业务类型","type": "header - three","depth":0,"in1 inestyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"5oi7k", "text": "业务类型","type": "header-three","depth":0,"in1 inestyleRanges":[],"entityRanges":[], "data":{}},
                             {"key":"4hspd", "text":"大容量存储服务器。", "type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                            {"key":"4ueso","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}, 
+                            {"key":"4ueso","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
                             {"key":"65ia7",
-                            "text":"提供大容量存储服务器，可搭建统- -的大数据和计算平台，对海量数据进行采集、存储、分析、搜索、挖掘，发现其内在价值，适用于历史数据统计、交互式查询、精准营销、欺诈检测、社交网络分析等。建行云裸金属服务器目前为按需供给，请",
-                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                                "text":"提供大容量存储服务器，可搭建统一的大数据和计算平台，对海量数据进行采集、存储、分析、搜索、挖掘，发现其内在价值，适用于历史数据统计、交互式查询、精准营销、欺诈检测、社交网络分析等。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
+                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
                         ]}}}}
                     ]
                 }
             ]
-        
         },{
             "id":"67q7vnnr42m", "type":"section10", "dataType":"single",
             "data":{
                 "title":"产品功能",
-                "frature":{
+                "feature":{
                     "list":[
                         {
                             "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions1.png",
@@ -185,7 +185,7 @@
                             },
                             "linkText" :"多种集群类型"
                         },{
-                            "iconUr1":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
                             "title":"Kubernetes功能增强",
                             "desc":{
                                 "entityMap":{},
@@ -203,7 +203,7 @@
                             },
                             "linkText":"Kubernetes功能增强"
                         },{
-                            "iconUr1":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
                             "title":"丰富的调度策略,集成负载均衡",
                             "desc":{
                                 "entityMap":{},
@@ -315,58 +315,62 @@
                 }
             }
         },{
-            "id":"xoddhrp6818","type":"section12","dataType":"group", 
+            "id":"xoddhrp6818","type":"section12","dataType":"group",
             "data":{
                 "tabs":[
                     {"parentId":"default_root","title":"企业级","panelId":"jbqfqvrf4nf", "key":"jbqfqvrf4nf","parentTitle":"空"},
-                    {"parentId":"jbqfqvrf4nf", "title":"通用型", "panelId":"w4r64uhkp7s", "key": "w4r64uhkp7s", "parentTitle": "企业级"}
+                    {"parentId":"default_root","title":"个人","panelId":"jbqfqvrf4ng", "key":"jbqfqvrf4ng","parentTitle":"空"},
+                    {"parentId":"default_root","title":"计算","panelId":"jbqfqvrf4nh", "key":"jbqfqvrf4nh","parentTitle":"空"},
+                    {"parentId":"jbqfqvrf4nf", "title":"通用型", "panelId":"w4r64uhkp7s", "key": "w4r64uhkp7s", "parentTitle": "企业级"},
+                    {"parentId":"jbqfqvrf4nf", "title":"计算型", "panelId":"w4r64uhkp7d", "key": "w4r64uhkp7d", "parentTitle": "企业级"},
+                    {"parentId":"jbqfqvrf4nf", "title":"均衡型", "panelId":"w4r64uhkp7j", "key": "w4r64uhkp7j", "parentTitle": "企业级"}
                 ],"title":"产品类型"
             },
             "panels":[
                 {
-                    "id":"jbqfqvrf4nf", "blocks":[
-                        {
-                            "id":"eqw7qr72bef","type":"section13", "dataType":"single","data":{"content":{"title":"通用型（一区）：", "raw":{"entityMap":{},"blocks":[
-                                {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                                {"key":"hrpn","text":"内存: 256G (32GB*8) DDR4内存", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                {"key":"eh2r7","text":"硬盘: 2*2.5英寸1.2TB 10K SAS热插拔硬盘","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                                {"key":"82t6q", "text":"RAID:支持RAID1/RAIDO/NORAID/RAID1+0", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                {"key":"9l2ek", "text": "网卡: 2*106万兆电口网卡", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                {"key":"6m6ra","text":"操作系统支持: Cent0S/7.2、 Oraclelinux7 .4-64bit","type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}}
-                            ]}},"title":"通用型（一区）："}
-                        },{
-                            "id":"uazsgh4e8j","type":"section13", "dataType":"single",
-                            "data":{"content":{"title":"通用型（二区）：", "raw":{"entityMap":{},"blocks":[
-                                {"key":"bhi2","text":"CPU: 2颗intel Xeon Gold 6148 处理器(20核) ", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
-                                {"key":"q1qi","text":"内存: 256G (16GB*16) DDR4内存","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                {"key":"c6heh", "text":"硬盘: 6*SSD-4806", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
-                                {"key":"8q5gh","text":"RAID:支持2RAID1+4RAID10/RAID1+0/ RAID1/RAIDO/NORAID/RAID5","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                                {"key":"ba7r5","text":"网卡: 2*106万兆电口网卡","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}},
-                                {"key":"aus2b","text":"操作系统 支持: Cent0S/7.5、Oraclelinux7.4-64bit","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
-                            ]}},"title":"通用型（二区）："}
-                        }
-                    ]
+                    "id":"w4r64uhkp7d", "blocks":[
+                    {
+                        "id":"eqw7qr72bef","type":"section13", "dataType":"single","data":{"content":{"title":"通用型（一区）：", "raw":{"entityMap":{},"blocks":[
+                        {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                        {"key":"hrpn","text":"内存: 256G (32GB*8) DDR4内存", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"eh2r7","text":"硬盘: 2*2.5英寸1.2TB 10K SAS热插拔硬盘","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                        {"key":"82t6q", "text":"RAID: 支持RAID1/RAIDO/NORAID/RAID1+0", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"9l2ek", "text": "网卡: 2*106万兆电口网卡", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"6m6ra","text":"操作系统支持: Cent0S/7.2、 Oraclelinux7 .4-64bit","type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}}
+                    ]}},"title":"通用型（一区ttt）："}
+                    },{
+                        "id":"uazsgh4e8j","type":"section13", "dataType":"single",
+                        "data":{"content":{"title":"通用型（二区）：", "raw":{"entityMap":{},"blocks":[
+                            {"key":"bhi2","text":"CPU: 2颗intel Xeon Gold 6148 处理器(20核) ", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"q1qi","text":"内存: 256G (16GB*16) DDR4内存","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"c6heh", "text":"硬盘: 6*SSD-4806", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"8q5gh","text":"RAID: 支持2RAID1+4RAID10/RAID1+0/ RAID1/RAIDO/NORAID/RAID5","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"ba7r5","text":"网卡: 2*106万兆电口网卡","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"aus2b","text":"操作系统 支持: Cent0S/7.5、Oraclelinux7.4-64bit","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},"title":"通用型（二区）："}
+                    }
+                ]
                 },{
                     "id": "w4r64uhkp7s", "blocks":[
                         {
                             "id": "k58mqd2ufob", "type":"section13", "dataType":"single", "data":{
-                                "content":{"title":"通用型（一区）：","raw":{"entityMap":{}, "blocks":[
-                                    {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                                    {"key":"hrpn","text":"内存: 256G (32GB*8) DDR4内存", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                    {"key":"eh2r7","text":"硬盘: 2*2.5英寸1.2TB 10K SAS热插拔硬盘","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                                    {"key":"82t6q", "text":"RAID:支持RAID1/RAIDO/NORAID/RAID1+0", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                    {"key":"9l2ek", "text": "网卡: 2*106万兆电口网卡", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                    {"key":"6m6ra","text":"操作系统支持: Cent0S/7.2、 Oraclelinux7 .4-64bit","type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}}
-                                ]}}, "title":"通用型（一区）："
-                            }
+                            "content":{"title":"通用型（一区）：","raw":{"entityMap":{}, "blocks":[
+                                {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                {"key":"hrpn","text":"内存: 256G (32GB*8) DDR4内存", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"eh2r7","text":"硬盘: 2*2.5英寸1.2TB 10K SAS热插拔硬盘","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                {"key":"82t6q", "text":"RAID: 支持RAID1/RAIDO/NORAID/RAID1+0", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"9l2ek", "text": "网卡: 2*106万兆电口网卡", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"6m6ra","text":"操作系统支持: Cent0S/7.2、 Oraclelinux7 .4-64bit","type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}}
+                            ]}}, "title":"通用型（一区）："
+                        }
                         },{
-                            "id":"aizr7zfla65","type":"section13","type":"single","data":{
+                            "id":"aizr7zfla65","type":"section13","datatype":"single","data":{
                                 "content":{"title":"通用型（二区）：","raw":{
                                     "entityMap":{}, "blocks":[
                                         {"key":"bhi2","text":"CPU: 2颗intel Xeon Gold 6148 处理器(20核) ", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
                                         {"key":"q1qi","text":"内存: 256G (16GB*16) DDR4内存","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
                                         {"key":"c6heh", "text":"硬盘: 6*SSD-4806", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
-                                        {"key":"8q5gh","text":"RAID:支持2RAID1+4RAID10/RAID1+0/ RAID1/RAIDO/NORAID/RAID5","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                        {"key":"8q5gh","text":"RAID: 支持2RAID1+4RAID10/RAID1+0/ RAID1/RAIDO/NORAID/RAID5","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
                                         {"key":"ba7r5","text":"网卡: 2*106万兆电口网卡","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}},
                                         {"key":"aus2b","text":"操作系统 支持: Cent0S/7.5、Oraclelinux7.4-64bit","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
                                     ]
