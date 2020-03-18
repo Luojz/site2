@@ -4,8 +4,6 @@ import './index.less';
 
 const Features = ({data = mock}) => {
 
-    console.log("features data:", data);
-
     return (
         <div className="c-section c-p-y-tall function-mod">
             <div className="c-section-inner">

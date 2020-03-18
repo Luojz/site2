@@ -1,18 +1,30 @@
 import React from 'react';
 
 import Title from '../../../../components/Title/index';
-import mock from './mock.js';
 import './index.less';
 
-const Recommend = ({data = mock}) => {
+interface IProps {
+    data:{
+        title:string;
+        list:{
+            title:string;
+            imgUrl:string;
+            linkUrl:string;
+            key:number;
+        }[];
+    }
+}
 
-    console.log("recomend",data);
+export default (props:IProps) => {
+
+    const data = props.data;
+
     return (
         <div className="recommend">
-            <Title title={data.data.title} />
+            <Title title={data.title} />
             <ul>
                 {
-                    data.data.list.map((item,index)=>{
+                    data.list.map((item,index)=>{
                         return (
                             <li key={index}>
                                 <a href={item.linkUrl}>
@@ -27,5 +39,3 @@ const Recommend = ({data = mock}) => {
         </div>
     )
 }
-
-export default Recommend;

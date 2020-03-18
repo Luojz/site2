@@ -1,0 +1,20 @@
+{
+    "id":5,
+    "extra": {
+        "banner": {
+            "title":"容器服务",
+            "subTitle":"稳定、安全、高效、灵活扩展、简单易用的企业级Kubernetes 容器管理平台",
+            "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_banner.jpg",
+            "btnIcon":"buy",
+            "btnTitle":"点击继续",
+            "btnLink":"//console.yun.ccb.com/container/overview",
+            "addonButtons":[{
+                "btnTitle":"帮助文档",
+                "btnLink":"//doc.yun.ccb.com/tcloud/Compute/COntainerServer"
+            },{
+                "btnTitle":"",
+                "btnLink":""
+            }]
+        }
+    }
+}

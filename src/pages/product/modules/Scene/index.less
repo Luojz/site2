@@ -1,0 +1,74 @@
+@baseFont:100;
+.scene .scene-list{
+    margin-top: -52rem / @baseFont;
+    li{
+        .scene-hd{
+            height: 136rem / @baseFont;
+            display: flex;
+            cursor: pointer;
+            p{
+                flex: 1;
+                line-height: 136rem / @baseFont;
+                font-size: 32rem / @baseFont;
+                color: #9094A5;
+                letter-spacing: 0;
+                padding-left: 32rem / @baseFont;
+            }
+            .showIntro{
+                width: 74rem / @baseFont;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 64rem / @baseFont;
+                    right: 27rem / @baseFont;
+                    width: 18.39rem / @baseFont;
+                    height: 18.39rem / @baseFont;
+                    border-left: 4rem / @baseFont solid #9094a5;
+                    border-top: 4rem / @baseFont solid #9094a5;
+                    transform: rotate(45deg);
+                }
+            }
+            .closeIntro{
+                width: 74rem / @baseFont;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 64rem / @baseFont;
+                    right: 27rem / @baseFont;
+                    width: 18.39rem / @baseFont;
+                    height: 18.39rem / @baseFont;
+                    border-left: 4rem / @baseFont solid #9094a5;
+                    border-top: 4rem / @baseFont solid #9094a5;
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+        .scene-bd{
+            .scene-content{
+                background-color: #F6F7FB;
+                padding: 60rem / @baseFont 32rem / @baseFont 80rem / @baseFont 32rem / @baseFont;
+                .header-three{
+                    font-size: 32rem / @baseFont;
+                    color: #222;
+                    height: 45rem / @baseFont;
+                    line-height: 45rem / @baseFont;
+                }
+                .header-three:nth-child(n+2){
+                    margin-top: 48rem / @baseFont;
+                }
+                .unstyled{
+                    margin-top: 16rem / @baseFont;
+                    font-size: 28rem / @baseFont;
+                    color: #9094a5;
+                    line-height: 42rem / @baseFont;
+                    letter-spacing: 0;
+                    text-align:justify;
+                }
+            }
+        }
+    }
+}
