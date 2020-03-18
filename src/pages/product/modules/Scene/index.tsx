@@ -1,11 +1,28 @@
 import React, { useState } from 'react';
 
 import Title from '../../../../components/Title/index';
-import SceneContent from './SceneContent';
-import mock from './mock.js';
+import adapter from './adapter';
+
 import './index.less';
 
-const Scene = ({data = mock}) => {
+interface IProps {
+    data:{
+        title:string;
+        tabs:{
+            name:string;
+            panelId:string;
+            key:string;
+        }[];
+        panels:{
+            id:string;
+            blocks:Array<any>;
+        }[];
+    }
+}
+
+export default (props:IProps) => {
+
+    const data = props.data;
 
     const [isShow, setIsShow] = useState<Boolean>(true);
     const [showId, setShowId] = useState<Number>(0);
@@ -21,10 +38,10 @@ const Scene = ({data = mock}) => {
 
     return (
         <div className="scene">
-            <Title title={data.data.title} />
+            <Title title={data.title} />
             <ul className="scene-list">
                 {
-                    data.data.tabs && data.data.tabs.map((item,index)=>{
+                    data.tabs.length > 0 && data.tabs.map((item,index)=>{
                         return (
                             <li key={index} style={{"borderBottom":index===showId && isShow ? "0":".02rem solid #e6e7ec"}} onClick={()=>show(index)}>
                                 <div className="scene-hd">
@@ -33,8 +50,12 @@ const Scene = ({data = mock}) => {
                                 </div>
                                 <div className="scene-bd" style={{"display":index===showId && isShow ?"block":"none"}} onClick={(e)=>e.stopPropagation()}>
                                     {
-                                        data.panels &&
-                                        <SceneContent data={data.panels.filter(panels=>panels.id===item.panelId)} />
+                                        data.panels.filter(panels=>panels.id===item.panelId).length > 0 &&
+                                        adapter(data.panels.filter(panels=>panels.id===item.panelId)[0]).map(
+                                            ({ id, type, Component, data }) => (
+                                              <Component data={data} key={id || type} />
+                                            )
+                                        )
                                     }
                                 </div>
                             </li>
@@ -45,5 +66,3 @@ const Scene = ({data = mock}) => {
         </div>
     )
 }
-
-export default Scene;

@@ -1,16 +1,33 @@
 import React from 'react';
 
+import '../index.less';
 
-import mock from './mock.js';
-import './index.less';
+interface IProps {
+    data:{
+        content:{
+            raw:{
+                entityMap:object;
+                blocks:{
+                    key:string;
+                    text:string;
+                    type:string;
+                    depth:number;
+                    inlineStyleRanges:Array<any>;
+                    entityRanges:Array<any>;
+                    data:object;
+                }[];
+            }
+        }
+    }
+}
 
-const SceneContent = (props:any) => {
+export default (props:IProps) => {
 
-    const list = props.data[0].blocks[0].data.content.raw.blocks;
+    const list = props.data.content.raw.blocks;
     return (
         <div className="scene-content">
             {
-                list.map((item:any,index:number)=>{
+                list.map((item,index)=>{
                     if(item.type==="header-three"){
                         return (
                             <p className="header-three" key={index}>
@@ -30,5 +47,3 @@ const SceneContent = (props:any) => {
         </div>
     )
 }
-
-export default SceneContent;
