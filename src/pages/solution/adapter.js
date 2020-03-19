@@ -3,7 +3,7 @@ import CaseSituation from './bussiness/CaseSituation';
 import TabsScene from './bussiness/TabsScene';
 import ProtocolHTML from "./bussiness/ProtocolHTML";
 import TabsFrameWork from "./bussiness/TabsFrameWork";
-import Traffic from './bussiness/Traffic';
+import BussinessChallenge from './bussiness/BussinessChallenge';
 import PlatForm from './bussiness/Platform';
 import AboutProduct from './bussiness/AboutProduct';
 
@@ -25,7 +25,7 @@ const components = {
      * 业务挑战
      */
     BussinessChallenge: {
-        Component: Traffic,
+        Component: BussinessChallenge,
         convert(data) {
             return data
         }
