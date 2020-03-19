@@ -1,12 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react'
-import './index.less'
-import Icon from '@/components/Icon'
-import {protocol} from '@/config/apis'
-
+import React, { useState, useEffect } from "react";
+import "./index.less";
+import { protocol } from "@/config/apis";
+import Icon from "@/components/Icon";
 
 function List({ data }) {
     const [fold, setFold] = useState(false)
-    console.log('222',data.list.length)
     return (
         <ul>
             {data.list.map(({iconUrl, title, moreUrl},idx) => (
@@ -22,8 +20,8 @@ function List({ data }) {
     )
 }
 export default ({data}) => (
-    <div className="solution-tabsIndustry-frameWorkCloud">
-        <h3 className="title">{data.title}</h3>
+    <div id="solution-aboutProduct">
+        <h3>{data.title}</h3>
         <List data={data}/>
     </div>
 )

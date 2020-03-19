@@ -65,7 +65,7 @@ class Menu extends Component {
                                                         <div className="m-menu-ctrl J-qcMenuList">
                                                             {item2.children && item2.children.map((item3, index3)=>
                                                                 <div className="m-tit-level-3 J-qcMenuTitle" key={index3}>
-                                                                    <a href={item3.link}>{item3.title}</a>
+                                                                    <a href={item3.link.replace('//yun.ccb.com', '//localhost:3000')}>{item3.title}</a>
                                                                 </div>
                                                             )}
                                                         </div>

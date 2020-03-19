@@ -2,9 +2,10 @@ import Banner from './bussiness/Banner';
 import CaseSituation from './bussiness/CaseSituation';
 import TabsScene from './bussiness/TabsScene';
 import ProtocolHTML from "./bussiness/ProtocolHTML";
-import TabsIndustry from "./bussiness/TabsIndustry";
-import Traffic from './bussiness/Traffic';
+import TabsFrameWork from "./bussiness/TabsFrameWork";
+import BussinessChallenge from './bussiness/BussinessChallenge';
 import PlatForm from './bussiness/Platform';
+import AboutProduct from './bussiness/AboutProduct';
 
 
 const components = {
@@ -24,7 +25,7 @@ const components = {
      * 业务挑战
      */
     BussinessChallenge: {
-        Component: Traffic,
+        Component: BussinessChallenge,
         convert(data) {
             return data
         }
@@ -32,7 +33,19 @@ const components = {
     TabsScene: {
         Component: TabsScene,
         convert(data, childBlocks) {
-            return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
+            return {
+                ...data, 
+                children: childBlocks.map(({childBlocks}) => {
+                    let r = []
+                    const Situation = childBlocks.filter(({type}) => type === 'Situation')[0]
+                    if (Situation) {
+                        r = Situation.data.content
+                                .split("\n")
+                                .map(line => line.trim())
+                                .filter(line => line)
+                    }
+                    return r
+                })}
         }
     },
     /**
@@ -51,9 +64,15 @@ const components = {
         }
     },
     TabsIndustry: {
-        Component: TabsIndustry,
+        Component: TabsFrameWork,
         convert(data, childBlocks) {
             return {...data, children: childBlocks.map(({childBlocks}) => childBlocks)}
+        }
+    },
+    AboutProduct: {
+        Component: AboutProduct,
+        convert(data) {
+            return data
         }
     },
 }
