@@ -45,65 +45,77 @@
                 "title": "产品特性",
                 "list":[
                     {
-                        "title":"多样化配置",
+                        "title":"简单易用",
                         "desc":{
                             "blocks":[
-                                {"text":"提供类型丰富的实例类型、操作系统版本和软件包；"},
-                                {"text":"CPU、内存、硬盘和带宽均可灵活调整，随时升降配置。"}
-                            ]
-                        },
-                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character1.png"
-                    },
-                    {
-                        "title":"稳定可靠",
-                        "desc":{
-                            "blocks":[
-                                {"text":"服务可用性99.95%、数据可靠性 99.9999999%；"},
-                                {"text":"提供三副本存储策略，保证在任一副本异常时自动迁移和恢复；"},
-                                {"text":"先进的网络架构保证服务高可用。"}
+                                {"text":"一键创建容器集群，无需关注各种复杂组件和繁琐操作。提供应用的全生命周期管理，并自动对接网络、存储、负载均衡、账户体系等，充分发挥云上各产品的能力。让用户运维集群和应用管理都变得简单易用。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character2.png"
                     },
                     {
-                        "title":"管理简单",
+                        "title":"安全可靠",
                         "desc":{
                             "blocks":[
-                                {"text":"提供控制台、命令行等管理方式；"},
-                                {"text":"提供配置修改、重启等管理操作。"}
+                                {"text":"安全精细化的权限控制，多租户的quota管理保证多个租户安全的共享集群所有资源。全平台无单点，所有组件都支持热升级，保证版本之间的兼容性；"},
+                                {"text":"容器服务提供了全维度的资源管理，包括CPU、内存、网络、磁盘等，保证一个主机上各个容器可以安全的共享主机资源。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character1.png"
+                    },
+                    {
+                        "title":"灵活高效",
+                        "desc":{
+                            "blocks":[
+                                {"text":"容器服务为用户对etcd，kubernetes等系统组件做了优化配置。在很多点都考虑性能问题，多个管理组件可以水平扩，提供了P2P的镜像下载功能，支持所有的网络模式，应用可以根据需求灵活的选择最适合自己的方式，存储方面提供了普通云盘和内置云盘，独占云盘和共享云盘等。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character3.png"
                     },
                     {
-                        "title":"安全网络",
+                        "title":"全自动运维体系",
                         "desc":{
                             "blocks":[
-                                {"text":"提供ACL和安全组等多种网络控制策略；"},
-                                {"text":"提供逻辑隔离的私有网络确保云上资源安全。"}
+                                {"text":"容器服务提供了可视化、自动化的运维系统，简化了集群的运维方式，降低使用者的学习成本和人力成本，并且减少了运维错误。同时，提供了全方位监控告警体系，进一步提升了系统可靠性。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character4.png"
                     },
                     {
-                        "title":"全面防护",
+                        "title":"场景丰富",
                         "desc":{
                             "blocks":[
-                                {"text":"提供木马检测、暴力破解防护、主机配置检测和系统漏洞检测等防护功能；"},
-                                {"text":"提供多层次DDoS防护。"}
+                                {"text":"容器服务可以支持开发云、测试云、微服务应用、有状态的应用、离线计算、GPU应用等等各种应用场景，是真正意义的云操作系统，让各种应用都可以共享集群资源。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character5.png"
                     },
                     {
-                        "title":"可扩展性",
+                        "title":"对接主流社区",
                         "desc":{
                             "blocks":[
-                                {"text":"与建行云各种丰富云产品无缝对接；"},
-                                {"text":"可持续为业务发展提供完整的计算、网络、存储等解决方案。"}
+                                {"text":"同时兼容compose编排和kubernetes编排，兼容多种用户使用模式，不改变用户使用习惯。并且通过编排模板和服务市场的方式，大大简化用户的使用模式，快速创建一个或者一组应用，并对其统一管理。可以无缝对接SpringCloud，istio等主流开源产品。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character6.png"
+                    },
+                    {
+                        "title":"弹性伸缩",
+                        "desc":{
+                            "blocks":[
+                                {"text":"同时支持自动扩缩容和主动扩缩容，可以让用户来选择灵活的扩缩容策略。扩容时可以指定与已有版本不同的新版本，缩容时可以选择定点裁撤，充分考虑各种不同应用场景的弹性伸缩需求。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character7.png"
+                    },
+                    {
+                        "title":"低成本",
+                        "desc":{
+                            "blocks":[
+                                {"text":"对所有资源实行弹性的管理策略，让一个主机的共享资源被容器共享，不但可以大大减少容器的异常，更可以提升主机乃至整个集群的使用率。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character8.png"
                     }
 
                 ]

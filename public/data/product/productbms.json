@@ -45,65 +45,49 @@
                 "title": "产品特性",
                 "list":[
                     {
-                        "title":"多样化配置",
+                        "title":"弹性扩展，灵活配置",
                         "desc":{
                             "blocks":[
-                                {"text":"提供类型丰富的实例类型、操作系统版本和软件包；"},
-                                {"text":"CPU、内存、硬盘和带宽均可灵活调整，随时升降配置。"}
+                                {"text":"可以灵活选择预定义好的物理服务器配置，包括 CPU、内存、硬盘等。依靠建行云资源池，更可一键申请数十台物理服务器，快速扩容集群，应对高峰需求。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character1.png"
                     },
                     {
-                        "title":"稳定可靠",
+                        "title":"即买即用，快速部署",
                         "desc":{
                             "blocks":[
-                                {"text":"服务可用性99.95%、数据可靠性 99.9999999%；"},
-                                {"text":"提供三副本存储策略，保证在任一副本异常时自动迁移和恢复；"},
-                                {"text":"先进的网络架构保证服务高可用。"}
+                                {"text":"选择服务器硬件配置后，还可指定操作系统、RAID模式等安装需求，大部分设备可在半小时左右部署完毕。可通过控制台，在线关闭、开启、重启、重装服务器等。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character2.png"
                     },
                     {
-                        "title":"管理简单",
+                        "title":"集成各类云服务",
                         "desc":{
                             "blocks":[
-                                {"text":"提供控制台、命令行等管理方式；"},
-                                {"text":"提供配置修改、重启等管理操作。"}
+                                {"text":"提供私有网络、负载均衡、NAT 网关、专线连接等云服务。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character3.png"
                     },
                     {
-                        "title":"安全网络",
+                        "title":"立体防护，专业支持",
                         "desc":{
                             "blocks":[
-                                {"text":"提供ACL和安全组等多种网络控制策略；"},
-                                {"text":"提供逻辑隔离的私有网络确保云上资源安全。"}
+                                {"text":"私有网络允许自定义IP 范围，自行决定哪些服务器可开放，哪些内部私有，保证节点的私有性和安全性。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character4.png"
                     },
                     {
-                        "title":"全面防护",
+                        "title":"7*24原厂维保服务",
                         "desc":{
                             "blocks":[
-                                {"text":"提供木马检测、暴力破解防护、主机配置检测和系统漏洞检测等防护功能；"},
-                                {"text":"提供多层次DDoS防护。"}
+                                {"text":"为快速解决硬件故障，建行云故障部件经用户同意后，通过维保服务予以替换。过保设备也将会按照计划逐步替换。"}
                             ]
                         },
                         "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character5.png"
-                    },
-                    {
-                        "title":"可扩展性",
-                        "desc":{
-                            "blocks":[
-                                {"text":"与建行云各种丰富云产品无缝对接；"},
-                                {"text":"可持续为业务发展提供完整的计算、网络、存储等解决方案。"}
-                            ]
-                        },
-                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character6.png"
                     }
 
                 ]
