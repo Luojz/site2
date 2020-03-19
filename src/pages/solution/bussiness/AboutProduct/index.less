@@ -10,14 +10,11 @@
     }
 
     >ul {
-        display        : flex;
-        justify-content: space-around;
-        flex-wrap      : wrap;
-
-
+        overflow: hidden;
+        
         >li {
-            flex: 0 0 25%;
-
+            float: left;
+            width: 25%;
             >a {
                 display   : block;
                 text-align: center;
@@ -31,7 +28,7 @@
 
                 >span {
                     font-size     : 0.2rem;
-                    line-height   : 0.28rem;
+                    line-height   : 0.36rem;
                     color         : #333;
                     letter-spacing: 0;
                     display       : block;
@@ -41,12 +38,14 @@
         }
 
         >span {
+            display: block;
+            float: left;
             font-family        : PingFangSC-Regular;
             font-size          : 0.2rem;
             color              : #2F88FF;
             letter-spacing     : 0;
-            margin-left        : 0.4rem;
-            margin-top         : 0.2rem;
+            margin-left        : 0.46rem;
+            margin-top         : 0.4rem;
             background-image   : url(/icons/arrow-down-blue.png);
             background-size    : contain;
             background-repeat  : no-repeat;
