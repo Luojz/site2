@@ -5,7 +5,6 @@ import mock from './mock.js';
 import './index.less';
 
 const Details = ({data = mock}) => {
-    console.log("details data:", data);
     return (
         <div className="c-section c-p-y-tall function-mod">
             <div className="c-section-inner">

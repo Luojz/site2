@@ -26,7 +26,7 @@ export default (props:IProps) => {
                 {
                     data.list.map((item,index)=>{
                         return (
-                            <li key={index} style={{"flex":`0 0 ${1/data.list.length*100}%`}}>
+                            <li key={index} style={{"flex":`0 0 ${ data.list.length > 4 ? 25 : 1/data.list.length*100}%`}}>
                                 <a href={item.linkUrl}>
                                     <img src={item.imgUrl} alt=""/>
                                     <p>{item.title}</p>

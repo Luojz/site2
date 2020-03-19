@@ -18,7 +18,7 @@ interface IProps {
                 }[];
             }
         };
-        relation:{
+        relation?:{
             list:{
                 iconUrl:string;
                 linkText:string;
@@ -30,9 +30,9 @@ interface IProps {
 
 export default (props:IProps) => {
 
-    console.log(props);
     const blocks = props.data.content.raw.blocks;
-    const list = props.data.relation.list;
+    
+    const list = props.data.relation ? props.data.relation.list : [];
     return (
         <div className="scene-content">
             {
