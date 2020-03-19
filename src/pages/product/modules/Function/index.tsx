@@ -87,7 +87,10 @@ export default (props:IProps) => {
                                             data.announcement.list.filter(child=>child.title===item.linkText).map((item,index)=>{
                                                 return (
                                                     <li key={index}>
-                                                        <p>{item.cTitle}</p>
+                                                        {
+                                                            item.cTitle !== " " &&
+                                                            <p>{item.cTitle}</p>
+                                                        }
                                                         <div>{item.desc.blocks[0].text}</div>
                                                     </li>
                                                 )

@@ -109,56 +109,76 @@
                 ]
             }
         },{
-            "id":"a57xcdvco5q","type":"section3","dataType":"group",
-            "data":{
+            "id":"49rhyun9bj5","type":"section3","dataType": "group", "data":{
                 "tabs":[
-                    {"name":"通用型场景","panelId":"eyfa4iafgkw","key":"eyfa4iafgkw"},
-                    {"name":"密集、高速的并行计算和浮点计算场景","panelId":"pj658mu3rle", "key":"pj658mu3r1e"},
-                    {"name":"大数据计算场景","panelId":"6rxz5qhl3p", "key":"6rxz5qhl3p"}
-                ],
-                "title":"应用场景"
+                    {"name":"持续集成与交付", "panelId":"mfnj2pen69", "key": "mfnj2pen69"},
+                    {"name": "微服务架构", "panelId":"ny9smaocqum","key":"ny9smaocqum"},
+                    {"name":"传统服务和有状态服务", "panelId":"ap37jj3q7pv", "key":"ap37jj3q7pv"},
+                    {"name": "离线计算", "panelId":"g5nvzpx72m9", "key":"g5nvzpx7 2m9"} ,
+                    {"name":"弹性伸缩","panelId":"3ybbt2zgyr5", "key":"3ybbt2zgyr5"}
+                ], "title":"应用场景"
             },
             "panels":[
                 {
-                    "id":"eyfa4iafgkw","blocks":[
-                    {"id":"sx062hm7nk", "type":"aside", "dataType":"single","data":{
-                        "content":{"raw":{
-                            "entityMap":{}, "blocks":[
-                                {"key":"5h3iv", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
-                                {"key":"eemnh", "text":"标准服务器", "type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                {"key":"5r2cd", "text":"上云建议", "type": "header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                                {"key":"737bp", "text":"裸金属服务器是一种物理裸机租赁服务，是可按需申请的服务；相较于自建数据中心，使用裸金属服务器可以更快地搭计算环境，并由建行云提供数据中心私有网络、负载均衡、NAT网关、专线互联、运维支持、基础监控、安全防护等能力。只需选择服务器配置和数量，部署、交付时间将被缩短至半小时左右。如果业务是性能敏感型的，推荐使用裸金属服务器，因为它提供了物理机的计算能力，而几乎没有性能损耗。对服务器的计算性能、 稳定性、 实时性等要求很高的计算场景。可以选择裸金属标准服务器。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
-                                    "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
-                            ]
-                        }}
-                    }}
-                ]
-                },{
-                    "id":"pj658mu3rle", "blocks":[{"id":"insvvjdyee","type":"aside", "dataType":"single", "data":{
-                        "content":{
-                            "raw":{
-                                "entityMap":{},"blocks":[
-                                    {"key":"367o7", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
-                                    {"key":"f7pn2","text":"GPU服务器。", "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                                    {"key":"fjboh","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
-                                    {"key":"rjig",
-                                        "text":"GPU 服务器是基于 GPU 的快速、稳定、弹性的物理计算服务，主要应用于深度学习训练\\推理、图形图像处理以及科学计算等场景。 GPU 物理服务器通过其强大的快速处理海量数据的计算性能，有效解放计算压力，提升业务处理效率与竞争力。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
-                                        "type":"unstyled", "depth":0, "inlineStyleRanges":[],"entityRanges":[], "data":{}}
-                                ]
-                            }
-                        }
+                    "id": "mfnj2pen69", "blocks":[{"id": "nwdems7okpr", "type":"aside", "dataType":"single", "data":{
+                        "content":{"raw":{"entitMap":{}, "blocks":[
+                            {"key":"94gnu","text":"业务类型","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"9f7c5", "text":"敏捷开发应用。","type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"dg57i", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"1khpq","text":"实现了从开发、测试到发布整个流程一体化、 标准化、自动化。通过不断地代码构建和自动化软件交付，让软件产品高效迭代,从而快速成熟、更加安全可控。","type":"unstyled", "depth":0,
+                            "inlineStyleRanges":[], "entityRanges":[], "data":{}}
+                        ]}},
+                        "relation":{"list":[
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_selfNet.png","linkText":"虚拟私有网络","linkUrl":"//yun.ccb.com/product/vpc1"}
+                        ]}
                     }}]
                 },{
-                    "id":"6rxz5qhl3p", "blocks":[
-                        {"id": "viskedds4p", "type":"aside", "dataType": "single", "data":{"content":{"raw":{"entityMap":{}, "blocks":[
-                            {"key":"5oi7k", "text": "业务类型","type": "header-three","depth":0,"in1 inestyleRanges":[],"entityRanges":[], "data":{}},
-                            {"key":"4hspd", "text":"大容量存储服务器。", "type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                            {"key":"4ueso","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                            {"key":"65ia7",
-                                "text":"提供大容量存储服务器，可搭建统一的大数据和计算平台，对海量数据进行采集、存储、分析、搜索、挖掘，发现其内在价值，适用于历史数据统计、交互式查询、精准营销、欺诈检测、社交网络分析等。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
-                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
-                        ]}}}}
-                    ]
+                    "id": "ny9smaocqum", "blocks":[{"id": "9diojz9rzrp", "type":"aside", "dataType":"single", "data":{
+                        "content":{"raw":{"entityMap":{},"blocks":[
+                            {"key":"73b5v", "text":"业务类型", "type": "header-three", "depth":0,"inlinestyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"d19d4", "text": "微服务应用。","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"8msi7", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"25iip","text":"微服务是用一组小而专的服务来构建一个应用，服务之间通过轻量的通讯机制来交互，并且服务可以通过自动化部署方式独立部署。微服务的核心理念是将大型、复杂的应用分解为小且内聚的服务,这些小的服务便于扩展和部署，它们可以简单的和Docker、DevOps、 云计算结合起来。",
+                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
+                    }}]
+                },{
+                    "id":"ap37jj3q7pv","blocks":[{"id":"yIpiaogwVfm","type":"aside","dataType":"single", "data":{
+                        "content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"e3j78","text": "业务类型","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"98u7k","text":"传统应用和有状态应用。 ","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"5esud", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"31qv7", "text":"对于大部分企业应用来说，存在着大量的未改造或者不能完全改造成微服务的应用，而这些应用也希望能够使用容器,持续集成与持续交付，统一-调度和资源管理等特性,容器服务可以对这类应用提供支持。容器服务也可以对有状态应用进行支持。",
+                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_cloud.png","linkText":"云硬盘","1inkUrl":"//yun.ccb.com/product/productcbs"}
+                        ]}
+                    }}]
+                },{
+                    "id":"g5nvzpx72m9","blocks":[{"id":"mbufkoq4wp","type":"aside","dataType":"single","data":{
+                        "content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"erv21","text":"业务类型","type":"header-three", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"1gfhu", "text":"离线应用。", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"79dg5","text":"上云建议", "type": "header-three","depth":0, "inlinestyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"ds1b1","text":"利用优化的配额弹性管理、优先级调度、准入控制、P2P镜像下载等特性为这些离线计算提供支持，让用户无需关注繁琐的集群管理， 专注业务。","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
+                    }}]
+                },{
+                    "id":"3ybbt2zgyr5","blocks":[{"id":"2xjhktnqunh", "type":"aside","dataType":"single", "data":{
+                        "content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"7uvvh", "text":"业务类型","type": "header-three","depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"9fu85","text":"资源动态伸缩的应用。","type": "unstyled","depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"77qnd","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"9g56a", "text": "容器具有极其轻量、高效的特点，使得容器化的服务可以被快速的启动和迁移。同时借助容器服务的自动扩缩容和主动扩缩容机制，让业务可以根据各自的运行情况，资源使用指标，以及自定义指标等进行自动或者主动的弹性伸缩。",
+                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
+                    }}]
                 }
             ]
         },{
@@ -185,7 +205,7 @@
                             },
                             "linkText" :"多种集群类型"
                         },{
-                            "iconUr1":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
                             "title":"Kubernetes功能增强",
                             "desc":{
                                 "entityMap":{},
@@ -203,7 +223,7 @@
                             },
                             "linkText":"Kubernetes功能增强"
                         },{
-                            "iconUr1":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
                             "title":"丰富的调度策略,集成负载均衡",
                             "desc":{
                                 "entityMap":{},
@@ -322,27 +342,27 @@
                 "title":"相关产品推荐",
                 "list":[
                     {
+                        "title":"云服务器",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png",
+                        "linkUrl":"//yun.ccb.com/product/cvm",
+                        "key":1
+                    },
+                    {
                         "title":"云硬盘",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_cloud.png",
+                        "linkUrl":"//yun.ccb.com/product/productcbs",
+                        "key":2
                     },
                     {
-                        "title":"虚拟专用网络",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
+                        "title":"云数据库MySQL版",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct3.png",
+                        "linkUrl":"//yun.ccb.com/product/productmysql",
+                        "key":3
                     },
                     {
-                        "title":"云监控",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
-                    },
-                    {
-                        "title":"容器服务",
-                        "imgUrl":"",
-                        "linkUrl":"",
+                        "title":"云数据库Redis版",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct4.png",
+                        "linkUrl":"//yun.ccb.com/product/productredis",
                         "key":""
                     }
                 ]

@@ -17,17 +17,27 @@ interface IProps {
                     data:object;
                 }[];
             }
-        }
+        };
+        relation:{
+            list:{
+                iconUrl:string;
+                linkText:string;
+                linkUrl:string;
+            }[]
+        };
     }
 }
 
 export default (props:IProps) => {
 
-    const list = props.data.content.raw.blocks;
+    console.log(props);
+    const blocks = props.data.content.raw.blocks;
+    const list = props.data.relation.list;
     return (
         <div className="scene-content">
             {
-                list.map((item,index)=>{
+                blocks.length > 0 &&
+                blocks.map((item,index)=>{
                     if(item.type==="header-three"){
                         return (
                             <p className="header-three" key={index}>
@@ -43,6 +53,26 @@ export default (props:IProps) => {
                         )
                     }
                 })
+            }
+            {
+                list.length > 0 &&
+                <>
+                    <p className="header-three">相关产品推荐</p>
+                    <ul className="scene-content-relation">
+                        {
+                            list.map((item,index)=>{
+                                return (
+                                    <li key={index}>
+                                        <a href={item.linkUrl}>
+                                            <img src={item.iconUrl} alt=""/>
+                                            {item.linkText}
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                </>
             }
         </div>
     )

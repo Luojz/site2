@@ -319,16 +319,12 @@
             "data":{
                 "tabs":[
                     {"parentId":"default_root","title":"企业级","panelId":"jbqfqvrf4nf", "key":"jbqfqvrf4nf","parentTitle":"空"},
-                    {"parentId":"default_root","title":"个人","panelId":"jbqfqvrf4ng", "key":"jbqfqvrf4ng","parentTitle":"空"},
-                    {"parentId":"default_root","title":"计算","panelId":"jbqfqvrf4nh", "key":"jbqfqvrf4nh","parentTitle":"空"},
-                    {"parentId":"jbqfqvrf4nf", "title":"通用型", "panelId":"w4r64uhkp7s", "key": "w4r64uhkp7s", "parentTitle": "企业级"},
-                    {"parentId":"jbqfqvrf4nf", "title":"计算型", "panelId":"w4r64uhkp7d", "key": "w4r64uhkp7d", "parentTitle": "企业级"},
-                    {"parentId":"jbqfqvrf4nf", "title":"均衡型", "panelId":"w4r64uhkp7j", "key": "w4r64uhkp7j", "parentTitle": "企业级"}
+                    {"parentId":"jbqfqvrf4nf", "title":"通用型", "panelId":"w4r64uhkp7s", "key": "w4r64uhkp7s", "parentTitle": "企业级"}
                 ],"title":"产品类型"
             },
             "panels":[
                 {
-                    "id":"w4r64uhkp7d", "blocks":[
+                    "id":"jbqfqvrf4nf", "blocks":[
                     {
                         "id":"eqw7qr72bef","type":"section13", "dataType":"single","data":{"content":{"title":"通用型（一区）：", "raw":{"entityMap":{},"blocks":[
                         {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
@@ -388,28 +384,10 @@
                 "title":"相关产品推荐",
                 "list":[
                     {
-                        "title":"云硬盘",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
-                    },
-                    {
                         "title":"虚拟专用网络",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
-                    },
-                    {
-                        "title":"云监控",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
-                    },
-                    {
-                        "title":"容器服务",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_selfNet.png",
+                        "linkUrl":"//yun.ccb.com/product/vpc1",
+                        "key":1
                     }
                 ]
             }
