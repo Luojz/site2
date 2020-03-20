@@ -5,7 +5,7 @@
             "type":"section11",
             "dataType":"group",
             "data":{
-                "title": "产品信息",
+                "title": "产品信息1",
                 "tabs": [
                     {
                         "name": "容器服务简介"
@@ -133,18 +133,18 @@
             "panels":[
                 {
                     "id": "mfnj2pen69", "blocks":[{"id": "nwdems7okpr", "type":"aside", "dataType":"single", "data":{
-                    "content":{"raw":{"entitMap":{}, "blocks":[
-                        {"key":"94gnu","text":"业务类型","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
-                        {"key":"9f7c5", "text":"敏捷开发应用。","type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
-                        {"key":"dg57i", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
-                        {"key":"1khpq","text":"实现了从开发、测试到发布整个流程一体化、 标准化、自动化。通过不断地代码构建和自动化软件交付，让软件产品高效迭代,从而快速成熟、更加安全可控。","type":"unstyled", "depth":0,
+                        "content":{"raw":{"entitMap":{}, "blocks":[
+                            {"key":"94gnu","text":"业务类型","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"9f7c5", "text":"敏捷开发应用。","type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"dg57i", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"1khpq","text":"实现了从开发、测试到发布整个流程一体化、 标准化、自动化。通过不断地代码构建和自动化软件交付，让软件产品高效迭代,从而快速成熟、更加安全可控。","type":"unstyled", "depth":0,
                             "inlineStyleRanges":[], "entityRanges":[], "data":{}}
-                    ]}},
-                    "relation":{"list":[
-                        {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
-                        {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_selfNet.png","linkText":"虚拟私有网络","linkUrl":"//yun.ccb.com/product/vpc1"}
-                    ]}
-                }}]
+                        ]}},
+                        "relation":{"list":[
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_selfNet.png","linkText":"虚拟私有网络","linkUrl":"//yun.ccb.com/product/vpc1"}
+                        ]}
+                    }}]
                 },{
                     "id": "ny9smaocqum", "blocks":[{"id": "9diojz9rzrp", "type":"aside", "dataType":"single", "data":{
                         "content":{"raw":{"entityMap":{},"blocks":[
@@ -152,7 +152,7 @@
                             {"key":"d19d4", "text": "微服务应用。","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
                             {"key":"8msi7", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
                             {"key":"25iip","text":"微服务是用一组小而专的服务来构建一个应用，服务之间通过轻量的通讯机制来交互，并且服务可以通过自动化部署方式独立部署。微服务的核心理念是将大型、复杂的应用分解为小且内聚的服务,这些小的服务便于扩展和部署，它们可以简单的和Docker、DevOps、 云计算结合起来。",
-                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
                         ]}},
                         "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
                     }}]
@@ -163,7 +163,7 @@
                             {"key":"98u7k","text":"传统应用和有状态应用。 ","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
                             {"key":"5esud", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
                             {"key":"31qv7", "text":"对于大部分企业应用来说，存在着大量的未改造或者不能完全改造成微服务的应用，而这些应用也希望能够使用容器,持续集成与持续交付，统一-调度和资源管理等特性,容器服务可以对这类应用提供支持。容器服务也可以对有状态应用进行支持。",
-                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
                         ]}},
                         "relation":{"list":[
                             {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
@@ -187,7 +187,7 @@
                             {"key":"9fu85","text":"资源动态伸缩的应用。","type": "unstyled","depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
                             {"key":"77qnd","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
                             {"key":"9g56a", "text": "容器具有极其轻量、高效的特点，使得容器化的服务可以被快速的启动和迁移。同时借助容器服务的自动扩缩容和主动扩缩容机制，让业务可以根据各自的运行情况，资源使用指标，以及自定义指标等进行自动或者主动的弹性伸缩。",
-                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                            "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
                         ]}},
                         "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
                     }}]
