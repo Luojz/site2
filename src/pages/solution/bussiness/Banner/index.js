@@ -19,8 +19,6 @@ const Banner = ({data = mock}) => {
                             <a href={data.btn1Link} className="c-btn buy">
                                 {data.btn1Title}
                             </a>
-							<a href={data.btn2Link}
-								className="c-btn p-weak-btn">{data.btn2Title}</a>
                         </div>
                     </div>
                 </div>

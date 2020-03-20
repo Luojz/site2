@@ -256,29 +256,29 @@ const data = {
             desc: null,
             list: [
               {
-                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_yjk.png',
                 title: '云监控',
-                moreUrl: '//yun.ccb.com/product/vpc1'
+                moreUrl: '//yun.ccb.com/solution/monitoring'
               },
               {
-                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/product/product_memory5.png',
                 title: '云硬盘',
-                moreUrl: '//yun.ccb.com/product/vpc1'
+                moreUrl: '//yun.ccb.com/product/productcbs'
               },
               {
-                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_wl_xnsywl.png',
                 title: '虚拟私有网络',
                 moreUrl: '//yun.ccb.com/product/vpc1'
               },
               {
-                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
-                title: '虚拟私有网络',
-                moreUrl: '//yun.ccb.com/product/vpc1'
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png',
+                title: '云服务器',
+                moreUrl: '//yun.ccb.com/product/cvm'
               },
               {
-                iconUrl: '//imagecachexxfb.yun.ccb.com/static/solution/aboutproduct_selfNet.png',
-                title: '虚拟私有网络',
-                moreUrl: '//yun.ccb.com/product/vpc1'
+                iconUrl: '//imagecachexxfb.yun.ccb.com/static/product/product_rqfw.png',
+                title: '容器服务',
+                moreUrl: '//yun.ccb.com/product/tke'
               }
             ]
           }
