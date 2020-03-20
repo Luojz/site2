@@ -8,14 +8,14 @@ function List({ data }) {
     return (
         <ul>
             {data.list.map(({iconUrl, title, moreUrl},idx) => (
-                <li key={idx} style={{ display: idx < 4 || fold ? 'block' : 'none' }}>
+                <li key={idx} style={{ display: idx < 8 || fold ? 'block' : 'none' }}>
                     <a href={`${protocol}${moreUrl}`}>
                         <img src={`${protocol}${iconUrl}`} />
                         <span>{title}</span>
                     </a>
                 </li>
             ))}
-            <span onClick={() => setFold(true)} style={{ display: data.list.length > 3 && !fold ? '' : 'none' }}>更多产品</span>
+            <span onClick={() => setFold(true)} style={{ display: data.list.length > 8 && !fold ? '' : 'none' }}>更多产品</span>
         </ul>
     )
 }
