@@ -27,7 +27,8 @@ const Banner = ({data = mock}) => {
             </div>
 
             <div className="c-hero-icon-mod">
-                <img src={data.bgUrl} width="100%" height="100%"/>
+                {/*<img src={data.bgUrl} width="100%" height="100%"/>*/}
+                <img src={require('./banner.png')} width="100%" height="100%"/>
             </div>
 
         </div>
