@@ -8,16 +8,7 @@
                 "title": "产品信息",
                 "tabs": [
                     {
-                        "name": "简介"
-                    },
-                    {
-                        "name": "概述"
-                    },
-                    {
-                        "name": "功能"
-                    },
-                    {
-                        "name": "实例类型"
+                        "name": "容器服务简介"
                     }
                 ]
 
@@ -35,39 +26,7 @@
                                     "blocks":[
                                         {
                                             "key":"",
-                                            "text":"云服务器（Cloud Virtual Machine，CVM）为您提供稳定高效的弹性计算服务，只需动动手指，片刻等待，您就可以在云端获取属于自己的CVM，满足您的计算需求。随着业务需求的变化，您可以自由扩展或缩减计算资源。",
-                                            "type":"unstyled",
-                                            "depth":0
-                                        }
-                                    ]
-                                }
-                            }
-                        },{
-                            "id":"",
-                            "type":"text",
-                            "data":{
-                                "raw":{
-                                    "entityMap":{},
-                                    "blocks":[
-                                        {
-                                            "key":"",
-                                            "text":"云服务器1（Cloud Virtual Machine，CVM）为您提供稳定高效的弹性计算服务，只需动动手指，片刻等待，您就可以在云端获取属于自己的CVM，满足您的计算需求。随着业务需求的变化，您可以自由扩展或缩减计算资源。",
-                                            "type":"unstyled",
-                                            "depth":0
-                                        }
-                                    ]
-                                }
-                            }
-                        },{
-                            "id":"",
-                            "type":"text",
-                            "data":{
-                                "raw":{
-                                    "entityMap":{},
-                                    "blocks":[
-                                        {
-                                            "key":"",
-                                            "text":"云服务器2（Cloud Virtual Machine，CVM）为您提供稳定高效的弹性计算服务，只需动动手指，片刻等待，您就可以在云端获取属于自己的CVM，满足您的计算需求。随着业务需求的变化，您可以自由扩展或缩减计算资源。",
+                                            "text":"容器服务是基于原生kubernetes打造的容器云平台，可以调度CPU或GPU等海量计算资源，运行各种计算框架，监控任务执行结果，让数据中心的所有资源被合理使用，协同完成各类应用场景的服务和计算。 CCS为容器化提供了从构建到交付到运行的一整套解决方案。通过对原生kubernetes的产品化，提升了可用性、易用性、以及共享容器集群的安全性等，帮助用户降低成本，提高效率。",
                                             "type":"unstyled",
                                             "depth":0
                                         }
@@ -75,8 +34,6 @@
                                 }
                             }
                         }
-                        
-
                     ]
                 }
             ]
@@ -88,26 +45,306 @@
                 "title": "产品特性",
                 "list":[
                     {
-                        "title":"多样化配置",
+                        "title":"简单易用",
                         "desc":{
                             "blocks":[
-                                {"text":"提供类型丰富的实例类型、操作系统版本和软件包；"},
-                                {"text":"CPU、内存、硬盘和带宽均可灵活调整，随时升降配置。"}
+                                {"text":"一键创建容器集群，无需关注各种复杂组件和繁琐操作。提供应用的全生命周期管理，并自动对接网络、存储、负载均衡、账户体系等，充分发挥云上各产品的能力。让用户运维集群和应用管理都变得简单易用。"}
                             ]
-                        }
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character2.png"
                     },
                     {
-                        "title":"稳定可靠",
+                        "title":"安全可靠",
                         "desc":{
                             "blocks":[
-                                {"text":"服务可用性99.95%、数据可靠性 99.9999999%；"},
-                                {"text":"提供三副本存储策略，保证在任一副本异常时自动迁移和恢复；"},
-                                {"text":"先进的网络架构保证服务高可用。"}
+                                {"text":"安全精细化的权限控制，多租户的quota管理保证多个租户安全的共享集群所有资源。全平台无单点，所有组件都支持热升级，保证版本之间的兼容性；"},
+                                {"text":"容器服务提供了全维度的资源管理，包括CPU、内存、网络、磁盘等，保证一个主机上各个容器可以安全的共享主机资源。"}
                             ]
-                        }
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character1.png"
+                    },
+                    {
+                        "title":"灵活高效",
+                        "desc":{
+                            "blocks":[
+                                {"text":"容器服务为用户对etcd，kubernetes等系统组件做了优化配置。在很多点都考虑性能问题，多个管理组件可以水平扩，提供了P2P的镜像下载功能，支持所有的网络模式，应用可以根据需求灵活的选择最适合自己的方式，存储方面提供了普通云盘和内置云盘，独占云盘和共享云盘等。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character3.png"
+                    },
+                    {
+                        "title":"全自动运维体系",
+                        "desc":{
+                            "blocks":[
+                                {"text":"容器服务提供了可视化、自动化的运维系统，简化了集群的运维方式，降低使用者的学习成本和人力成本，并且减少了运维错误。同时，提供了全方位监控告警体系，进一步提升了系统可靠性。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character4.png"
+                    },
+                    {
+                        "title":"场景丰富",
+                        "desc":{
+                            "blocks":[
+                                {"text":"容器服务可以支持开发云、测试云、微服务应用、有状态的应用、离线计算、GPU应用等等各种应用场景，是真正意义的云操作系统，让各种应用都可以共享集群资源。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character5.png"
+                    },
+                    {
+                        "title":"对接主流社区",
+                        "desc":{
+                            "blocks":[
+                                {"text":"同时兼容compose编排和kubernetes编排，兼容多种用户使用模式，不改变用户使用习惯。并且通过编排模板和服务市场的方式，大大简化用户的使用模式，快速创建一个或者一组应用，并对其统一管理。可以无缝对接SpringCloud，istio等主流开源产品。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character6.png"
+                    },
+                    {
+                        "title":"弹性伸缩",
+                        "desc":{
+                            "blocks":[
+                                {"text":"同时支持自动扩缩容和主动扩缩容，可以让用户来选择灵活的扩缩容策略。扩容时可以指定与已有版本不同的新版本，缩容时可以选择定点裁撤，充分考虑各种不同应用场景的弹性伸缩需求。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character7.png"
+                    },
+                    {
+                        "title":"低成本",
+                        "desc":{
+                            "blocks":[
+                                {"text":"对所有资源实行弹性的管理策略，让一个主机的共享资源被容器共享，不但可以大大减少容器的异常，更可以提升主机乃至整个集群的使用率。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character8.png"
                     }
 
                 ]
+            }
+        },{
+            "id":"49rhyun9bj5","type":"section3","dataType": "group", "data":{
+                "tabs":[
+                    {"name":"持续集成与交付", "panelId":"mfnj2pen69", "key": "mfnj2pen69"},
+                    {"name": "微服务架构", "panelId":"ny9smaocqum","key":"ny9smaocqum"},
+                    {"name":"传统服务和有状态服务", "panelId":"ap37jj3q7pv", "key":"ap37jj3q7pv"},
+                    {"name": "离线计算", "panelId":"g5nvzpx72m9", "key":"g5nvzpx7 2m9"} ,
+                    {"name":"弹性伸缩","panelId":"3ybbt2zgyr5", "key":"3ybbt2zgyr5"}
+                ], "title":"应用场景"
+            },
+            "panels":[
+                {
+                    "id": "mfnj2pen69", "blocks":[{"id": "nwdems7okpr", "type":"aside", "dataType":"single", "data":{
+                    "content":{"raw":{"entitMap":{}, "blocks":[
+                        {"key":"94gnu","text":"业务类型","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                        {"key":"9f7c5", "text":"敏捷开发应用。","type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"dg57i", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                        {"key":"1khpq","text":"实现了从开发、测试到发布整个流程一体化、 标准化、自动化。通过不断地代码构建和自动化软件交付，让软件产品高效迭代,从而快速成熟、更加安全可控。","type":"unstyled", "depth":0,
+                            "inlineStyleRanges":[], "entityRanges":[], "data":{}}
+                    ]}},
+                    "relation":{"list":[
+                        {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
+                        {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_selfNet.png","linkText":"虚拟私有网络","linkUrl":"//yun.ccb.com/product/vpc1"}
+                    ]}
+                }}]
+                },{
+                    "id": "ny9smaocqum", "blocks":[{"id": "9diojz9rzrp", "type":"aside", "dataType":"single", "data":{
+                        "content":{"raw":{"entityMap":{},"blocks":[
+                            {"key":"73b5v", "text":"业务类型", "type": "header-three", "depth":0,"inlinestyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"d19d4", "text": "微服务应用。","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"8msi7", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"25iip","text":"微服务是用一组小而专的服务来构建一个应用，服务之间通过轻量的通讯机制来交互，并且服务可以通过自动化部署方式独立部署。微服务的核心理念是将大型、复杂的应用分解为小且内聚的服务,这些小的服务便于扩展和部署，它们可以简单的和Docker、DevOps、 云计算结合起来。",
+                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
+                    }}]
+                },{
+                    "id":"ap37jj3q7pv","blocks":[{"id":"yIpiaogwVfm","type":"aside","dataType":"single", "data":{
+                        "content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"e3j78","text": "业务类型","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"98u7k","text":"传统应用和有状态应用。 ","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"5esud", "text":"上云建议","type":"header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"31qv7", "text":"对于大部分企业应用来说，存在着大量的未改造或者不能完全改造成微服务的应用，而这些应用也希望能够使用容器,持续集成与持续交付，统一-调度和资源管理等特性,容器服务可以对这类应用提供支持。容器服务也可以对有状态应用进行支持。",
+                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器", "linkUrl":"//yun.ccb.com/product/cvm"},
+                            {"iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_cloud.png","linkText":"云硬盘","1inkUrl":"//yun.ccb.com/product/productcbs"}
+                        ]}
+                    }}]
+                },{
+                    "id":"g5nvzpx72m9","blocks":[{"id":"mbufkoq4wp","type":"aside","dataType":"single","data":{
+                        "content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"erv21","text":"业务类型","type":"header-three", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"1gfhu", "text":"离线应用。", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"79dg5","text":"上云建议", "type": "header-three","depth":0, "inlinestyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"ds1b1","text":"利用优化的配额弹性管理、优先级调度、准入控制、P2P镜像下载等特性为这些离线计算提供支持，让用户无需关注繁琐的集群管理， 专注业务。","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png","linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
+                    }}]
+                },{
+                    "id":"3ybbt2zgyr5","blocks":[{"id":"2xjhktnqunh", "type":"aside","dataType":"single", "data":{
+                        "content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"7uvvh", "text":"业务类型","type": "header-three","depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"9fu85","text":"资源动态伸缩的应用。","type": "unstyled","depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                            {"key":"77qnd","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"9g56a", "text": "容器具有极其轻量、高效的特点，使得容器化的服务可以被快速的启动和迁移。同时借助容器服务的自动扩缩容和主动扩缩容机制，让业务可以根据各自的运行情况，资源使用指标，以及自定义指标等进行自动或者主动的弹性伸缩。",
+                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},
+                        "relation":{"list":[{"iconUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png", "linkText":"云服务器","linkUrl":"//yun.ccb.com/product/cvm"}]}
+                    }}]
+                }
+            ]
+        },{
+            "id":"67q7vnnr42m", "type":"section10", "dataType":"single",
+            "data":{
+                "title":"产品功能",
+                "feature":{
+                    "list":[
+                        {
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions1.png",
+                            "title":"多种集群类型",
+                            "desc":{
+                                "entityMap":{},"blocks":[
+                                    {
+                                        "key":"ffj3d",
+                                        "text":"根据企业自身需要，选择合适的集群规模，并可选择多种规格的容器工作节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            },
+                            "linkText" :"多种集群类型"
+                        },{
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
+                            "title":"Kubernetes功能增强",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"3eclc",
+                                        "text":"与社区版本同步更新，在开源Kubernetes基础上，增强了安全性，稳定性，可靠性",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            },
+                            "linkText":"Kubernetes功能增强"
+                        },{
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
+                            "title":"丰富的调度策略,集成负载均衡",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"4qa17",
+                                        "text":"有多种调度策略可供选择，集成了负载均衡服务来提供对外访问接口",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlinestyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            },
+                            "linkText" :"丰富的调度策略，集成负载均衡"
+                        }
+                    ]
+                },
+                "announcement":{
+                    "list":[
+                        {
+                            "title":"多种集群类型",
+                            "cTitle":"小集群",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"bjq03",
+                                        "text":"管理最大20个节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"多种集群类型",
+                            "cTitle":"中集群",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"1sdct",
+                                        "text":"管理最大50个节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"多种集群类型",
+                            "cTitle":"大集群",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"ejdvp",
+                                        "text":"管理最大200个节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"Kubernetes功能增强",
+                            "cTitle":" ",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"2pj3v",
+                                        "text":"容器服务包含了原生Kubernetes的全部功能，同时增强了集群监控，告警，日志管理,资源控制等功能。",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"丰富的调度策略，集成负载均衡",
+                            "cTitle":" ",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"2s7vl",
+                                        "text":"调度策略包括亲和调度、反亲和调度和优先级调度等。可以针对不同的容器实例，绑定不同的负载均衡器，支持灰度发布功能。",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
             }
         },{
             "id":"3",
@@ -117,27 +354,27 @@
                 "title":"相关产品推荐",
                 "list":[
                     {
+                        "title":"云服务器",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/solution/product_yfwq.png",
+                        "linkUrl":"//yun.ccb.com/product/cvm",
+                        "key":1
+                    },
+                    {
                         "title":"云硬盘",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_cloud.png",
+                        "linkUrl":"//yun.ccb.com/product/productcbs",
+                        "key":2
                     },
                     {
-                        "title":"虚拟专用网络",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
+                        "title":"云数据库MySQL版",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct3.png",
+                        "linkUrl":"//yun.ccb.com/product/productmysql",
+                        "key":3
                     },
                     {
-                        "title":"云监控",
-                        "imgUrl":"",
-                        "linkUrl":"",
-                        "key":""
-                    },
-                    {
-                        "title":"容器服务",
-                        "imgUrl":"",
-                        "linkUrl":"",
+                        "title":"云数据库Redis版",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct4.png",
+                        "linkUrl":"//yun.ccb.com/product/productredis",
                         "key":""
                     }
                 ]

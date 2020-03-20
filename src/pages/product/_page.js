@@ -12,7 +12,12 @@ export default ({ location }) => {
 
     useEffect(() => {
         const url = location.pathname;
-        const api = location.search ? `${url}${location.search.replace("?!", "_")}.json` : `${url}.json`;
+        let api = location.search ? `${url}${location.search.replace("?!", "_")}.json` : `${url}.json`;
+
+        //针对非官方的网页，微信会在地址后面增加验证参数
+        if(location.search.indexOf('nsukey=')){
+            api = `${url}.json`;
+        }
         const bannerDataApi = `${url}_banner.json`;
         setLoading(true)
         asyncData(api)
