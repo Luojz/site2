@@ -12,7 +12,8 @@ export default ({ location }) => {
 
     useEffect(() => {
         const url = location.pathname;
-        const api = location.search ? `${url}${location.search.replace("?!", "_")}.json` : `${url}.json`;
+        const api = `${location.pathname}.json`;
+        // const api = location.search ? `${url}${location.search.replace("?!", "_")}.json` : `${url}.json`;
         const bannerDataApi = `${url}_banner.json`;
         setLoading(true)
         asyncData(api)
