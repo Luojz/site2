@@ -2,7 +2,7 @@
     .solution-tabsScene-title {
         height     : .56rem;
         line-height: .56rem;
-        margin     : .80rem auto .60rem;
+        margin-top : .80rem;
         text-align : center;
         font-size  : .40rem;
         color      : #222;
@@ -17,25 +17,25 @@
                 display        : flex;
                 justify-content: space-between;
                 align-items    : center;
-                padding-left   : .31rem;
+                margin         : .48rem 0 .38rem .31rem;
                 font-family    : PingFangSC-Regular;
                 font-size      : .32rem;
-                line-height    : 1rem;
-                color          : #2F88FF;
+                font-weight    : normal;
                 letter-spacing : 0;
             }
 
             .solution-tabsScene-container-content {
                 box-shadow: 0 0 .20rem 0 #C7D9F5;
-                padding   : .4rem .31rem;
+                padding   : .4rem .21rem;
 
                 .solution-tabsScene-container-content-img {
-                    margin        : .08rem 1.12rem;
-                    width         : 4rem;
-                    height        : 4rem;
-                    padding       : 1.2rem .18rem;
-                    color         : #fff;
-                    letter-spacing: 0;
+                    margin         : .08rem 1.12rem;
+                    width          : 4rem;
+                    height         : 4rem;
+                    padding        : 1.2rem .18rem;
+                    color          : #fff;
+                    letter-spacing : 0;
+                    background-size: cover;
 
                     >h3 {
                         font-family: PingFangSC-Semibold;
@@ -43,16 +43,16 @@
                     }
 
                     >p {
-                        margin-top    : .32rem;
-                        font-family   : PingFangSC-Medium;
-                        font-size     : .20rem;
-                        text-align    : justify;
-                        line-height   : .28rem;
+                        margin-top : .32rem;
+                        font-family: PingFangSC-Medium;
+                        font-size  : .20rem;
+                        text-align : justify;
+                        line-height: .28rem;
                     }
                 }
 
                 .solution-tabsScene-container-content-text {
-                    padding       : 0 .43rem;
+                    padding-left  : .22rem;
                     white-space   : pre-wrap;
                     white-space   : -moz-pre-wrap;
                     white-space   : -pre-wrap;
@@ -60,20 +60,20 @@
                     letter-spacing: 0;
 
                     >h3 {
-                        margin-top : .2rem;
+                        margin : .4rem 0 .2rem 0;
                         font-family: PingFangSC-Medium;
                         font-size  : .32rem;
-                        line-height: 2;
                         color      : #666666;
                     }
 
                     >p {
                         font-family: PingFangSC-Regular;
                         font-size  : .28rem;
+                        line-height: .44rem;
                         color      : #9094A5;
                         text-align : justify;
-                        line-height: .44rem;
                     }
+
                     >p:not(:empty)::before {
                         content: '★  '
                     }

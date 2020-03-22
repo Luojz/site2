@@ -3,7 +3,7 @@ import "./index.less";
 import {protocol} from '@/config/apis'
 
 export default ({ data }) => (
-  <ul id="solution-caseSituation">
+  <section id="solution-caseSituation">
     <h3>{data.title}</h3>
     <ul>
       {data.list.map(({ title, desc, iconUrl }) => (
@@ -14,5 +14,5 @@ export default ({ data }) => (
         </li>
       ))}
     </ul>
-  </ul>
+  </section>
 );

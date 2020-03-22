@@ -6,14 +6,15 @@ import Icon from "@/components/Icon";
 export default ({ data }) => {
   const [current, setCurrent] = useState(0);
   return (
-    <ul id="solution-tabsScene">
+    <section id="solution-tabsScene">
       <h3 className="solution-tabsScene-title">应用场景</h3>
       <ul className="solution-tabsScene-container">
         {data.tabs.map(({ title, scene_title, scene_desc, iconUrl }, i) => (
           <li key={title}>
             <h4
               className="solution-tabsScene-container-summary"
-              onClick={() => setCurrent(current === i ? -1 : i)}
+              onClick={() => setCurrent(current === i ? -1 : i)}               
+              style={{color:  current === i ? '#2F88FF' : '#333333'}}
             >
               {title}
               <Icon
@@ -42,6 +43,6 @@ export default ({ data }) => {
           </li>
         ))}
       </ul>
-    </ul>
+    </section>
   );
 };
