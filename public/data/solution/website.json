@@ -14,6 +14,7 @@
                         "title": "网站解决方案",
                         "desc": "安全建站，弹性扩容，轻松应对每一次来访",
                         "bgUrl": "//imagecachexxfb.yun.ccb.com/static/solution/solution_banner.jpg",
+	        "mbgUrl":"//imagecachexxfb.yun.ccb.com/static/solution/m_solution_banner.png",
                         "btn1Title": "服务咨询",
                         "btn1Icon": "default",
                         "btn1Link": "//yun.ccb.com/contactUs/contact_us.html",
