@@ -7,7 +7,7 @@ import Icon from '@/components/Icon'
 export default ({ data }) => {
   const [current, setCurrent] = useState(0);
   return (
-    <div id="solution-tabsIndustry">
+    <section id="solution-tabsIndustry">
       <h3 className="solution-tabsIndustry-title">{data.title}</h3>
       <ul className="solution-tabsIndustry-container">
         {data.tabs.map(({ title, iconUrl }, idx) => (
@@ -15,6 +15,7 @@ export default ({ data }) => {
             <h4
               className="solution-tabsIndustry-container-summary"
               onClick={() => setCurrent(current === idx ? -1 : idx)}
+              style={{color: current === idx ? '#2F88FF' : '#333'}}
             >
               {title}
               <Icon src={current === idx ? '/icons/arrow-up.png' : '/icons/arrow-down.png'} />
@@ -36,6 +37,6 @@ export default ({ data }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
