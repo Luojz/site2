@@ -76,7 +76,7 @@ export default (props:IProps) => {
                                 style={{"marginRight":data.tabs.filter(item=>item.parentId==="default_root").length > 1 ? ".30rem":"0"}}
                             >
                                 <div>{item.title}</div>
-                                <p style={{"borderBottom":showBottomId===index?"4px solid #3f88ff":"0"}}></p>
+                                <p style={{"borderBottom":showBottomId===index?"0.04 solid #3f88ff":"0"}}></p>
                             </li>
                         )
                     })
