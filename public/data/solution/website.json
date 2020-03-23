@@ -601,6 +601,28 @@
                             }
                         ]
                     }
+                },
+                {
+                    "id": "gneksmrpeqg",
+                    "type": "PlatformAdv",
+                    "data": {
+                        "column": null,
+                        "mod": "platformAdv",
+                        "title": "专属服务",
+                        "desc": null,
+                        "list": [
+                            {
+                                "iconUrl": "//imagecachexxfb.yun.ccb.com/static/solution/solution_service1.png",
+                                "title": "核心业务",
+                                "desc": "提供多种财务公司产品服务功能，以实现对客户产品服务"
+                            },
+                            {
+                                "iconUrl": "//imagecachexxfb.yun.ccb.com/static/solution/solution_service3.png",
+                                "title": "现金管理",
+                                "desc": "为客户提供现金流入、流出、留存过程中各种资金管理所需要的流动性管理服务"
+                            }
+                        ]
+                    }
                 }
             ]
         }
