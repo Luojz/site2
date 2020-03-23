@@ -1,10 +1,54 @@
 import React, { useState } from 'react';
 
 import Title from '../../../../components/Title/index';
-import mock from './mock.js';
 import './index.less';
 
-const Function = ({data = mock}) => {
+interface IProps {
+    data:{
+        title:string;
+        feature:{
+            list:{
+                iconUrl:string;
+                title:string;
+                desc:{
+                    entityMap:object;
+                    blocks:{
+                        key:string;
+                        text:string;
+                        type:string;
+                        depth:number;
+                        inlineStyleRanges:Array<any>;
+                        entityRanges:Array<any>;
+                        data:object;
+                    }[];
+                };
+                linkText:string;
+            }[]
+        };
+        announcement:{
+            list:{
+                title:string;
+                cTitle:string;
+                desc:{
+                    entityMap:object;
+                    blocks:{
+                        key:string;
+                        text:string;
+                        type:string;
+                        depth:number;
+                        inlineStyleRanges:Array<any>;
+                        entityRanges:Array<any>;
+                        data:object;
+                    }[];
+                };
+            }[]
+        };
+    }
+}
+
+export default (props:IProps) => {
+
+    const data = props.data;
 
     const [isShow, setIsShow] = useState<Boolean>(true);
     const [showId, setShowId] = useState<Number>(0);
@@ -19,10 +63,10 @@ const Function = ({data = mock}) => {
     }
     return (
         <div className="function">
-            <Title title={data.data.title} />
+            <Title title={data.title} />
             <ul className="function-list">
                 {
-                    data.data.feature.list.map((item,index)=>{
+                    data.feature.list.map((item,index)=>{
                         return (
                             <li key={index} style={{"borderBottom":index===showId && isShow ? "0":".02rem solid #e6e7ec"}} onClick={()=>show(index)}>
                                 <div className="function-hd">
@@ -39,10 +83,14 @@ const Function = ({data = mock}) => {
                                 <div className="function-bd" style={{"display":index===showId && isShow ?"block":"none"}} onClick={(e)=>e.stopPropagation()}>
                                     <ul>
                                         {
-                                            data.data.announcement.list.filter(child=>child.title===item.linkText).map((item,index)=>{
+                                            data.announcement.list.filter(child=>child.title===item.linkText).length > 0 &&
+                                            data.announcement.list.filter(child=>child.title===item.linkText).map((item,index)=>{
                                                 return (
                                                     <li key={index}>
-                                                        <p>{item.cTitle}</p>
+                                                        {
+                                                            item.cTitle !== " " &&
+                                                            <p>{item.cTitle}</p>
+                                                        }
                                                         <div>{item.desc.blocks[0].text}</div>
                                                     </li>
                                                 )
@@ -59,5 +107,3 @@ const Function = ({data = mock}) => {
         </div>
     )
 }
-
-export default Function;

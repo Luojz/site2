@@ -1,0 +1,380 @@
+{
+    "blocks": [
+        {
+            "id":"1",
+            "type":"section11",
+            "dataType":"group",
+            "data":{
+                "title": "产品信息1",
+                "tabs": [
+                    {
+                        "name": "裸金属服务器简介"
+                    }
+                ]
+
+            },
+            "panels":[
+                {
+                    "id":"",
+                    "blocks":[
+                        {
+                            "id":"",
+                            "type":"text",
+                            "data":{
+                                "raw":{
+                                    "entityMap":{},
+                                    "blocks":[
+                                        {
+                                            "key":"",
+                                            "text":"建行云裸金属服务器（Bare Metal Server， BMS） 是建行云提供的云上物理服务器， 可以和现有建行云计算、 网络等服务无缝集成， 满足业务对计算性能的极致要求， 提供高性能、 稳定的物理计算资源， 并且可以与云服务器（CVM） 、 私有网络（VPC） 等云产品配合使用， 集成了传统托管主机的稳定性与云上资源高度弹性的优势。",
+                                            "type":"unstyled",
+                                            "depth":0
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },{
+            "id":"2",
+            "type":"section8",
+            "dataType":"single",
+            "data":{
+                "title": "产品特性",
+                "list":[
+                    {
+                        "title":"弹性扩展，灵活配置",
+                        "desc":{
+                            "blocks":[
+                                {"text":"可以灵活选择预定义好的物理服务器配置，包括 CPU、内存、硬盘等。依靠建行云资源池，更可一键申请数十台物理服务器，快速扩容集群，应对高峰需求。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character1.png"
+                    },
+                    {
+                        "title":"即买即用，快速部署",
+                        "desc":{
+                            "blocks":[
+                                {"text":"选择服务器硬件配置后，还可指定操作系统、RAID模式等安装需求，大部分设备可在半小时左右部署完毕。可通过控制台，在线关闭、开启、重启、重装服务器等。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character2.png"
+                    },
+                    {
+                        "title":"集成各类云服务",
+                        "desc":{
+                            "blocks":[
+                                {"text":"提供私有网络、负载均衡、NAT 网关、专线连接等云服务。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character3.png"
+                    },
+                    {
+                        "title":"立体防护，专业支持",
+                        "desc":{
+                            "blocks":[
+                                {"text":"私有网络允许自定义IP 范围，自行决定哪些服务器可开放，哪些内部私有，保证节点的私有性和安全性。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character4.png"
+                    },
+                    {
+                        "title":"7*24原厂维保服务",
+                        "desc":{
+                            "blocks":[
+                                {"text":"为快速解决硬件故障，建行云故障部件经用户同意后，通过维保服务予以替换。过保设备也将会按照计划逐步替换。"}
+                            ]
+                        },
+                        "iconUrl": "//imagecachexxfb.yun.ccb.com/static/product/product_character5.png"
+                    }
+
+                ]
+            }
+        },{
+            "id":"a57xcdvco5q","type":"section3","dataType":"group",
+            "data":{
+                "tabs":[
+                    {"name":"通用型场景","panelId":"eyfa4iafgkw","key":"eyfa4iafgkw"},
+                    {"name":"密集、高速的并行计算和浮点计算场景","panelId":"pj658mu3rle", "key":"pj658mu3r1e"},
+                    {"name":"大数据计算场景","panelId":"6rxz5qhl3p", "key":"6rxz5qhl3p"}
+                ],
+                "title":"应用场景"
+            },
+            "panels":[
+                {
+                    "id":"eyfa4iafgkw","blocks":[
+                    {"id":"sx062hm7nk", "type":"aside", "dataType":"single","data":{
+                        "content":{"raw":{
+                            "entityMap":{}, "blocks":[
+                                {"key":"5h3iv", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                                {"key":"eemnh", "text":"标准服务器", "type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"5r2cd", "text":"上云建议", "type": "header-three", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"737bp", "text":"裸金属服务器是一种物理裸机租赁服务，是可按需申请的服务；相较于自建数据中心，使用裸金属服务器可以更快地搭计算环境，并由建行云提供数据中心私有网络、负载均衡、NAT网关、专线互联、运维支持、基础监控、安全防护等能力。只需选择服务器配置和数量，部署、交付时间将被缩短至半小时左右。如果业务是性能敏感型的，推荐使用裸金属服务器，因为它提供了物理机的计算能力，而几乎没有性能损耗。对服务器的计算性能、 稳定性、 实时性等要求很高的计算场景。可以选择裸金属标准服务器。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
+                                    "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                            ]
+                        }}
+                    }}
+                ]
+                },{
+                    "id":"pj658mu3rle", "blocks":[{"id":"insvvjdyee","type":"aside", "dataType":"single", "data":{
+                        "content":{
+                            "raw":{
+                                "entityMap":{},"blocks":[
+                                    {"key":"367o7", "text":"业务类型", "type": "header-three", "depth":0,"inlineStyleRanges":[], "entityRanges":[],"data":{}},
+                                    {"key":"f7pn2","text":"GPU服务器。", "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                    {"key":"fjboh","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                                    {"key":"rjig",
+                                        "text":"GPU 服务器是基于 GPU 的快速、稳定、弹性的物理计算服务，主要应用于深度学习训练\\推理、图形图像处理以及科学计算等场景。 GPU 物理服务器通过其强大的快速处理海量数据的计算性能，有效解放计算压力，提升业务处理效率与竞争力。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
+                                        "type":"unstyled", "depth":0, "inlineStyleRanges":[],"entityRanges":[], "data":{}}
+                                ]
+                            }
+                        }
+                    }}]
+                },{
+                    "id":"6rxz5qhl3p", "blocks":[
+                        {"id": "viskedds4p", "type":"aside", "dataType": "single", "data":{"content":{"raw":{"entityMap":{}, "blocks":[
+                            {"key":"5oi7k", "text": "业务类型","type": "header-three","depth":0,"in1 inestyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"4hspd", "text":"大容量存储服务器。", "type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"4ueso","text":"上云建议","type":"header-three","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"65ia7",
+                                "text":"提供大容量存储服务器，可搭建统一的大数据和计算平台，对海量数据进行采集、存储、分析、搜索、挖掘，发现其内在价值，适用于历史数据统计、交互式查询、精准营销、欺诈检测、社交网络分析等。建行云裸金属服务器目前为按需供给，请联系建行云客服或技术经理沟通和提出裸金属服务器的部署需求。 ",
+                                "type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}}}}
+                    ]
+                }
+            ]
+        },{
+            "id":"67q7vnnr42m", "type":"section10", "dataType":"single",
+            "data":{
+                "title":"产品功能",
+                "feature":{
+                    "list":[
+                        {
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions1.png",
+                            "title":"多种集群类型",
+                            "desc":{
+                                "entityMap":{},"blocks":[
+                                    {
+                                        "key":"ffj3d",
+                                        "text":"根据企业自身需要，选择合适的集群规模，并可选择多种规格的容器工作节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            },
+                            "linkText" :"多种集群类型"
+                        },{
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions2.png",
+                            "title":"Kubernetes功能增强",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"3eclc",
+                                        "text":"与社区版本同步更新，在开源Kubernetes基础上，增强了安全性，稳定性，可靠性",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            },
+                            "linkText":"Kubernetes功能增强"
+                        },{
+                            "iconUrl":"//imagecachexxfb.yun.ccb.com/static/product/product_functions3.png",
+                            "title":"丰富的调度策略,集成负载均衡",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"4qa17",
+                                        "text":"有多种调度策略可供选择，集成了负载均衡服务来提供对外访问接口",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlinestyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            },
+                            "linkText" :"丰富的调度策略，集成负载均衡"
+                        }
+                    ]
+                },
+                "announcement":{
+                    "list":[
+                        {
+                            "title":"多种集群类型",
+                            "cTitle":"小集群",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"bjq03",
+                                        "text":"管理最大20个节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"多种集群类型",
+                            "cTitle":"中集群",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"1sdct",
+                                        "text":"管理最大50个节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"多种集群类型",
+                            "cTitle":"大集群",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"ejdvp",
+                                        "text":"管理最大200个节点",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"Kubernetes功能增强",
+                            "cTitle":" ",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"2pj3v",
+                                        "text":"容器服务包含了原生Kubernetes的全部功能，同时增强了集群监控，告警，日志管理,资源控制等功能。",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        },{
+                            "title":"丰富的调度策略，集成负载均衡",
+                            "cTitle":" ",
+                            "desc":{
+                                "entityMap":{},
+                                "blocks":[
+                                    {
+                                        "key":"2s7vl",
+                                        "text":"调度策略包括亲和调度、反亲和调度和优先级调度等。可以针对不同的容器实例，绑定不同的负载均衡器，支持灰度发布功能。",
+                                        "type":"unstyled",
+                                        "depth":0,
+                                        "inlineStyleRanges":[],
+                                        "entityRanges":[],
+                                        "data":{}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },{
+            "id":"xoddhrp6818","type":"section12","dataType":"group",
+            "data":{
+                "tabs":[
+                    {"parentId":"default_root","title":"企业级","panelId":"jbqfqvrf4nf", "key":"jbqfqvrf4nf","parentTitle":"空"},
+                    {"parentId":"jbqfqvrf4nf", "title":"通用型", "panelId":"w4r64uhkp7s", "key": "w4r64uhkp7s", "parentTitle": "企业级"}
+                ],"title":"产品类型"
+            },
+            "panels":[
+                {
+                    "id":"jbqfqvrf4nf", "blocks":[
+                    {
+                        "id":"eqw7qr72bef","type":"section13", "dataType":"single","data":{"content":{"title":"通用型（一区）：", "raw":{"entityMap":{},"blocks":[
+                        {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                        {"key":"hrpn","text":"内存: 256G (32GB*8) DDR4内存", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"eh2r7","text":"硬盘: 2*2.5英寸1.2TB 10K SAS热插拔硬盘","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                        {"key":"82t6q", "text":"RAID: 支持RAID1/RAIDO/NORAID/RAID1+0", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"9l2ek", "text": "网卡: 2*106万兆电口网卡", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                        {"key":"6m6ra","text":"操作系统支持: Cent0S/7.2、 Oraclelinux7 .4-64bit","type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}}
+                    ]}},"title":"通用型（一区ttt）："}
+                    },{
+                        "id":"uazsgh4e8j","type":"section13", "dataType":"single",
+                        "data":{"content":{"title":"通用型（二区）：", "raw":{"entityMap":{},"blocks":[
+                            {"key":"bhi2","text":"CPU: 2颗intel Xeon Gold 6148 处理器(20核) ", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"q1qi","text":"内存: 256G (16GB*16) DDR4内存","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                            {"key":"c6heh", "text":"硬盘: 6*SSD-4806", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                            {"key":"8q5gh","text":"RAID: 支持2RAID1+4RAID10/RAID1+0/ RAID1/RAIDO/NORAID/RAID5","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"ba7r5","text":"网卡: 2*106万兆电口网卡","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}},
+                            {"key":"aus2b","text":"操作系统 支持: Cent0S/7.5、Oraclelinux7.4-64bit","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                        ]}},"title":"通用型（二区）："}
+                    }
+                ]
+                },{
+                    "id": "w4r64uhkp7s", "blocks":[
+                        {
+                            "id": "k58mqd2ufob", "type":"section13", "dataType":"single", "data":{
+                            "content":{"title":"通用型（一区）：","raw":{"entityMap":{}, "blocks":[
+                                {"key":"4ta9i","text":"CPU: 2颗intel E5 2690V4处理器(14核) ","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                {"key":"hrpn","text":"内存: 256G (32GB*8) DDR4内存", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"eh2r7","text":"硬盘: 2*2.5英寸1.2TB 10K SAS热插拔硬盘","type":"unstyled","depth":0, "inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                {"key":"82t6q", "text":"RAID: 支持RAID1/RAIDO/NORAID/RAID1+0", "type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"9l2ek", "text": "网卡: 2*106万兆电口网卡", "type":"unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                {"key":"6m6ra","text":"操作系统支持: Cent0S/7.2、 Oraclelinux7 .4-64bit","type":"unstyled", "depth":0,"inlineStyleRanges":[], "entityRanges":[], "data":{}}
+                            ]}}, "title":"通用型（一区）："
+                        }
+                        },{
+                            "id":"aizr7zfla65","type":"section13","datatype":"single","data":{
+                                "content":{"title":"通用型（二区）：","raw":{
+                                    "entityMap":{}, "blocks":[
+                                        {"key":"bhi2","text":"CPU: 2颗intel Xeon Gold 6148 处理器(20核) ", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                                        {"key":"q1qi","text":"内存: 256G (16GB*16) DDR4内存","type": "unstyled", "depth":0, "inlineStyleRanges":[], "entityRanges":[], "data":{}},
+                                        {"key":"c6heh", "text":"硬盘: 6*SSD-4806", "type":"unstyled", "depth":0,"inlineStyleRanges":[],"entityRanges":[], "data":{}},
+                                        {"key":"8q5gh","text":"RAID: 支持2RAID1+4RAID10/RAID1+0/ RAID1/RAIDO/NORAID/RAID5","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}},
+                                        {"key":"ba7r5","text":"网卡: 2*106万兆电口网卡","type":"unstyled","depth":0,"inlinestyleRanges":[],"entityRanges":[],"data":{}},
+                                        {"key":"aus2b","text":"操作系统 支持: Cent0S/7.5、Oraclelinux7.4-64bit","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}
+                                    ]
+                                }},"title":"通用型（二区）："
+                            }
+                        }
+                    ]
+                }
+            ]
+        },{
+            "id":"3",
+            "type":"section4",
+            "dataType":"single",
+            "data":{
+                "title":"相关产品推荐",
+                "list":[
+                    {
+                        "title":"虚拟专用网络",
+                        "imgUrl":"//imagecachexxfb.yun.ccb.com/static/product/aboutproduct_selfNet.png",
+                        "linkUrl":"//yun.ccb.com/product/vpc1",
+                        "key":1
+                    }
+                ]
+            }
+        }
+    ]
+}

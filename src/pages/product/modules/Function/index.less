@@ -3,7 +3,7 @@
     margin-top: -28rem / @baseFont;
     li{
         .function-hd{
-            height: 180rem / @baseFont;
+            height: 178rem / @baseFont;
             padding-top: 28rem / @baseFont;
             display: flex;
             cursor: pointer;
@@ -25,6 +25,7 @@
                     font-size: 24rem / @baseFont;
                     line-height: 34rem / @baseFont;
                     color: #9094A5;
+                    text-align: justify;
                 }
             }
             .showIntro{
@@ -67,14 +68,22 @@
                 padding: 60rem / @baseFont 32rem / @baseFont 80rem / @baseFont;
                 li{
                     p{
+                        margin-bottom: 8rem / @baseFont;
+                        line-height: 40rem / @baseFont;
                         font-size: 28rem / @baseFont;
                         color: #222;
+                        
                     }
                     div{
-                        font-size: 28rem / @baseFont;
+                        line-height: 33rem / @baseFont;
+                        font-size: 24rem / @baseFont;
                         color: #9094A5;
                         text-align: justify;
-                        margin-left: 20rem / @baseFont;
+                        margin-bottom: 25rem / @baseFont;
+                        
+                    }
+                    &:last-child div{
+                        margin-bottom: 0;
                     }
                 }
             }

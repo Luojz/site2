@@ -22,7 +22,7 @@ export default ({ location }) => {
             })
             .catch((err) => { alert(err) })
     }, [])
-    console.log(data);
+
     return (
         <Layout hidden={loading}>
             {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}

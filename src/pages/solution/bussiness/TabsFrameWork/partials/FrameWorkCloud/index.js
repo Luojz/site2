@@ -6,7 +6,7 @@ import {protocol} from '@/config/apis'
 
 export default ({data}) => (
     <div className="solution-tabsIndustry-frameWorkCloud">
-        <h3 className="title">{data.title}</h3>
+        <h3>{data.title}</h3>
         <ul>
             {data.list.map(({iconUrl, title, moreUrl}) => (
                 <li key={title}>

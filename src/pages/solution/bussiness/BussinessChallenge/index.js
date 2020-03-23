@@ -6,13 +6,9 @@ import mock from './mock.js'
 export default ({ data = mock }) => {
     console.log("@业务调整:", data)
     return (
-        <div className='bussiness-traffic'>
-            <div className='traffic-top'>
-                <h3>{data.title}</h3>
-            </div>
-            <div className='traffic-plugs'>
-                <TrafficPlugs data={data} />
-            </div>
+        <div id='solution-bussinessChallenge'>
+            <h3>{data.title}</h3>
+            <TrafficPlugs data={data} />
         </div>
     )
 }

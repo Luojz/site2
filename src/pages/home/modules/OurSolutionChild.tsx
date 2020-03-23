@@ -12,10 +12,9 @@ interface Props {
 }
 
 const OurSolutionChild = ({list}:Props) => {
-    console.log("11-------",list);
+    
     const [showAll,setShowAll] = useState<Boolean>( list.length > 2 ? false : true );
     
-    console.log(showAll);
     return (
         <>
             {
