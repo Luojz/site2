@@ -5,7 +5,27 @@ import Functions from './modules/Function/index';
 import Details from './modules/Details/index';
 import InstanceType from './modules/InstanceType/index';
 
-const components = {
+interface DataType {
+    id:string;
+    blocks:{
+        id:string;
+        type:string;
+        data:{
+            title:string;
+            tabs:Array<any>;
+        };
+        panels:Array<any>;
+    }[];
+}
+
+interface componentsType {
+    [key:string]: {
+        Component(props:any):JSX.Element;
+        convert(data:any,panels?:any):any;
+    },
+}
+
+const components:componentsType = {
     section3: {     //应用场景(新版)
         Component: Scene,
         convert(data,panels) {
@@ -44,7 +64,7 @@ const components = {
     },
 }
 
-export default (data) =>  data.map(item => {
+export default (data:DataType) =>  data.blocks.map(item => {
     const { id, type, data, panels } = item;
     const { Component, convert } = components[type];
     return { id, type, Component, data: convert(data, panels) }

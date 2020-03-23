@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { asyncData } from '@/plugins/axios';
-import Layout from '@/layouts/default';
-
+import { asyncData } from '../../plugins/axios';
+import Layout from '../../layouts/default';
 import Banner from './modules/Banner/index';
-import adapter from './adapter'
+import adapter from './adapter.ts';
 
 export default ({ location }) => {
     const [data, setData] = useState();
@@ -12,7 +11,7 @@ export default ({ location }) => {
 
     useEffect(() => {
         const url = location.pathname;
-        let api = location.search.includes("?!preview") ? `${url}_preview.json` : `${url}.json`;
+        const api = location.search.includes("?!preview") ? `${url}_preview.json` : `${url}.json`;
 
         const bannerDataApi = `${url}_banner.json`;
         setLoading(true)
@@ -22,7 +21,8 @@ export default ({ location }) => {
                     window.location.href = res.redirect
                 } else {
                     setLoading(false);
-                    setData(adapter(res.blocks));
+                    console.log(res.blocks);
+                    setData(adapter(res));
                 }
             })
             // .catch((err) => {window.location.href = '/';})
@@ -36,7 +36,7 @@ export default ({ location }) => {
                 }
             })
             // .catch((err) => {window.location.href = '/';})
-    }, [])
+    }, [location.pathname,location.search])
     return (
         <Layout hidden={loading}>
             <div className="product-body">

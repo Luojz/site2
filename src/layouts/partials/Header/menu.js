@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import './index.less'
 const topMenuData = require('./topNavData.json');
 const $ = require('jquery');
@@ -19,7 +19,7 @@ class Menu extends Component {
         console.log(e.target);
         $(e.target).parent().next().toggle();
 
-        if($(e.target).parent().next().css("display") == "block"){
+        if($(e.target).parent().next().css("display") === "block"){
             $(e.target).parent().addClass("r-arrow-up")
             $(e.target).parent().removeClass("r-arrow-down")
         } else {
@@ -31,7 +31,7 @@ class Menu extends Component {
 
     render () {
 
-        let showM = this.props.isShow == true ? "block":"none";
+        let showM = this.props.isShow === true ? "block":"none";
 
         return (
             <div className="c-nav-wrap-m c-nav" style={{display:showM}}>
@@ -46,7 +46,7 @@ class Menu extends Component {
                             topMenuData.map((item, index)=>
                                 <div className="c-nav-m-menu" key={index}>
                                     {
-                                        item.children && item.children.length>0 == true ?
+                                        item.children && item.children.length > 0 ?
                                             <div className="m-tit-level-1 J-qcMenuTitle">
                                                 <a onClick={this.showSeconedMenu.bind(this)}>{item.title}</a>
                                             </div>
