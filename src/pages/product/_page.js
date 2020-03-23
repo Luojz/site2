@@ -21,7 +21,6 @@ export default ({ location }) => {
                     window.location.href = res.redirect
                 } else {
                     setLoading(false);
-                    console.log(res.blocks);
                     setData(adapter(res));
                 }
             })
