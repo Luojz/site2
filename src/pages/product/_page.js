@@ -15,27 +15,18 @@ export default ({ location }) => {
 
         const bannerDataApi = `${url}_banner.json`;
         setLoading(true)
-        asyncData(api)
-            .then((res) => {
+        asyncData([api, bannerDataApi])
+            .then(([res, res2]) => {
                 if (res.redirect) {
                     window.location.href = res.redirect
                 } else {
                     setLoading(false);
                     setData(adapter(res));
+                    setBannerData(res2)
                 }
             })
             // .catch((err) => {window.location.href = '/';})
-        asyncData(bannerDataApi)
-            .then((res) => {
-                if (res.redirect) {
-                    window.location.href = res.redirect
-                } else {
-                    setLoading(false)
-                    setBannerData(res)
-                }
-            })
-            // .catch((err) => {window.location.href = '/';})
-    }, [location.pathname,location.search])
+    }, [location.pathname, location.search])
     return (
         <Layout hidden={loading}>
             <div className="product-body">
