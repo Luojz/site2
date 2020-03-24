@@ -1,9 +1,9 @@
 @baseFont:100;
 .function .function-list{
     margin-top: -28rem / @baseFont;
-    li{
+    &>li{
+        min-height: 180rem / @baseFont;
         .function-hd{
-            height: 178rem / @baseFont;
             padding-top: 28rem / @baseFont;
             display: flex;
             cursor: pointer;
@@ -35,7 +35,7 @@
                     content: "";
                     display: block;
                     position: absolute;
-                    top: 60rem / @baseFont;
+                    top: 55.5rem / @baseFont;
                     right: 27rem / @baseFont;
                     width: 18.39rem / @baseFont;
                     height: 18.39rem / @baseFont;
@@ -51,7 +51,7 @@
                     content: "";
                     display: block;
                     position: absolute;
-                    top: 40rem / @baseFont;
+                    top: 48rem / @baseFont;
                     right: 27rem / @baseFont;
                     width: 18.39rem / @baseFont;
                     height: 18.39rem / @baseFont;
@@ -63,7 +63,7 @@
         }
         .function-bd{
             background-color: #f6f7fb;
-            margin-top: 12rem / @baseFont;
+            margin-top: 32rem / @baseFont;
             ul{
                 padding: 60rem / @baseFont 32rem / @baseFont 80rem / @baseFont;
                 li{
