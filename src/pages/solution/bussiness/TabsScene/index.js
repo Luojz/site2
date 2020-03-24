@@ -37,7 +37,7 @@ export default ({ data }) => {
                 <p>{scene_desc}</p>
               </div>
               <pre className="solution-tabsScene-container-content-text">
-                {data.children[i].map((line, j) => line.match(/[\:\：]$/) ? <h3 key={j}>{line}</h3> : <p key={j}>{line}</p>)}
+                {data.children[i].map((line, j) => line.match(/[\:\：]$/) ? <h3 key={j}>{line}</h3> : <div><span>★</span><div key={j}>{line}</div></div>)}
               </pre>
             </div>
           </li>

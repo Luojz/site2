@@ -59,22 +59,25 @@
                     letter-spacing: 0;
 
                     >h3 {
-                        margin: .4rem 0 .2rem 0;
+                        margin     : .4rem 0 .2rem 0;
                         font-family: PingFangSC-Medium;
                         font-size  : .32rem;
                         color      : #666666;
                     }
 
-                    >p {
-                        font-family: PingFangSC-Regular;
-                        font-size  : .28rem;
-                        line-height: .44rem;
-                        color      : #9094A5;
-                        text-align : justify;
-                    }
+                    >div {
+                        display        : flex;
+                        justify-content: space-between;
+                        width          : 100%;
+                        font-family    : PingFangSC-Regular;
+                        font-size      : .28rem;
+                        line-height    : .44rem;
+                        color          : #9094A5;
 
-                    >p:not(:empty)::before {
-                        content: '★     '
+                        >div {
+                            width     : 5.66rem;
+                            text-align: justify;
+                        }
                     }
                 }
             }
