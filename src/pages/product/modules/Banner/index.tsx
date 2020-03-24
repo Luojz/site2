@@ -14,17 +14,17 @@ const Banner = ({data = mock}) => {
                         <div className="c-hero-section-des">
                             <p>{data.extra.banner.subTitle}</p>
                         </div>
-                        <div className="c-hero-section-btn">
-                            <a href={data.extra.banner.btnLink} className="c-btn buy">
-                                {data.extra.banner.btnTitle}
-                            </a>
-                            {(data.extra.banner.addonButtons).length > 0 ?
-                                <a href={data.extra.banner.addonButtons[0].btnLink}
-                                   className="c-btn p-weak-btn">{data.extra.banner.addonButtons[0].btnTitle}</a>
-                                :''
-                            }
-                        </div>
                     </div>
+                </div>
+                <div className="c-hero-section-btn">
+                    <a href={data.extra.banner.btnLink} className="c-btn buy">
+                        {data.extra.banner.btnTitle}
+                    </a>
+                    {(data.extra.banner.addonButtons).length > 0 ?
+                        <a href={data.extra.banner.addonButtons[0].btnLink}
+                           className="c-btn p-weak-btn">{data.extra.banner.addonButtons[0].btnTitle}</a>
+                        :''
+                    }
                 </div>
             </div>
 
