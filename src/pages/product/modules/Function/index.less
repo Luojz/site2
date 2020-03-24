@@ -1,9 +1,9 @@
 @baseFont:100;
 .function .function-list{
     margin-top: -28rem / @baseFont;
-    li{
+    &>li{
+        min-height: 178rem / @baseFont;
         .function-hd{
-            height: 178rem / @baseFont;
             padding-top: 28rem / @baseFont;
             display: flex;
             cursor: pointer;
@@ -63,7 +63,7 @@
         }
         .function-bd{
             background-color: #f6f7fb;
-            margin-top: 12rem / @baseFont;
+            margin-top: 32rem / @baseFont;
             ul{
                 padding: 60rem / @baseFont 32rem / @baseFont 80rem / @baseFont;
                 li{
