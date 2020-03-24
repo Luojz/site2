@@ -8,9 +8,7 @@ export default ({ data = mock }) => {
     console.log("@平台优势:", data)
     return (
         <div className='bussiness-platform'>
-            <div className='platform-top'>
-        `       <h3>{data.title}</h3>
-            </div>
+            <h3 className='platform-h3'>{data.title}</h3>
             <div className='platform-plugs'>
                 <PlatformPlugs data={data} />
             </div>
