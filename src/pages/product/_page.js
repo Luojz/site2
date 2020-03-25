@@ -5,8 +5,8 @@ import Banner from './modules/Banner/index';
 import adapter from './adapter.ts';
 
 export default ({ location }) => {
-    const [data, setData] = useState();
-    const [bannerData,setBannerData] = useState();
+    const [data, setData] = useState([]);
+    const [bannerData, setBannerData] = useState();
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -20,8 +20,8 @@ export default ({ location }) => {
                 if (res.redirect) {
                     window.location.href = res.redirect
                 } else {
-                    setLoading(false);
-                    setData(adapter(res));
+                    setLoading(false)
+                    setData(adapter(res))
                     setBannerData(res2)
                 }
             })
@@ -31,7 +31,7 @@ export default ({ location }) => {
         <Layout hidden={loading}>
             <div className="product-body">
                 {bannerData && <Banner data={bannerData} />}
-                {data && data.map(({ id, Component, data }) => <Component data={data} key={id} />)}
+                {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
             </div>
         </Layout>
     )

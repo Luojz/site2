@@ -5,6 +5,7 @@ import Functions from './modules/Function/index';
 import Details from './modules/Details/index';
 import InstanceType from './modules/InstanceType/index';
 
+
 interface DataType {
     id:string;
     blocks:{
@@ -58,8 +59,8 @@ const components:componentsType = {
     },
     section12: {     //实例类型(新版)
         Component: InstanceType,
-        convert(data,panels) {
-            return {...data,panels}
+        convert(data, panels) {
+            return {...data, panels}
         }
     },
 }
