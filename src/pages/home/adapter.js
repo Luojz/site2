@@ -50,13 +50,13 @@ const components = {
         }
     },
     MyTrade: {
-        Component: Solutions,
+        Component: Industry,
         convert(data) {
             // return data
         }
     },
     TabsIndustry: {
-        Component: Industry,
+        Component: Solutions,
         convert(data, childBlocks) {
             // return {...data, childBlocks}
         }

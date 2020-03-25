@@ -6,13 +6,13 @@ import adapter from './adapter.ts';
 
 export default ({ location }) => {
     const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const url = location.pathname;
         const api = location.search.includes("?!preview") ? `${url}_preview.json` : `${url}.json`;
         const bannerDataApi = `${url}_banner.json`;
-
+        
         setLoading(true)
         asyncData([api, bannerDataApi])
             .then(([res, res2]) => {
