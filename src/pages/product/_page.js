@@ -13,7 +13,7 @@ export default ({ location }) => {
         const api = location.search.includes("?!preview") ? `${url}_preview.json` : `${url}.json`;
         const bannerDataApi = `${url}_banner.json`;
 
-        setLoading(true)
+        // setLoading(true)
         asyncData([api, bannerDataApi])
             .then(([res, res2]) => {
                 if (res.redirect) {
@@ -24,7 +24,7 @@ export default ({ location }) => {
                 }
             })
             // .catch((err) => {window.location.href = '/';})
-    }, [location.pathname, location.search])
+    }, [])
     return (
         <Layout hidden={loading}>
             {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}

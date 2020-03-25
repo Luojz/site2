@@ -10,7 +10,7 @@ export default ({ location }) => {
 
     useEffect(() => {
         const api = location.search.includes('?!preview') ? `${location.pathname}_preview.json` : `${location.pathname}.json`
-        setLoading(true)
+        // setLoading(true)
         asyncData(api)
             .then((res) => {
                 if (res.redirect) {
@@ -21,7 +21,7 @@ export default ({ location }) => {
                 }
             })
             // .catch((err) => { window.location.href = '/' })
-    }, [location.pathname, location.search])
+    }, [])
 
     return (
         <Layout hidden={loading}>

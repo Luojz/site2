@@ -10,7 +10,7 @@ export default ({ location }) => {
 
     useEffect(() => {
         const api = location.search.includes('preview') ? '/preview!_index.json' : '/_index.json'
-        setLoading(true)
+        // setLoading(true)
         asyncData(api)
             .then((res) => {
                 if (res.redirect) {
