@@ -6,7 +6,7 @@ import adapter from './adapter'
 
 export default ({ location }) => {
     const [data, setData] = useState([])
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const api = location.search.includes('preview') ? '/preview!_index.json' : '/_index.json'
