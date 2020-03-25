@@ -6,14 +6,13 @@ import adapter from './adapter.ts';
 
 export default ({ location }) => {
     const [data, setData] = useState([]);
-    const [bannerData, setBannerData] = useState();
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const url = location.pathname;
         const api = location.search.includes("?!preview") ? `${url}_preview.json` : `${url}.json`;
-
         const bannerDataApi = `${url}_banner.json`;
+        
         setLoading(true)
         asyncData([api, bannerDataApi])
             .then(([res, res2]) => {
@@ -21,8 +20,7 @@ export default ({ location }) => {
                     window.location.href = res.redirect
                 } else {
                     setLoading(false)
-                    setData(adapter(res))
-                    setBannerData(res2)
+                    setData([{ id: 'banner', type: 'Banner', Component: Banner, data: res2 }, ...adapter(res)])
                 }
             })
             // .catch((err) => {window.location.href = '/';})
@@ -30,7 +28,6 @@ export default ({ location }) => {
     return (
         <Layout hidden={loading}>
             <div className="product-body">
-                {bannerData && <Banner data={bannerData} />}
                 {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
             </div>
         </Layout>
