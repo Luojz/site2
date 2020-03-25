@@ -63,6 +63,12 @@ const components = {
             return data
         }
     },
+    protocolHTML: {
+        Component: ProtocolHTML,
+        convert(data) {
+            return data
+        }
+    },
     TabsIndustry: {
         Component: TabsFrameWork,
         convert(data, childBlocks) {
