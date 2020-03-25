@@ -9,7 +9,7 @@ export default ({ location }) => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        const api = location.search.includes('preview') ? '/preview!_index.json' : '/_index.json'
+        const api = `${location.search.includes('preview') ? '/preview!' : ''}_index.json`
         // setLoading(true)
         asyncData(api)
             .then((res) => {
@@ -21,7 +21,7 @@ export default ({ location }) => {
                 }
             })
             .catch((err) => { alert(err) })
-    }, [location.search])
+    }, [])
 
     return (
         <Layout hidden={loading}>
