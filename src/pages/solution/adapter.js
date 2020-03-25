@@ -63,12 +63,6 @@ const components = {
             return data
         }
     },
-    protocolHTML: {
-        Component: ProtocolHTML,
-        convert(data) {
-            return data
-        }
-    },
     TabsIndustry: {
         Component: TabsFrameWork,
         convert(data, childBlocks) {
@@ -88,7 +82,7 @@ export default (data, method = 'get') => method === 'get'
     ? data.map(item => {
         const { id, type, data, childBlocks } = item
         const { Component, convert } = components[type]
-        return { id, type, Component, data: convert(data, childBlocks) }
+        return { id, type: type.replace(/^[a-z]/, c => c.toUppercase()), Component, data: convert(data, childBlocks) }
     })
     : [
         {
