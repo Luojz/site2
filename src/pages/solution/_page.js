@@ -21,7 +21,7 @@ export default ({ location }) => {
                 }
             })
             // .catch((err) => { window.location.href = '/' })
-    }, [])
+    }, [location.pathname, location.search])
 
     return (
         <Layout hidden={loading}>

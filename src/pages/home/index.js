@@ -21,7 +21,7 @@ export default ({ location }) => {
                 }
             })
             .catch((err) => { alert(err) })
-    }, [])
+    }, [location.search])
 
     return (
         <Layout hidden={loading}>
