@@ -4,6 +4,7 @@ import './index.less';
 
 const Banner = ({data = mock}) => {
     return (
+        <div className="product-body">
         <div className="c-hero-section J-pdBanner">
             <div className="c-hero-section-body">
                 <div className="c-hero-section-inner">
@@ -33,6 +34,7 @@ const Banner = ({data = mock}) => {
 	<img src={require('./m_product_banner.png')} width="100%" height="100%"/>
             </div>
 
+        </div>
         </div>
     )
 }

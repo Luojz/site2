@@ -6,7 +6,8 @@ import './index.less';
 
 const Details = ({data = mock}) => {
     return (
-        <div className="c-section c-p-y-tall function-mod">
+        <div className="product-body">
+            <div className="c-section c-p-y-tall function-mod">
             <div className="c-section-inner">
                 <div className="c-section-hd">
                     <h3 className="c-section-tit">{data.title}</h3>
@@ -36,6 +37,7 @@ const Details = ({data = mock}) => {
                     }
                 </Tabs>
             </div>
+        </div>
         </div>
     )
 }

@@ -27,9 +27,7 @@ export default ({ location }) => {
     }, [location.pathname, location.search])
     return (
         <Layout hidden={loading}>
-            <div className="product-body">
-                {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
-            </div>
+            {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
         </Layout>
     )
 }
