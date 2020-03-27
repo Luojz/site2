@@ -9,11 +9,11 @@
     }
 
     >ul {
-        overflow: hidden;
-        
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         >li {
-            float: left;
-            width: 25%;
+            flex: 0 0 25%;
             margin-bottom: 0.32rem;
             >a {
                 display   : block;
@@ -39,7 +39,6 @@
 
         >span {
             display: block;
-            float: left;
             font-family        : PingFangSC-Regular;
             font-size          : 0.28rem;
             color              : #2F88FF;
