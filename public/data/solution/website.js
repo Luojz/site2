@@ -597,10 +597,10 @@ const data = {
                 },
                 {
                     id: '',
-                    type: 'BussinessChallenge',
+                    type: 'BusinessChallenge',
                     data: {
                         column: null,
-                        mod: 'bussinessChallenge',
+                        mod: 'businessChallenge',
                         title: '业务挑战',
                         desc: null,
                         list: [

@@ -1,11 +1,11 @@
-import Banner from './bussiness/Banner';
-import CaseSituation from './bussiness/CaseSituation';
-import TabsScene from './bussiness/TabsScene';
-import ProtocolHTML from "./bussiness/ProtocolHTML";
-import TabsFrameWork from "./bussiness/TabsFrameWork";
-import BussinessChallenge from './bussiness/BussinessChallenge';
-import PlatForm from './bussiness/Platform';
-import AboutProduct from './bussiness/AboutProduct';
+import Banner from './business/Banner';
+import CaseSituation from './business/CaseSituation';
+import TabsScene from './business/TabsScene';
+import ProtocolHTML from "./business/ProtocolHTML";
+import TabsFrameWork from "./business/TabsFrameWork";
+import BusinessChallenge from './business/BusinessChallenge';
+import PlatForm from './business/Platform';
+import AboutProduct from './business/AboutProduct';
 
 
 const components = {
@@ -24,8 +24,8 @@ const components = {
     /**
      * 业务挑战
      */
-    BussinessChallenge: {
-        Component: BussinessChallenge,
+    BusinessChallenge: {
+        Component: BusinessChallenge,
         convert(data) {
             return data
         }
@@ -63,6 +63,12 @@ const components = {
             return data
         }
     },
+    protocolHTML: {
+        Component: ProtocolHTML,
+        convert(data) {
+            return data
+        }
+    },
     TabsIndustry: {
         Component: TabsFrameWork,
         convert(data, childBlocks) {
@@ -82,7 +88,7 @@ export default (data, method = 'get') => method === 'get'
     ? data.map(item => {
         const { id, type, data, childBlocks } = item
         const { Component, convert } = components[type]
-        return { id, type: type.replace(/^[a-z]/, c => c.toUppercase()), Component, data: convert(data, childBlocks) }
+        return { id, type, Component, data: convert(data, childBlocks) }
     })
     : [
         {
