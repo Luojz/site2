@@ -22,11 +22,11 @@ export default (props:IProps) => {
     return (
         <div className="recommend">
             <Title title={data.title} />
-            <ul>
+            <ul style={{ justifyContent:data.list.length>4 ? 'flex-start':'center'}}>
                 {
                     data.list.map((item,index)=>{
                         return (
-                            <li key={index} style={{"flex":`0 0 ${ data.list.length > 4 ? 25 : 1/data.list.length*100}%`}}>
+                            <li key={index} style={{ margin:(data.list.length <4 && data.list.length>1)?'0 0.2rem':'0'}}>
                                 <a href={item.linkUrl}>
                                     <img src={item.imgUrl} alt=""/>
                                     <p>{item.title}</p>

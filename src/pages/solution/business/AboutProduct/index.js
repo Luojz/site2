@@ -6,9 +6,9 @@ import Icon from "@/components/Icon";
 function List({ data }) {
     const [fold, setFold] = useState(false)
     return (
-        <ul>
+        <ul style={{ justifyContent:data.list.length>4 ? 'flex-start':'center'}}>
             {data.list.map(({iconUrl, title, moreUrl},idx) => (
-                <li key={idx} style={{ display: idx < 8 || fold ? 'block' : 'none' }}>
+                <li key={idx} style={{ display: idx < 8 || fold ? 'block' : 'none', margin:(data.list.length <4 && data.list.length>1)?'0 0.2rem':'0'}}>
                     <a href={`${protocol}${moreUrl}`}>
                         <img src={`${protocol}${iconUrl}`} />
                         <span>{title}</span>
