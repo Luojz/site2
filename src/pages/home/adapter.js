@@ -76,6 +76,8 @@ export default (data, method = 'get') => method === 'get'
         const { Component, convert } = components[type]
         return { id, type, Component, data: convert(data, childBlocks) }
     })
-    : data.map(item => {
-
-    })
+    : [
+        {
+            // 
+        }
+    ]
