@@ -1,5 +1,5 @@
 export default {
-    items:[
+    list:[
         {
             title:"ISO 20000",
             iconUrl:"//yun.ccb.com/myNatural/img/iso20000_v2.png"

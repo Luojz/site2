@@ -9,7 +9,9 @@ interface IProps {
     data:{
         tabs:Array<any>,
         title:string,
-        desc:string
+        desc:string,
+        theme?:string,
+        childBlocks?:Array<any>
     }
 }
 
@@ -36,7 +38,7 @@ const OurSolution = ({ data = mock}:IProps) => {
                     data.tabs.map((item, index)=> 
                         <li key={index} onClick={()=>show(index)} style={{"borderBottom":index===showId && isShow ? "0":".02rem solid #e6e7ec"}}>
                             <div className="our-solution-hd">
-                                <img src={`https:${item.hoverIconUrl}`} alt=""/>
+                                <img src={item.hoverIconUrl} alt=""/>
                                 <span style={{"color":index===showId && isShow ? "#2f88ff":"#9094a5"}}>{item.title}</span>
                                 <i className={index===showId && isShow ?"closeIntro":"showIntro"}></i>
                             </div>

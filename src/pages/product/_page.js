@@ -6,29 +6,33 @@ import adapter from './adapter.ts';
 
 export default ({ location }) => {
     const [data, setData] = useState([]);
+    const [bannerData,setBannerData] = useState();
     const [loading, setLoading] = useState(true);
-    console.log(location);
 
+    const url = location.pathname;
+    const api = location.search.includes("?!preview") ? `${url}!preview.json` : `${url}.json`;
+    const bannerDataApi = location.search.includes("?!preview") ? `${url}_banner!preview.json` : `${url}_banner.json`;
     useEffect(() => {
-        
-        const url = location.pathname;
-        const api = location.search.includes("?!preview") ? `${url}_preview.json` : `${url}.json`;
-        const bannerDataApi = `${url}_banner.json`;
-
-        // setLoading(true)
-        asyncData([api, bannerDataApi])
-            .then(([res, res2]) => {
-                if (res.redirect) {
-                    window.location.href = res.redirect
-                } else {
-                    setLoading(false)
-                    setData([{ id: 'banner', type: 'Banner', Component: Banner, data: res2 }, ...adapter(res)])
-                }
+        asyncData(bannerDataApi)
+            .then((res)=>{
+                setBannerData(res);
             })
-            // .catch((err) => {window.location.href = '/';})
+            .catch((err)=>{
+                console.log(err);
+            })
+        asyncData(api)
+            .then((res) => {
+                setData(adapter(res));
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.log(err);
+                setLoading(false);
+            })
     }, [])
     return (
         <Layout hidden={loading}>
+            { bannerData && <Banner data={bannerData} /> }
             {data.map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
         </Layout>
     )

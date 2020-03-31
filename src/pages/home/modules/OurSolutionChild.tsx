@@ -23,7 +23,7 @@ const OurSolutionChild = ({list}:Props) => {
                     return (
                         <li key={index}>
                             <div>
-                                <img src={`https:${item.iconUrl}`} alt=""/>
+                                <img src={item.iconUrl} alt=""/>
                             </div>
                             <div>
                                 <h3>{item.title}</h3>
@@ -40,7 +40,7 @@ const OurSolutionChild = ({list}:Props) => {
                         index < 2 ?
                         <li key={index}>
                             <div>
-                                <img src={`https:${item.iconUrl}`} alt=""/>
+                                <img src={item.iconUrl} alt=""/>
                             </div>
                             <div>
                                 <h3>{item.title}</h3>

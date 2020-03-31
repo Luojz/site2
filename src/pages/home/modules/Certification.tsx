@@ -5,7 +5,7 @@ import cert from "./cert";
 
 interface IProps {
     data:{
-        items:Array<any>,
+        list:Array<any>,
         title:string,
         desc:string
     }
@@ -17,8 +17,8 @@ const Certification = ({ data = cert }:IProps) => {
             <ModuleTitle title={data.title} desc={data.desc} />
             <ul>
                 {
-                    data.items &&
-                    data.items.map((item,index)=>
+                    data.list &&
+                    data.list.map((item,index)=>
                         <li key={index}>
                             <div style={{background:`url(https:${item.iconUrl}) no-repeat center center`,backgroundSize:`1.78rem`}}></div>
                             <p>{item.title}</p>

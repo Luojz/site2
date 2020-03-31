@@ -1,6 +1,6 @@
 @baseFont: 100;
 .our-solution {
-    margin-top: 88rem / @baseFont;
+    margin-top: 79rem / @baseFont;
     &>ul>li{
         border-bottom: 2rem / @baseFont solid #e6e7ec;
         cursor: pointer;
@@ -22,6 +22,7 @@
                 width: 72rem / @baseFont;
                 position: relative;
                 &::after{
+                    margin-top: -0.07rem;
                     content: "";
                     display: block;
                     position: absolute;
@@ -56,22 +57,23 @@
 
         .our-solution-bd{
             background-color: #f6f7fb;
-            padding-bottom: 20rem / @baseFont;
+            padding-bottom: 66rem / @baseFont;
             &>ul{
                 margin: 0 27rem / @baseFont 0 / @baseFont;
                 li{
                     display: flex;
                     width: 100%;
-                    margin-top: 35rem / @baseFont;
+                    margin-top: 30rem / @baseFont;
                     div:nth-child(1){
                         width: 75rem / @baseFont;
                         img{
-                            width: 50rem / @baseFont;
-                            height: 50rem / @baseFont;
+                            width: 60rem / @baseFont;
+                            height: 57rem / @baseFont;
                             padding-left: 4rem / @baseFont;
                         }
                     }
                     div:nth-child(2){
+                        margin-top: 0.12rem;
                         flex: 1;
                         h3{
                             line-height:  36rem / @baseFont;
@@ -79,9 +81,11 @@
                             color: #333;
                         }
                         p{
-                            margin-top: 24rem / @baseFont;
+                            margin-top: 16rem / @baseFont;
+                            margin-bottom: 14rem / @baseFont;
                             color: #666;
                             font-size: 22rem / @baseFont;
+                            text-align: justify;
                         }
                     }
                     .showMore{
@@ -108,8 +112,16 @@
                 }
             }
             &>h3{
-                padding: 57rem / @baseFont 0 0 34rem / @baseFont;
-                font-size: 26rem / @baseFont;
+                padding: 50rem / @baseFont 0 0 34rem / @baseFont;
+                font-size: 28rem / @baseFont;
+                font-weight: normal;
+                color: #333333;
+            }
+            &>h4{
+                padding: 60rem / @baseFont 0 0 34rem / @baseFont;
+                font-size: 28rem / @baseFont;
+                font-weight: normal;
+                color: #333333;
             }
         }
     }
