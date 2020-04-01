@@ -1,0 +1,36 @@
+{
+    "block":{
+        "root":{
+            "id":"root",
+            "type":"Root",
+            "data":{"title":"住房租赁服务平台"},
+            "childBlocks":[
+                {
+                    "id":"banner",
+                    "type":"Banner",
+                    "data":{
+                        "title":"住房租赁服务平台",
+                        "desc":"要租房，到建行。提供全场景住房租赁综合服务平台",
+                        "bgUrl":"//yun.ccb.com/common/images/assist/banner4-new.jpg",
+                        "mbgUrl":"//yun.ccb.com/common/images/assist/m-banner4-new.png",
+                        "btn1Title":"服务咨询",
+                        "btn1Icon":"default",
+                        "btn1Link":"//yun.ccb.com/universal/contact_us",
+                        "btn2Title":"",
+                        "btn2Icon":"",
+                        "btn2Link":""
+                    },
+                    "childBlocks":[]
+                },{
+                    "id":"zbyquoiwv5",
+                    "type":"RawHtml",
+                    "data":{
+                        "mod":"rawHtml",
+                        "title":"HTML内容",
+                        "content":"<style>\n\t.bg_banner {\n\t\tbackground-image: url(\"//yun.ccb.com/common/images/assist/banner.png\");\n\t\tbackground-repeat: no-repeat;\n\t\tbackgound-position: center;\n\t\tbackground-size:cover;\n\t}</style>\n\n<div class=\"ccb_i_center_a\">\n  <p class=\"ccb_lxwm_pa\">您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p>\n</div>"
+                    }
+                }
+            ]
+        }
+    }
+}
