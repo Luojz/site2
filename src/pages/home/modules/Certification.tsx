@@ -2,6 +2,7 @@ import * as React from "react";
 import ModuleTitle from "../common/ModuleTitle";
 import "./Certification.less";
 import cert from "./cert";
+import { protocol } from '../../../config/apis'
 
 interface IProps {
     data:{
@@ -20,7 +21,7 @@ const Certification = ({ data = cert }:IProps) => {
                     data.list &&
                     data.list.map((item,index)=>
                         <li key={index}>
-                            <div style={{background:`url(https:${item.iconUrl}) no-repeat center center`,backgroundSize:`1.78rem`}}></div>
+                            <div style={{background:`url(${protocol}${item.iconUrl}) no-repeat center center`,backgroundSize:`1.78rem`}}></div>
                             <p>{item.title}</p>
                         </li>
                     )

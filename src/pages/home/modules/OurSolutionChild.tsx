@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
+import { protocol } from '../../../config/apis';
 import "./solution.less";
 
 interface Props {
@@ -23,7 +24,7 @@ const OurSolutionChild = ({list}:Props) => {
                     return (
                         <li key={index}>
                             <div>
-                                <img src={item.iconUrl} alt=""/>
+                                <img src={`${protocol}${item.iconUrl}`} alt=""/>
                             </div>
                             <div>
                                 <h3>{item.title}</h3>
@@ -40,7 +41,7 @@ const OurSolutionChild = ({list}:Props) => {
                         index < 2 ?
                         <li key={index}>
                             <div>
-                                <img src={item.iconUrl} alt=""/>
+                                <img src={`${protocol}${item.iconUrl}`} alt=""/>
                             </div>
                             <div>
                                 <h3>{item.title}</h3>
