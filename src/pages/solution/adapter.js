@@ -40,6 +40,7 @@ const components = {
                     const Situation = childBlocks.filter(({type}) => type === 'Situation')[0]
                     if (Situation) {
                         r = Situation.data.content
+                                .replace(/\r\n/g, '\n')
                                 .split("\n")
                                 .map(line => line.trim())
                                 .filter(line => line)
