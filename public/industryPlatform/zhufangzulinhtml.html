@@ -1,3 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html{font-size: 100px;font-family: 'PingFangSC-Regular';}
+        body{
+            font-family: "-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFangSC-Regular,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 0.14rem;
+            margin: 0 auto;
+            line-height: 1.5;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+
+        *{margin: 0;padding: 0;}
+        ul{list-style-type: none;}
+
+        /*-----------------------------------*/
+        .typePage {
+            margin: 0.8rem auto 0;
+        }
+        .con_title {
+            text-align: center;
+            font-size: 0.4rem;
+            color: #333;
+            line-height: 0.56rem;
+            font-family: 'PingFangSC-Regular';
+        }
+        .textP p {
+            font-size: 0.28rem;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 0.48rem;
+            word-wrap: break-word;
+            word-break: normal;
+            text-align: justify;
+            width: 6.06rem;
+            margin: 0 auto;
+        }
+        .tabs_js {
+            border-bottom: 1px solid #E6E7EC;
+            margin: 0.4rem -0.32rem 0;
+            text-align: center;
+        }
+        .tabs_box ul li.cur {
+            color: #0066b3;
+        }
+        .tabs_box ul li.cur {
+            border-bottom: 2px solid #0066b3;
+        }
+        .tabs_box ul li {
+            float: left;
+            font-size: .2rem;
+            padding: .1rem .5rem;
+            cursor: pointer;
+        }
+        .clear {
+            display: block;
+            clear: both;
+            height: 0px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px;
+            padding: 0px;
+            border-width: 0px;
+            border-style: none;
+            float: none;
+            overflow: hidden;
+            zoom: 1;
+        }
+        .imgTxtBox {
+            width: calc(100% - 20px);
+            background-size: auto 100% !important;
+        }
+        .jg1 {
+            height: 5rem;
+            background: url(https://yun.ccb.com/industryPlatform/images/zhufang-jg-1.png) center no-repeat;
+        }
+        .imgTxtBox {
+            width: 7.19rem;
+            background-size: 6.93rem auto !important;
+            border: .1rem solid #fafafa;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .jsjg {
+            height: 5rem;
+            background: url(https://yun.ccb.com/industryPlatform/images/zhufang-jsjg-new.png) center no-repeat;
+        }
+    </style>
+    <script src="https://yun.ccb.com/common/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div style="width: 6.86rem;margin: 0 auto;">
 <div class="layer m_tb_50">
     <div class="typePage">
         <div class="con_title" style="padding-left: 0;">平台简介</div>
@@ -52,90 +152,8 @@
             </div>
         </div>
         <div class="clear"></div>
-        <div class="con_title mt_50" style="padding-left: 0px;margin-top: 20px;">平台优势</div>
-        <div class="cloud_list mt_30 ptys">
-            <div class="pl_20">
-                <ul>
-                    <li class="lineBlue_b">
-                        <h4>金融服务丰富</h4>
-                        <div class="cont_p3"></div>
-                        <p>依托建行，提供按居贷、聚合选择、租房保险、租金代扣等多种便捷金融服务</p>
-                    </li>
-                    <li class="lineBlue_b">
-                        <h4>房源信息真实</h4>
-                        <div class="cont_p3"></div>
-                        <p>对接政府，房源官方核验，保障房源真实性，扩大房源核验范围，实现有产权、无产权房源核验的广泛覆盖</p>
-                    </li>
-                    <li class="lineBlue_b">
-                        <h4>特色业务多元</h4>
-                        <div class="cont_p3"></div>
-                        <p>为企业提供B2B2C业务模式，为企事业单位提供住房租赁云服务，为个人提供存房、找房、租房等多种服务</p>
-                    </li>
-                    <li class="lineBlue_b">
-                        <h4>平台技术先进</h4>
-                        <div class="cont_p3"></div>
-                        <p>利用区块链技术实现住房信息共享的“住房链”。利用大数据技术提供找房、租金估价、住房价格指数发布等服务。支持在线签约、电子合同并进行区块链加密。</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="con_title mt_50" style="padding-left: 0px;margin-top: 20px;">专属服务</div>
-        <div class="service_list mt_30">
-            <div class="pl_20">
-                <ul>
-                    <li>
-                        <div class="icon_bg bg-jgfw inline_block"></div>
-                        <div class="inline_block">
-                            <h4>监管服务</h4>
-                            <p class="cont_p3 color_999">实现对市场房源和住房租赁交易的监管。</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon_bg bg-jcfw inline_block"></div>
-                        <div class="inline_block">
-                            <h4>监测服务</h4>
-                            <p class="cont_p3 color_999">为政府监测住房租赁市场提供数据保障</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon_bg bg-jrfw inline_block"></div>
-                        <div class="inline_block">
-                            <h4>金融服务</h4>
-                            <p class="cont_p3 color_999">依靠建行，提供丰富租赁金融服务</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="con_title mt_50" style="padding-left: 0px;margin-top: 20px;">客户案例</div>
-        <div class="cst_case mt_30">
-            <div class="pl_20">
-                <div class="bg-fa">
-                    <div class="case_img middle inline_block">
-                        <img src="/images/universal/zfzl-case.png" width="200" height="" alt="">
-                    </div>
-                    <div class="inline_block middle case_content">
-                        <p class="cont_p3 color_666">四川分行客户经理在拓展业务过程中，发现部分高校存在有房源、没系统的困扰。住房租赁服务平台的房源管理功能和阳光租赁服务恰恰满足了高校的需求。</p>
-                        <p class="cont_p3 color_666">借助智慧校园管理升级，充分发挥银行既有优势，平台针对校方差异化需求进行论证开发，最终实现高校教师公寓和学生公寓的线上管理。目前西南交通大学正在使用我行系统收取租金。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="con_title me_50" style="padding-left: 0px;margin-top: 20px;">合作伙伴</div>
-        <div class="case_list mt_30">
-            <div class="pl_20">
-                <ul class="case">
-                    <li>
-                        <div class="imgbox">
-                            <img src="/images/universal/sm-op-1.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear"></div>
     </div>
 </div>
+</div>
+</body>
+</html>
