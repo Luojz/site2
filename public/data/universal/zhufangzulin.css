@@ -1,3 +1,666 @@
+/* soulition 云产品  icon */
+/* 对私客户关系管理 */
+.prod-choose .crm{
+    background: url(../../../solution/images/icon-crm.png) no-repeat ;
+}
+/* 智能风控 */
+.prod-choose .iwc{
+    background: url(../../../solution/images/icon-iwc.png) no-repeat ;
+}
+.prod-choose .vpc{
+    background: url(../../../solution/images/icon-vpc.png) no-repeat ;
+}
+.prod-choose .eip{
+    background: url(../../../solution/images/icon-eip.png) no-repeat ;
+}
+.prod-choose .cvm{
+    background: url(../../../solution/images/icon-cvm.png) no-repeat ;
+}
+.prod-choose .rds{
+    background: url(../../../solution/images/icon-rds.png) no-repeat ;
+}
+.prod-choose .myl{
+    background: url(../../../solution/images/icon-myl.png) no-repeat ;
+}
+.prod-choose .orl{
+    background: url(../../../solution/images/icon-orl.png) no-repeat ;
+}
+.prod-choose .cbs{
+    background: url(../../../solution/images/icon-cbs.png) no-repeat ;
+}
+.prod-choose .cos{
+    background: url(../../../solution/images/icon-cos.png) no-repeat ;
+}
+.prod-choose .cfs{
+    background: url(../../../solution/images/icon-cfs.png) no-repeat ;
+}
+.prod-choose .ssp{
+    background: url(../../../solution/images/icon-ssp.png) no-repeat ;
+}
+.prod-choose .elb{
+    background: url(../../../solution/images/icon-elb.png) no-repeat ;
+}
+.prod-choose .nat{
+    background: url(../../../solution/images/icon-nat.png) no-repeat ;
+}
+.prod-choose .msp{
+    background: url(../../../solution/images/icon-msp.png) no-repeat ;
+}
+.prod-choose .pcn{
+    background: url(../../../solution/images/icon-pcn.png) no-repeat ;
+}
+.prod-choose .vpn{
+    background: url(../../../solution/images/icon-vpn.png) no-repeat ;
+}
+.prod-choose .dlg{
+    background: url(../../../solution/images/icon-dlg.png) no-repeat ;
+}
+.prod-choose .waf{
+    background: url(../../../solution/images/icon-waf.png) no-repeat ;
+}
+.prod-choose .eip{
+    background: url(../../../solution/images/icon-eip.png) no-repeat ;
+}
+.prod-choose .orl{
+    background: url(../../../solution/images/icon-orl.png) no-repeat ;
+}
+.prod-choose .vpn{
+    background: url(../../../solution/images/icon-vpn.png) no-repeat ;
+}
+.prod-choose .fort{
+    background: url(../../../solution/images/icon-fort.png) no-repeat ;
+}
+.prod-choose .hids{
+    background: url(../../../solution/images/icon-hids.png) no-repeat ;
+}
+.prod-choose .cdn{
+    background: url(../../../solution/images/icon-cdn.png) no-repeat ;
+}
+.prod-choose .ebes{
+    background: url(../../../solution/images/icon-ebes.png) no-repeat ;
+}
+.prod-choose .dbas{
+    background: url(../../../solution/images/icon-dbas.png) no-repeat ;
+}
+.prod-choose .stlans{
+    background: url(../../../solution/images/icon-stlans.png) no-repeat ;
+}
+.prod-choose .safe{
+    background: url(../../../solution/images/icon-safe.png) no-repeat ;
+}
+.prod-choose .dc{
+    background: url(../../../solution/images/icon-dc.png) no-repeat ;
+}
+.prod-choose .pc{
+    background: url(../../../solution/images/icon-pc.png) no-repeat ;
+}
+
+.prod-choose .yda{
+    background: url(../../../product/images/云档案.png) no-repeat ;
+}
+.prod-choose .xjgl{
+    background: url(../../../product/images/现金管理.png) no-repeat ;
+}
+.prod-choose .jgbs{
+    background: url(../../../product/images/监管报送.png) no-repeat ;
+}
+.prod-choose .yaq{
+    background: url(../../../product/images/云安全.png) no-repeat ;
+}
+.prod-choose .dgkhgxgl{
+    background: url(../../../product/images/对公客户关系管理.png) no-repeat ;
+}
+
+.prod-choose .hxyy{
+    background: url(../../../product/images/核心应用.png) no-repeat ;
+}
+.prod-choose .fxgl{
+    background: url(../../../product/images/风险管理.png) no-repeat ;
+}
+.prod-choose .sjyy{
+    background: url(../../../product/images/数据应用.png) no-repeat ;
+}
+
+.prod-choose .jyhy{
+    background: url(../../../solution/images/icon-jyhy.png) no-repeat ;
+}
+.prod-choose .cwjs{
+    background: url(../../../solution/images/icon-cwjs.png) no-repeat ;
+}
+.prod-choose .pzyx{
+    background: url(../../../solution/images/icon-pzyx.png) no-repeat ;
+}
+.prod-choose .qyzlfwgl{
+    background: url(../../../product/images/企业租赁服务管理系统.png) no-repeat ;
+}
+.prod-choose .zfzljgfw{
+    background: url(../../../product/images/住房租赁监管服务平台简介.png) no-repeat ;
+}
+.prod-choose .zfzlfwgx{
+    background: url(../../../product/images/住房租赁服务共享平台.png) no-repeat ;
+}
+.prod-choose .zfbzxzf{
+    background: url(../../../product/images/政府保障性住房服务系统.png) no-repeat ;
+}
+/*.prod-choose .zfzljcfx{*/
+    /*background: url(../../../product/images/住房租赁监测服务平台.png) no-repeat ;*/
+/*}*/
+
+/*应用场景 start*/
+/*网站建设*/
+.wzjs{
+    background: url(../../../solution/images/icon_gray_网站建设.png) no-repeat center ;
+}
+
+.wzjs-d {
+    background: url(../../../solution/images/space-wzjs-d.png) no-repeat center ;
+}
+/*域名注册*/
+.ymzc{
+    background: url(../../../solution/images/icon_gray_域名注册.png) no-repeat center ;
+}
+
+.ymzc-d{
+    background: url(../../../solution/images/space-ymzc-d.png) no-repeat center ;
+}
+/*产品选购*/
+.cpxg{
+    background: url(../../../solution/images/icon_gray_产品选购.png) no-repeat center;
+}
+
+.cpxg-d {
+    background: url(../../../solution/images/space-cpxg-d.png) no-repeat center;
+}
+/*域名解析*/
+.ymjx{
+    background: url(../../../solution/images/icon_gray_域名解析.png) no-repeat center;
+}
+.ymjx-d{
+    background: url(../../../solution/images/space-ymjx-d.png) no-repeat center;
+}
+/*网站备案*/
+.wzba{
+    background: url(../../../solution/images/space-wzba.png) no-repeat  center;
+}
+/*云端备份*/
+.ydbf{
+    background: url(../../../solution/images/icon_gray_租户数据云端备份.png) no-repeat  center;
+}
+.ydbf-d{
+    background: url(../../../solution/images/space-ydbf-d.png) no-repeat  center;
+}
+/*演练环境*/
+.ylhj{
+    background: url(../../../solution/images/icon_gray_随时搭建.png) no-repeat  center;
+}
+.ylhj-d{
+    background: url(../../../solution/images/space-ylhj-d.png) no-repeat  center;
+}
+/*云上备份*/
+.ysbf{
+    background: url(../../../solution/images/icon_gray_建行云上备份.png) no-repeat  center;
+}
+.ysbf-d{
+    background: url(../../../solution/images/space-ysbf-d.png) no-repeat  center;
+}
+/*财务公司 start*/
+.ywtz{background: url(../../../solution/images/icon_gray_财务公司业务拓展.png) no-repeat  center;}
+.gscl{background: url(../../../solution/images/icon_gray_财务公司新开成立.png) no-repeat  center;}
+.xtth{background: url(../../../solution/images/icon_gray_财务公司系统替换.png) no-repeat  center;}
+
+.ywtz-d{background: url(../../../solution/images/space-ywtz-d.png) no-repeat  center;}
+.gscl-d{background: url(../../../solution/images/space-gscl-d.png) no-repeat  center;}
+.xtth-d{background: url(../../../solution/images/space-xtth-d.png) no-repeat  center;}
+/*财务公司 end*/
+
+/*安全防护*/
+.aqfh{
+    background: url(../../../solution/images/icon_gray_网络安全防护.png) no-repeat  center;
+}
+.aqfh-d{
+    background: url(../../../solution/images/space-aqfh-d.png) no-repeat  center;
+}
+/*入侵防御*/
+.rqfy{
+    background: url(../../../solution/images/icon_gray_应用入侵防御.png) no-repeat  center;
+}
+.rqfy-d{
+    background: url(../../../solution/images/space-rqfy-d.png) no-repeat  center;
+}
+/*数据保护*/
+.sjbh{
+    background: url(../../../solution/images/icon_gray_数据安全保护.png) no-repeat  center;
+}
+.sjbh-d{
+    background: url(../../../solution/images/space-sjbh-d.png) no-repeat  center;
+}
+/*运维与管理*/
+.ywgl{
+    background: url(../../../solution/images/icon_gray_安全运维与管理.png) no-repeat  center;
+}
+.ywgl-d{
+    background: url(../../../solution/images/space-ywgl-d.png) no-repeat  center;
+}
+
+/*数据共享*/
+.sjgx{
+    background: url(../../../solution/images/icon_gray_数据共享.png) no-repeat  center;
+}
+.sjgx-d{
+    background: url(../../../solution/images/space-sjgx-d.png) no-repeat  center;
+}
+/*网站搭建*/
+.wzdj{
+    background: url(../../../solution/images/icon_gray_网站搭建.png) no-repeat  center;
+}
+
+.wzdj-d {
+    background: url(../../../solution/images/space-wzdj-d.png) no-repeat  center;
+}
+/*搭建混合云*/
+.djhh{
+    background: url(../../../solution/images/space-djhh.png) no-repeat  center;
+}
+
+/*文件备份*/
+.wjbf{background: url(../../../solution/images/icon_gray_文件备份.png) no-repeat  center;}
+
+.wjbf-d {background: url(../../../solution/images/space-wjbf-d.png) no-repeat  center;}
+
+/*云网络 完全隔离*/
+.wqgl{background: url(../../images/index/solution/net-wqgl.png) no-repeat  center;}
+/*云网络 灵活配置*/
+.lhpz{background: url(../../images/index/solution/net-lhpz.png) no-repeat  center;}
+/*云网络 安全策略*/
+.aqcl{background: url(../../images/index/solution/net-aqcl.png) no-repeat  center;}
+/*云网络 多样接入*/
+.dyjr{background: url(../../images/index/solution/net-dyjr.png) no-repeat  center;}
+/*网站 安全可靠*/
+.aqkk{background: url(../../images/index/solution/website-aqkk.png) no-repeat  center;}
+/*网站 弹性扩展*/
+.txkz{background: url(../../images/index/solution/website-txkz.png) no-repeat  center;}
+
+/*云存储 灵活配置*/
+.storage-lhpz{background: url(../../images/index/solution/storage-lhpz.png) no-repeat  center;}
+/*云存储 动态扩展*/
+.storage-dtkz{background: url(../../images/index/solution/storage-dtkz.png) no-repeat  center;}
+/*云存储 持久稳定*/
+.storage-cjwd{background: url(../../images/index/solution/storage-cjwd.png) no-repeat  center;}
+/*云存储 安全隔离*/
+.storage-aqgl{background: url(../../images/index/solution/storage-aqgl.png) no-repeat  center;}
+
+/*备份归档 安全合规*/
+.aqhg{background: url(../../images/index/solution/backup-aqhg.png) no-repeat  center;}
+/*备份归档 即需即用*/
+.jxjy{background: url(../../images/index/solution/backup-jxjy.png) no-repeat  center;}
+
+/*通用安全 安全方案*/
+.aqfa{background: url(../../images/index/solution/safe-aqfa.png) no-repeat  center;}
+/*通用安全 智慧防御*/
+.zhfy{background: url(../../images/index/solution/safe-zhfy.png) no-repeat  center;}
+/*通用安全 灵活定制*/
+.lhdz{background: url(../../images/index/solution/safe-lhdz.png) no-repeat  center;}
+/*通用安全 专注安全*/
+.zzaq{background: url(../../images/index/solution/safe-zzaq.png) no-repeat  center;}
+
+/*财务公司 安全方案*/
+.dlbs{background: url(../../images/index/solution/fina-dlbs.png) no-repeat  center;}
+/*财务公司 开放平台*/
+.kfpt{background: url(../../images/index/solution/fina-kfpt.png) no-repeat  center;}
+/*财务公司 多法人*/
+.dfr{background: url(../../images/index/solution/fina-dfr.png) no-repeat  center;}
+/*财务公司 轻量级*/
+.qlj{background: url(../../images/index/solution/fina-qlj.png) no-repeat  center;}
+
+#scen ul li:hover{
+    -o-box-shadow: -2px 0px 5px 1px #eee,0px -2px 5px 1px #eee,2px 0px 5px 1px #eee,0px 2px 5px 1px #eee;
+    -moz-box-shadow: -2px 0px 5px 1px #eee,0px -2px 5px 1px #eee,2px 0px 5px 1px #eee,0px 2px 5px 1px #eee;
+    -webkit-box-shadow: -2px 0px 5px 1px #eee, 0px -2px 5px 1px #eee, 2px 0px 5px 1px #eee, 0px 2px 5px 1px #eee;
+    -ms-box-shadow: -2px 0px 5px 1px #eee,0px -2px 5px 1px #eee,2px 0px 5px 1px #eee,0px 2px 5px 1px #eee;
+    box-shadow: -2px 0px 5px 1px #eee, 0px -2px 5px 1px #eee, 2px 0px 5px 1px #eee, 0px 2px 5px 1px #eee;
+}
+#scen ul li .icon-scen{
+    height: 50px;
+    background-size: 46px 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+#scen ul li h4{
+    font-size: 20px;
+}
+#scen .cont_p3{
+
+    padding: 20px 50px 0 50px;
+    line-height: 1.3;
+    text-align: center;
+}
+#scen .underline{
+    margin: 0 auto;
+    background:#3da4f1;
+    width:25px;
+    height:2px;
+}
+/*应用场景 end*/
+
+
+/*业务挑战*/
+
+    /*解决方案start*/
+
+.aqfx{
+    background: url(../../../solution/images/ywtz-aqfx.png) no-repeat  center;
+}
+.zjaq{
+    background: url(../../../solution/images/ywtz-zjaq.png) no-repeat  center;
+}
+.sjaq{
+    background: url(../../../solution/images/ywtz-sjaq.png) no-repeat  center;
+}
+.apt{
+    background: url(../../../solution/images/ywtz-apt.png) no-repeat  center;
+}
+.ywxt{
+    background: url(../../../solution/images/ywtz-ywxt.png) no-repeat  center;
+}
+.ddos{
+    background: url(../../../solution/images/ywtz-ddos.png) no-repeat  center;
+}
+.trjd{
+    background: url(../../../solution/images/ywtz-trjd.png) no-repeat  center;
+}
+.nkfx{
+    background: url(../../../solution/images/ywtz-nkfx.png) no-repeat  center;
+}
+.kfaq{
+    background: url(../../../solution/images/ywtz-kfaq.png) no-repeat  center;
+}
+.aqcb{
+    background: url(../../../solution/images/ywtz-aqcb.png) no-repeat  center;
+}
+
+
+    /*解决方案end*/
+
+    /*行业平台 start */
+.wszf{
+    background: url(../../../industryPlatform/images/ywtz-wszf.png) no-repeat  center;
+}
+.gxmd{
+    background: url(../../../industryPlatform/images/ywtz-gxmd.png) no-repeat  center;
+}
+.xqsj{
+    background: url(../../../industryPlatform/images/ywtz-xqsj.png) no-repeat  center;
+}
+
+.ptjs{
+    background: url(../../../industryPlatform/images/ywtz-ptjs.png) no-repeat  center;
+}
+.fwnl{
+    background: url(../../../industryPlatform/images/ywtz-fwnl.png) no-repeat  center;
+}
+.sjwj{
+    background: url(../../../industryPlatform/images/ywtz-sjwj.png) no-repeat  center;
+}
+.glll{
+    background: url(../../../industryPlatform/images/ywtz-glll.png) no-repeat  center;
+}
+.llh{
+    background: url(../../../industryPlatform/images/yl-llh.png) no-repeat  center;
+}
+.zfjg{
+    background: url(../../../industryPlatform/images/yl-zfjg.png) no-repeat  center;
+}
+.sch{
+    background: url(../../../industryPlatform/images/yl-sch.png) no-repeat  center;
+}
+
+.glfs{
+    background: url(../../../industryPlatform/images/ywtz-glfs.png) no-repeat  center;
+}
+.qfxy{
+    background: url(../../../industryPlatform/images/ywtz-qfxy.png) no-repeat  center;
+}
+.xxhd{
+    background: url(../../../industryPlatform/images/ywtz-xxhd.png) no-repeat  center;
+}
+.aqxd{background: url(../../../industryPlatform/images/ywtz-aqxd.png) no-repeat  center;}
+.gkbj{background: url(../../../industryPlatform/images/ywtz-gkbj.png) no-repeat  center;}
+.sxxd{background: url(../../../industryPlatform/images/ywtz-sxxd.png) no-repeat  center;}
+.fzn{background: url(../../../industryPlatform/images/业务挑战_分账难.png) no-repeat  center;}
+.hkm{background: url(../../../industryPlatform/images/业务挑战_回款慢.png) no-repeat  center;}
+.thf{background: url(../../../industryPlatform/images/业务挑战_退货繁.png) no-repeat  center;}
+
+.fxwcyf{background: url(../../../industryPlatform/images/业务挑战_风险事件无从预防.png) no-repeat  center;}
+.jynyff{background: url(../../../industryPlatform/images/业务挑战_假药难以防范.png) no-repeat  center;}
+.ypzt{background: url(../../../industryPlatform/images/业务挑战_药品状态难以验证.png) no-repeat  center;}
+
+.zjcd{background: url(../../../industryPlatform/images/业务挑战_宗教事务管理信息化程度低.png) no-repeat  center;}
+.zjsj{background: url(../../../industryPlatform/images/业务挑战_宗教信息数据不完整.png) no-repeat  center;}
+.zjzj{background: url(../../../industryPlatform/images/业务挑战_宗教资金监管不健全.png) no-repeat  center;}
+
+.gxxq{background: url(../../../industryPlatform/images/业务挑战_个性化需求难满足.png) no-repeat  center;}
+.jyzy{background: url(../../../industryPlatform/images/业务挑战_教育资源不均衡.png) no-repeat  center;}
+
+.gxxx{
+    background: url(../../../industryPlatform/images/业务挑战_供需信息不对称.png) no-repeat  center;
+}
+.qfqz{
+    background: url(../../../industryPlatform/images/业务挑战_缺乏线上圈子交互管理.png) no-repeat  center;
+}
+.zxwqy{
+    background: url(../../../industryPlatform/images/业务挑战_中小微企业拓展困难.png) no-repeat  center;
+}
+
+.cgcb{background: url(../../../industryPlatform/images/icon_采购成本难以控制.png) no-repeat  center;}
+.cggc{background: url(../../../industryPlatform/images/icon_采购过程难以管控.png) no-repeat  center;}
+.cgjg{background: url(../../../industryPlatform/images/icon_采购监管困难.png) no-repeat  center;}
+.gcxx{background: url(../../../industryPlatform/images/icon_过程信息难以利用.png) no-repeat  center;}
+
+
+.itgh{background: url(../../../product/images/ywtz-itgh.png) no-repeat  center;}
+.xqxy{background: url(../../../product/images/ywtz-xqxy.png) no-repeat  center;}
+.sjfs{background: url(../../../product/images/ywtz-sjfs.png) no-repeat  center;}
+
+.bg-znfk{background: url(../../../product/images/fina-znfk.png) no-repeat  center;}
+.bg-jgbs{background: url(../../../product/images/fina-jgbs.png) no-repeat  center;}
+.bg-yaq {background: url(../../../product/images/fina-yaq.png) no-repeat  center;}
+.bg-hxyw{background: url(../../../product/images/fina-hxyw.png) no-repeat  center;}
+.bg-xjgl{background: url(../../../product/images/fina-xjgl.png) no-repeat  center;}
+
+
+
+
+
+
+    /*行业平台 end */
+
+/*业务挑战end*/
+
+/*专属服务*/
+.bg-jcfw{
+    background: url(../../../industryPlatform/images/zsfw-jcfw.png) no-repeat  center;
+}
+.bg-jgfw{
+    background: url(../../../industryPlatform/images/zsfw-jgfw.png) no-repeat  center;
+
+}
+.bg-jrfw{
+    background: url(../../../industryPlatform/images/zsfw-jrfw.png) no-repeat  center;
+
+}
+
+.bg-dzzw{
+    background: url(../../../industryPlatform/images/zsfw-dzzw.png) no-repeat  center;
+}
+.bg-fwjc{
+    background: url(../../../industryPlatform/images/zsfw-fwjc.png) no-repeat  center;
+}
+.bg-zygx{
+    background: url(../../../industryPlatform/images/zsfw-zygx.png) no-repeat  center;
+}
+.bg-lhpz{
+    background: url(../../../industryPlatform/images/zsfw-lhpz.png) no-repeat  center;
+}
+.bg-zlnl{
+    background: url(../../../industryPlatform/images/zsfw-zlnl.png) no-repeat  center;
+
+}
+.bg-ptdj{
+    background: url(../../../industryPlatform/images/zsfw-ptdj.png) no-repeat  center;
+}
+.bg-dzfa{
+    background: url(../../../industryPlatform/images/zsfw-dzfa.png) no-repeat  center;
+}
+.bg-alck{
+    background: url(../../../industryPlatform/images/zsfw-alck.png) no-repeat  center;
+
+}
+.bg-app{
+    background: url(../../../industryPlatform/images/dangqun-app.png) no-repeat  center;
+}
+.bg-fyqm{
+    background: url(../../../industryPlatform/images/dangqun-fyqm.png) no-repeat  center;
+}
+.bg-nrff{
+    background: url(../../../industryPlatform/images/dangqun-nrff.png) no-repeat  center;
+
+}
+.bg-1v1{
+    background: url(../../../industryPlatform/images/block-1v1.png) no-repeat  center;
+
+}
+.bg-tgjd{
+    background: url(../../../industryPlatform/images/block-tgjd.png) no-repeat  center;
+
+}
+.bg-zjjm{
+    background: url(../../../industryPlatform/images/block-zjjm.png) no-repeat  center;
+
+}
+.bg-csfasp{
+    background: url(../../../industryPlatform/images/专属服务_成功案例解析.png) no-repeat  center;
+
+}
+.bg-cgaljx{
+    background: url(../../../industryPlatform/images/专属服务_成熟方案适配.png) no-repeat  center;
+
+}
+.bg-gxhjjfa{
+    background: url(../../../industryPlatform/images/专属服务_个性化解决方案.png) no-repeat  center;
+
+}
+
+.bg-qnzs{
+    background: url(../../../industryPlatform/images/专属服务_全链追溯.png) no-repeat  center;
+
+}
+.bg-yyaq{
+    background: url(../../../industryPlatform/images/专属服务_用药安全反馈互动.png) no-repeat  center;
+
+}
+.bg-zngx{
+    background: url(../../../industryPlatform/images/专属服务_智能高效执法.png) no-repeat  center;
+
+}
+
+.bg-jzryyz{
+    background: url(../../../industryPlatform/images/专属服务_教职人员验真.png) no-repeat  center;
+}
+.bg-dzgdx{
+    background: url(../../../industryPlatform/images/专属服务_电子功德箱.png) no-repeat  center;
+}
+
+.bg-zxzy{
+    background: url(../../../industryPlatform/images/专属服务_在线作业.png) no-repeat  center;
+}
+.bg-znpk{
+    background: url(../../../industryPlatform/images/专属服务_智能排课.png) no-repeat  center;
+}
+.bg-qwyy{
+    background: url(../../../industryPlatform/images/专属服务_趣味英语.png) no-repeat  center;
+}
+.bg-xnzz{
+    background: url(../../../industryPlatform/images/专属服务_虚拟助教.png) no-repeat  center;
+}
+.bg-xqfx{
+    background: url(../../../industryPlatform/images/专属服务_学情分析.png) no-repeat  center;
+}
+
+.bg-cgal{
+    background: url(../../../industryPlatform/images/成功案例解析.png) no-repeat  center;
+}
+.bg-cstc{
+    background: url(../../../industryPlatform/images/成熟套餐一键选购.png) no-repeat  center;
+}
+.bg-dzjj{
+    background: url(../../../industryPlatform/images/定制化解决方案.png) no-repeat  center;
+}
+
+.right-part{
+    margin-left: 750px;
+}
+
+.prod-choose li{
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    padding: 5px 1px 5px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    word-break: break-all;
+    line-height: 25px;
+    text-align: left;
+    color: #666;
+    font-size: 13px;
+}
+.icon-bg{
+    background-position-x: 8px !important;
+    background-position-y: 6px !important;
+    background-size: 25px 25px !important;
+}
+.icon-bg a{
+    color:#666;
+}
+.more-line{
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/*架构 */
+.imgTxtBox{
+    width: 719px;
+    background-size: 693px auto !important;
+
+    border: 10px solid #fafafa;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/*图片模态框*/
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #fafafa;
+    top: 0;
+    left: 0;
+    display: none ;
+    padding: 0px;
+}
+.modal #imgbox{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.font-size13{
+    font-size: 13px;
+}
+
 
 .icon_bg {
     height: 70px;
