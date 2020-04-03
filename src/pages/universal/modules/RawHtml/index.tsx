@@ -6,6 +6,7 @@ interface IProps {
         "mod": string;
         "title": string;
         "content": string;
+        "mcontent": string;
     }
 }
 
@@ -15,6 +16,6 @@ export default (props:IProps) => {
     console.log(props);
 
     return (
-        <div className="raw-html" dangerouslySetInnerHTML={{__html:data.content}}></div>
+        <div className="raw-html" dangerouslySetInnerHTML={{__html:data.mcontent}}></div>
     )
 };
