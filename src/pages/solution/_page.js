@@ -4,7 +4,7 @@ import Layout from '@/layouts/default';
 import adapter from './adapter';
 
 
-export default ({ location }) => {
+export default ({ location, match }) => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
