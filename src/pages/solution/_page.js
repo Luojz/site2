@@ -4,12 +4,12 @@ import Layout from '@/layouts/default';
 import adapter from './adapter';
 
 
-export default ({ location }) => {
+export default ({ location, match }) => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        const api = `${location.pathname}${location.search.includes('?!preview') ? '_preview' : ''}.json`
+        const api = `solution/${location.pathname}${location.search.includes('?!preview') ? 'preview!' : ''}${match.params.page}.json`
         // setLoading(true)
         asyncData(api)
             .then((res) => {
