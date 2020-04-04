@@ -1,0 +1,12 @@
+{
+    "block": {
+        "root": {
+            "id": "root",
+            "type": "Root",
+            "data": {
+                "title": "敬请期待"
+            },
+            "childBlocks": []
+        }
+    }
+}

@@ -21,6 +21,9 @@ export default ({ location, match }) => {
                         case 'notice':
                             setData(adapter(res.block.root.childBlocks.filter(item => item.type !== 'RawHtml').concat({ id: 'notice', type: 'Notice' })))
                             break
+                        case 'noticeDetail':
+                            setData(adapter([{ id: 'noticeDetail', type: 'NoticeDetail' }]))
+                            break
                         default:
                             setData(adapter(res.block.root.childBlocks))
                     }

@@ -1,6 +1,7 @@
 import Banner from './modules/Banner/index';
 import RawHtml from './modules/RawHtml/index';
 import Notice from './modules/Notice/index';
+import NoticeDetail from './modules/NoticeDetail/index';
 
 const components = {
     Banner: {
@@ -17,6 +18,12 @@ const components = {
     },
     Notice: {
         Component: Notice,
+        convert(data) {
+            return data
+        }
+    },
+    NoticeDetail: {
+        Component: NoticeDetail,
         convert(data) {
             return data
         }

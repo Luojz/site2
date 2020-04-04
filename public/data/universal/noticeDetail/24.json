@@ -1,0 +1,23 @@
+{
+    "code": 0,
+    "msg": "成功",
+    "data": {
+        "id": 25,
+        "createTime": "2019-11-28 09:34:26",
+        "updateTime": "2019-11-28 09:34:26",
+        "title": "11月28日BGP线路新增线路、调优改造通知",
+        "content": "<p>尊敬的建行云用户：</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好！</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了给您提供更加安全、可靠的服务，建行云将于北京时间2019年11月28日对联通线路进行上线和优化。</p>\n<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系统升级时间：</strong>北京时间2019年11月28日22:00 - 11月28日24:00</p>\n<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系统升级内容：</strong>联通BGP线路新增线路、调优改造</p>\n<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系统升级影响：</strong>已投产联通线路调优改造流量迁移时会造成联通用户访问BGP IP地址业务中断60秒-100秒。</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由此给您带来的不便，我们深表歉意，敬请谅解。</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如有任何疑问，请联系您的技术服务经理，谢谢！</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p style=\"text-align: right;\">建行云&nbsp; &nbsp; &nbsp;</p>\n<p style=\"text-align: right;\">2019年11月25日</p>",
+        "administrator": {
+            "id": 1,
+            "createTime": null,
+            "updateTime": "2019-05-23 10:41:53",
+            "username": "ccbcloud",
+            "password": "YQQLMgsycl@2018",
+            "power": null
+        },
+        "type": "PRODUCT",
+        "flag": "NORMAL",
+        "time": "2019-11-28 09:31:56",
+        "endtime": null
+    }
+}

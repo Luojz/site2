@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './index.less'
 import { asyncData } from '@/plugins/axios'
+import Icon from '@/components/Icon'
 
 const categories = {
     ALL: '全部',
@@ -54,7 +55,7 @@ export default () => {
     }
 
     return (
-        <div className="notice">
+        <section id="notice">
             <ul className="notice-title">
                 {Object.keys(categories).map(category => (
                     <li 
@@ -71,21 +72,21 @@ export default () => {
             </ul>
             <ul className="notice-content">
                 {filters.list().map(item => (
-                        <li key={item.id}>
+                        <li key={item.id} onClick={() => window.location.href = `/universal/noticeDetail?id=${item.id}`}>
                             <span className="category">【{categories[item.type] || '产品公告' }】</span>
                             <span className="content">{item.title}</span>
                         </li>
                     ))}
             </ul>
             <div className="pagination">
-                <span className="prev" onClick={methods.prev}>prev</span>
+                <span className="prev" onClick={methods.prev}>ᐸ</span>
                 <span className="pageNums">
                     <input type="text" onInput={methods.handleInputChange} value={curr} />
                     <span className="slug">/</span>
                     <span>{computed.pageNums}</span>
                 </span>
-                <span className="next" onClick={methods.next}>next</span>
+                <span className="next" onClick={methods.next}>ᐳ</span>
             </div>
-        </div>
+        </section>
     )
 }

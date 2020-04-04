@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./index.less";
 import adapter from "./adapter";
 import { protocol } from "@/config/apis";
