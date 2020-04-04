@@ -1,0 +1,476 @@
+<style>
+    .notice-content {
+        margin-bottom: 50px;
+    }
+
+    .notice-content .nav-list ul {
+        font-size: 0
+    }
+
+    .notice-content .nav-list .item {
+        display: inline-block;
+        width: 110px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-left: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        cursor: pointer;
+        margin-bottom: 23px
+    }
+
+    .notice-content .nav-list .item:last-of-type {
+        border-right: 1px solid #ddd;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px
+    }
+
+    .notice-content .nav-list .item:first-of-type {
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px
+    }
+
+    .notice-content .nav-list .item a {
+        font-size: 14px;
+        color: #666a75;
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 100%
+    }
+
+    .notice-content .nav-list .active {
+        background: #0066b3;
+        border: 1px solid #0066b3;
+        border-radius: 2px
+    }
+
+    .notice-content .nav-list .active a {
+        color: #fff
+    }
+
+    .notice-content .notice-list .content-item {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px
+    }
+
+    .notice-content .notice-list .content-item span {
+        font-size: 14px;
+        color: #656a76;
+        letter-spacing: 0;
+        line-height: 18px;
+        font-weight: bold;
+        display: inline-block
+    }
+
+    .notice-content .notice-list .content-item .category {
+        margin-right: 15px
+    }
+
+    .notice-content .notice-list .content-item a {
+        color: #242b3b;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 700px;
+        display: inline-block
+    }
+
+    .notice-content .notice-list .content-item .time {
+        color: #656a76;
+        float: right;
+        font-weight: normal;
+        margin-top: 21px
+    }
+
+    .notice-content .notice-list .content-item:hover {
+        background: #fff;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2px
+    }
+
+    .notice-content .notice-list .content-item:hover span,
+    .notice-content .notice-list .content-item:hover a,
+    .notice-content .notice-list .content-item:hover .time {
+        color: #0066b3;
+    }
+
+    /*start 分页样式*/
+    .paginate-box {
+        width: 1220px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .pagination {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+
+    .pagination>li {
+        display: inline;
+    }
+
+    .pagination-lg>li:first-child>a,
+    .pagination-lg>li:first-child>span {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .pagination>li:first-child>a,
+    .pagination>li:first-child>span {
+        margin-left: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .pagination-lg>li>a,
+    .pagination-lg>li>span {
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+    }
+
+    .pagination>li>a,
+    .pagination>li>span {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    .pagination>li>a:focus,
+    .pagination>li>a:hover,
+    .pagination>li>span:focus,
+    .pagination>li>span:hover {
+        z-index: 2;
+        color: #23527c;
+        background-color: #eee;
+        border-color: #ddd;
+    }
+
+    .pagination>.active>a,
+    .pagination>.active>a:focus,
+    .pagination>.active>a:hover,
+    .pagination>.active>span,
+    .pagination>.active>span:focus,
+    .pagination>.active>span:hover {
+        z-index: 3;
+        color: #fff;
+        cursor: default;
+        background-color: #337ab7;
+        border-color: #337ab7;
+    }
+
+    .pagination>.disable>a,
+    .pagination>.disable>a:focus,
+    .pagination>.disable>a:hover,
+    .pagination>.disable>span,
+    .pagination>.disable>span:focus,
+    .pagination>.disable>span:hover {
+        color: #777;
+        cursor: not-allowed;
+        background-color: #fff;
+        border-color: #ddd;
+    }
+
+    /*end 分页样式*/
+</style>
+
+<!--公告列表 star-->
+<div class="notice-content layer m_tb_50  ">
+    <div class="typePage nav-list">
+        <ul>
+            <li class="item active" id="notice_all">
+                <a href="javascript:;">全部</a>
+            </li>
+
+            <li class="item " id="notice_product">
+                <a href="javascript:;">产品公告</a>
+            </li>
+
+            <li class="item" id="notice_service">
+                <a href="javascript:;">服务公告</a>
+            </li>
+        </ul>
+    </div>
+    <div class="typePage notice-list ">
+    </div>
+    <div class="paginate-box">
+        <ul class="pagination pagination-lg">
+
+        </ul>
+    </div>
+</div>
+<!--公告列表 end-->
+
+<script></script>
+<script>
+    var types;
+    var notes = "";
+    var pageNo = 1;
+    var totalPage = ''
+
+    jQuery.support.cors = true;
+
+    var Http = {
+        get: function (url, param, callback) {
+            var urlArray = url.split("yun.ccb.com");
+            if (urlArray.length === 2) {
+                var time = new Date().getTime();
+                param.time = time;
+                $.ajax({
+                    url: url,
+                    data: param,
+                    type: 'GET',
+                    dataType: 'JSON',
+                    success: function (data) {
+                        callback(data)
+                    },
+                    error: function (error) {
+                        console.log(error)
+                    }
+                })
+            }
+        },
+        post: function (url, param, callback) {
+            $.ajax({
+                url: url,
+                data: param,
+                type: 'POST',
+                dataType: 'JSON',
+                success: function (data) {
+                    callback(data)
+                },
+                error: function (error) {
+                    console.log(error)
+                }
+            })
+        },
+    }
+
+    var config = {
+        baseUrl: '',// window.location.href.split('//')[0] + '//yun.ccb.com',
+        transTypeForCN: function (type) {
+            switch (type) {
+                case "PRODUCT":
+                    return '产品公告'
+                    break;
+                case "SERVICE":
+                    return '服务公告'
+                    break;
+                case "PREFER":
+                    return '漏洞预警'
+                    break;
+                default:
+                    break;
+            }
+
+        }
+    }
+
+    $(".item").click(function () {
+        $(".notice-list").empty()
+        $(this).addClass('active').siblings().removeClass("active");
+        var type = $(this).attr("id");
+        pageNo = 1;
+        totalPage = ''
+        switch (type) {
+            case "notice_product":
+                $(".content-list").hide();
+                $(".product").show();
+                initNotice('PRODUCT');
+                break;
+            case "notice_benefit":
+                $(".content-list").hide();
+                $(".benefit").show();
+                initNotice('PREFER');
+                break;
+            case "notice_service":
+                $(".content-list").hide();
+                $(".service").show();
+                initNotice('SERVICE');
+                break;
+            case "notice_all":
+                $(".content-list").show();
+                initNotice();
+                break;
+            default:
+                break;
+        }
+    })
+
+    initNotice()
+    selectPaginate();
+
+
+    function initNotice(type) {
+        var requestParam = {
+            pageNo: pageNo
+        }
+        type != undefined ? requestParam.type = type : ''
+        types = type
+        var uri = '/data/universal/notices.json'//'/notice/getForPage'
+        requestNotice(uri, requestParam, function (res) {
+            doNoticeRes(res)
+            totalPage = res.data.totalPages
+            doPaginate(totalPage)
+        })
+    }
+
+    function doNoticeRes(res) {
+        if (res.code == 0) {
+            var notelist = res.data.list
+            pageNo = Number(res.data.number) + 1
+            for (var index = 0; index < notelist.length; index++) {
+                notes = '<ul class="content-list ' + notelist[index].typeclass + '">' +
+                    '<li class="content-item ">' +
+                    '<span class="category ">【' + config.transTypeForCN(notelist[index].type
+                    ) + '】</span>' +
+                    '<span class="time">' + notelist[index].time + '</span>' +
+                    '<span class="content">' +
+                    '<a href="detail/noticeDetail.html?id=' + notelist[index].id + '" >' +
+                    notelist[index].title +
+                    '</a>' +
+                    '</span>' +
+                    '</li>' +
+                    '</ul>';
+                $(".notice-list").append(notes);
+            }
+        } else {
+            console.log(res.msg)
+        }
+    }
+
+    function selectPaginate() {
+        $('.pagination').on('click', 'li', function () {
+
+            var page = $(this).attr('data-page')
+
+            if (page == pageNo || $(this).hasClass('disable') || page == undefined || !page) return;
+            var currentPage;
+            //如果是页数
+            if (!isNaN(Number(page))) {
+                currentPage = page
+            } else if (page == 'last') {
+
+                currentPage = totalPage
+
+            } else if (page == 'first') {
+
+                currentPage = 1
+
+            } else if (page == 'leftMore') {
+
+                var nextPage = $(this).next().attr('data-page')
+
+                currentPage = Number(nextPage) - 2
+
+            } else if (page == 'rightMore') {
+                var prevPage = $(this).prev().attr('data-page')
+                currentPage = Number(prevPage) + 2
+            }
+
+            var requestParam = {};
+            requestParam.pageNo = currentPage
+            types != undefined ? requestParam.type = types : ''
+            var uri = '/data/universal/notices.json'//'/notice/getForPage'
+            requestNotice(uri, requestParam, function (res) {
+                //清除原有数据
+                $(".notice-list").empty();
+                doNoticeRes(res)
+            })
+            doPaginate(totalPage, currentPage)
+        })
+    }
+
+    function doPaginate(total, pageNo) {
+        $('.pagination').empty()
+        var currentPage = pageNo == undefined ? 1 : Number(pageNo);
+        var paginate = ''
+        if (total > 6) {
+            if (5 <= currentPage && currentPage <= total - 4) {
+                paginate = paginateItem('first')
+                paginate += paginateItem(1)
+                paginate += paginateItem('leftMore')
+                var start = currentPage - 1, end = currentPage + 2
+                for (var i = start; i < end; i++) {
+                    var active = i == currentPage ? 'active' : ''
+                    paginate += paginateItem(i, active)
+
+                }
+
+                paginate += paginateItem('rightMore')
+
+                paginate += paginateItem(total)
+
+                paginate += paginateItem('last')
+
+
+            } else if (currentPage < 5) {
+                paginate = paginateItem('first', 'disable')
+                for (var i = 1; i <= 5; i++) {
+
+                    var active = i == currentPage ? 'active' : ''
+
+                    paginate += paginateItem(i, active)
+
+                }
+                paginate += paginateItem('rightMore')
+                paginate += paginateItem(total)
+                paginate += paginateItem('last')
+            } else if (currentPage > total - 4) {
+                paginate = paginateItem('first')
+                paginate += paginateItem(1)
+                paginate += paginateItem('leftMore')
+                for (var i = total - 4; i <= total; i++) {
+                    var active = i == currentPage ? 'active' : ''
+                    paginate += paginateItem(i, active)
+                }
+                paginate += paginateItem('last', 'disable')
+            }
+        } else if (total > 1 && total <= 5) {
+            for (var i = 1; i <= total; i++) {
+                var active = i == currentPage ? 'active' : ''
+                paginate += paginateItem(i, active)
+            }
+        }
+        $('.pagination').append(paginate)
+    }
+
+    function paginateItem(index, active) {
+        var indexValue, id = ''
+        var active = active == undefined ? '' : active
+        if (index == 'leftMore' || index == 'rightMore') {
+            indexValue = '..'
+        } else if (index == 'first') {
+            indexValue = '&laquo;'
+            id = 'paginate-' + index
+        } else if (index == 'last') {
+            indexValue = '&raquo;'
+            id = 'paginate-' + index
+        } else {
+            indexValue = index
+
+        }
+        return '<li data-page="' + index + '" id="' + id + '" class="' + active + '"><a href="javascript:;">' + indexValue + '</a></li>'
+    }
+
+    function requestNotice(uri, param, callback) {
+        var url = config.baseUrl + uri
+        Http.get(url, param, function (res) {
+            callback(res)
+        })
+    }
+</script>

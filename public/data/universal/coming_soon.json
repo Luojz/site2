@@ -4,17 +4,17 @@
             "id": "root",
             "type": "Root",
             "data": {
-                "title": "联系我们"
+                "title": "敬请期待"
             },
             "childBlocks": [
                 {
                     "id": "banner",
                     "type": "Banner",
                     "data": {
-                        "title": "联系我们",
-                        "desc": "我们共同进步，期待您的建议和垂询",
-                        "bgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_u.png",
-                        "mbgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_u.png",
+                        "title": "敬请期待",
+                        "desc": "更多精彩内容内侧中…",
+                        "bgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_k.png",
+                        "mbgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_k.png",
                         "btn1Title": "",
                         "btn1Icon": "default",
                         "btn1Link": "",
@@ -31,7 +31,7 @@
                         "mod": "rawHtml",
                         "title": "HTML内容",
                         "content": "<style>\n\t.bg_banner {\n\t\tbackground-image: url(\"//yun.ccb.com/common/images/assist/banner.png\");\n\t\tbackground-repeat: no-repeat;\n\t\tbackgound-position: center;\n\t\tbackground-size:cover;\n\t}</style>\n\n<div class=\"ccb_i_center_a\">\n  <p class=\"ccb_lxwm_pa\">您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p>\n</div>",
-                        "mcontent": "\n<style>\n.contact_us {\n    padding: .56rem .62rem .2rem .62rem;\n    font-family: PingFangSC-Regular;\n    font-size: .32rem;\n    color: #222222;\n    letter-spacing: 0;\n}\n\n.contact_us>div {\n    margin: .8rem auto;\n    width: 4.08rem;\n    height: 4.02rem;\n    background-image: url(https://yun.ccb.com/1106/img/ccb_i_lxwm_bga.jpg);\n    background-size: cover;\n}\n</style>\n\n<div class=\"contact_us\">\n    <p>您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p>\n    <div></div>\n</div>\n                        "
+                        "mcontent": "\n<style>\n.comming_soon {\n    padding: .56rem .62rem .2rem .62rem;\n    font-family: PingFangSC-Regular;\n    font-size: .32rem;\n    color: #222222;\n    letter-spacing: 0;\n}\n\n.comming_soon>div {\n    margin: .44rem auto;\n    width: 3.28rem;\n    height: 3.35rem;\n    background-image: url(https://yun.ccb.com/1106/img/ccb_i_jqqd_bga.jpg);\n    background-size: cover;\n}\n</style>\n\n<div class=\"comming_soon\">\n    <p></p>\n    <div></div>\n</div>\n                        "
                     }
                 }
             ]

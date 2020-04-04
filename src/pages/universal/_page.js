@@ -4,12 +4,12 @@ import Layout from '@/layouts/default';
 import adapter from './adapter';
 
 
-export default ({ location }) => {
+export default ({ location, match }) => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        const api = `${location.pathname}${location.search.includes('?!preview') ? '_preview' : ''}.json`
+        const api = `universal/${location.search.includes('?!preview') ? 'preview!' : ''}${match.params.page}.json`
 
         asyncData(api)
             .then((res) => {
@@ -17,7 +17,13 @@ export default ({ location }) => {
                     window.location.href = res.redirect
                 } else {
                     setLoading(false)
-                    setData(adapter(res.block.root.childBlocks))
+                    switch (match.params.page) {
+                        case 'notice':
+                            setData(adapter(res.block.root.childBlocks.filter(item => item.type !== 'RawHtml').concat({ id: 'notice', type: 'Notice' })))
+                            break
+                        default:
+                            setData(adapter(res.block.root.childBlocks))
+                    }
                 }
             })
             .catch((err) => { 

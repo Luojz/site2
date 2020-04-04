@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.less';
-import './contact_us.less'
-import './coming_soon.less'
+
 
 interface IProps {
     data:{
