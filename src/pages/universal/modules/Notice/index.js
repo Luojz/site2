@@ -49,8 +49,13 @@ export default () => {
             }
         },
         handleInputChange(e) {
-            // 
-            console.log(e)
+            const inputNum = Number(e.target.value)
+            
+            if (inputNum === inputNum && inputNum <= computed.pageNums && inputNum > 0) {
+                setCurr(inputNum)
+            } else {
+                alert(inputNum)
+            }
         }
     }
 
@@ -81,7 +86,7 @@ export default () => {
             <div className="pagination">
                 <span className="prev" onClick={methods.prev}>ᐸ</span>
                 <span className="pageNums">
-                    <input type="text" onInput={methods.handleInputChange} value={curr} />
+                    <input type="text" onChange={methods.handleInputChange} value={curr} />
                     <span className="slug">/</span>
                     <span>{computed.pageNums}</span>
                 </span>
