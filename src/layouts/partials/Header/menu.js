@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './index.less'
-const topMenuData = require('./topNavData_web.json');
+const topMenuData = require('./topNavData.json');
 const $ = require('jquery');
 
 class Menu extends Component {
