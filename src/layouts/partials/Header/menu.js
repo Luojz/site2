@@ -17,6 +17,9 @@ class Menu extends Component {
     showSeconedMenu=(e)=>{
 
         console.log(e.target);
+        $(e.target).parent().parent().siblings().find(".J-qcMenuList").hide();
+        $(e.target).parent().parent().siblings().find(".J-qcMenuTitle").addClass("r-arrow-down");
+        $(e.target).parent().parent().siblings().find(".J-qcMenuTitle").addClass("r-arrow-up");
         $(e.target).parent().next().toggle();
 
         if($(e.target).parent().next().css("display") === "block"){
