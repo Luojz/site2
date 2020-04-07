@@ -1,0 +1,37 @@
+{
+    "block":{
+        "root":{
+            "id":"root",
+            "type":"Root",
+            "data":{"title":"联系我们"},
+            "childBlocks":[
+                {
+                    "id":"banner",
+                    "type":"Banner",
+                    "data":{
+                        "title":"联系我们",
+                        "desc":"我们共同进步，期待您的建议和垂询",
+                        "bgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_u.png",
+                        "mbgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_u.png",
+                        "btn1Title":"",
+                        "btn1Icon":"default",
+                        "btn1Link":"",
+                        "btn2Title":"",
+                        "btn2Icon":"",
+                        "btn2Link":""
+                    },
+                    "childBlocks":[]
+                },{
+                    "id":"zbyquoiwv5",
+                    "type":"RawHtml",
+                    "data":{
+                        "mod":"rawHtml",
+                        "title":"HTML内容",
+                        "content":"<div>11</div>",
+                        "mcontent":"<script src=\"https://yun.ccb.com/common/js/jquery-3.3.1.min.js\"></script><script>const certification = [{\"name\":\"苏凡\",\"identifier\":\"CCBCLOUD201901005\",\"url\":\"//imagecachexxfb.yun.ccb.com/static/thome/certification/img/CCBCLOUD201901005.png\"}] function searchCertification(){let name = $.trim($('#identifier').val());let identifier = $.trim($(\"#identifier\").val().toUpperCase());if(name == \"\" || identifier == \"\"){alert(\"请填写姓名和编号\");return}certification.array.forEach(item =>{if(item.name === name && item.identifier === identifier){$('#resultArea').hide();$('#ccbMask').show();$('#zsImg').attr('src',item.url)}else{$('#resultArea').show()}})}function closeMask(){$('#ccbMask').hide()}</script><style>.ccb_i_center_a{margin:.5rem auto;height:6.7rem}.ccb_i_center_search{margin:.90rem auto;width:100%}.ccb_i_center_search h2{font-family:PingFangSC-Medium;font-size:.4rem;color:#333;letter-spacing:0;text-align:center;font-weight:normal}.ccb_i_center_form{margin-top:.48rem}.ccb_i_center_form .ccb_i_center_title{text-align:center;width:6.06rem;margin:0 auto;font-family:PingFangSC-Regular;font-size:.28rem;color:#333;letter-spacing:0;text-align:justify;line-height:.44rem}.ccb_i_center_input{width:6.06rem;margin:.48rem auto 0}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dl{overflow:hidden}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dl:nth-child(2){clear:both;margin-top:.4rem}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dt{float:left;text-align:right;font-family:PingFangSC-Regular;font-size:.28rem;color:#333;letter-spacing:0;text-align:justify;line-height:.58rem}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dl:nth-child(1) dt{padding-left:.55rem}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dd{width:4.47rem;float:right}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dt span{color:#f00}.ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input .input_txt{height:.6rem;line-height:.6rem;padding-left:.03rem;width:4.47rem;border:1px solid #2f88ff;font-size:.28rem}.ccb_i_center_submit{text-align:center;width:100%;margin-top:.8rem}.search_btn{width:2rem;text-align:center;display:inline-block;height:.64rem;font-size:.28rem;line-height:.3rem;background-color:#2f88ff;color:#fff;border:0;cursor:pointer}.ccb_i_close{width:.32rem;height:auto;outline:0;border:0}</style><div class=\"ccb_i_center_a\"><div class=\"ccb_i_center_search\"><h2>证书查询</h2><div class=\"ccb_i_center_form\"><div class=\"ccb_i_center_title\">在下方输入姓名或者证书编号，可以查询对应认证证书信息</div><div class=\"ccb_i_center_input\"><dl><dt><span>*</span>姓名</dt><dd><input class=\"input_txt\" type=\"text\" id=\"name\"></dd></dl><dl><dt><span>*</span>证书编号</dt><dd><input class=\"input_txt\" type=\"text\" id=\"identifier\"></dd></dl><div class=\"ccb_i_center_submit\"><input type=\"button\" class=\"search_btn\" value=\"查询\" onclick=\"searchCertification()\"></div></div></div></div><div class=\"ccb_result_area\" id=\"resultArea\">当前未查询到相关的有效证书 </div></div><div class=\"ccb_i_mask\" id=\"ccbMask\"><img id=\"zsImg\"><input type=\"image\" id=\"closeImg\" class=\"ccb_i_close\" onclick=\"closeMask()\"></div></div>"
+                    }
+                }
+            ]
+        }
+    }
+}

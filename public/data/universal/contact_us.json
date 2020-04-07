@@ -1,37 +1,34 @@
 {
-    "block": {
-        "root": {
-            "id": "root",
-            "type": "Root",
-            "data": {
-                "title": "联系我们"
-            },
-            "childBlocks": [
+    "block":{
+        "root":{
+            "id":"root",
+            "type":"Root",
+            "data":{"title":"联系我们"},
+            "childBlocks":[
                 {
-                    "id": "banner",
-                    "type": "Banner",
-                    "data": {
-                        "title": "联系我们",
-                        "desc": "我们共同进步，期待您的建议和垂询",
-                        "bgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_u.png",
-                        "mbgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_u.png",
-                        "btn1Title": "",
-                        "btn1Icon": "default",
-                        "btn1Link": "",
-                        "btn2Title": "",
-                        "btn2Icon": "",
-                        "btn2Link": ""
+                    "id":"banner",
+                    "type":"Banner",
+                    "data":{
+                        "title":"联系我们",
+                        "desc":"我们共同进步，期待您的建议和垂询",
+                        "bgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_u.png",
+                        "mbgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_u.png",
+                        "btn1Title":"",
+                        "btn1Icon":"default",
+                        "btn1Link":"",
+                        "btn2Title":"",
+                        "btn2Icon":"",
+                        "btn2Link":""
                     },
-                    "childBlocks": []
-                },
-                {
-                    "id": "zbyquoiwv5",
-                    "type": "RawHtml",
-                    "data": {
-                        "mod": "rawHtml",
-                        "title": "HTML内容",
-                        "content": "<style>\n\t.bg_banner {\n\t\tbackground-image: url(\"//yun.ccb.com/common/images/assist/banner.png\");\n\t\tbackground-repeat: no-repeat;\n\t\tbackgound-position: center;\n\t\tbackground-size:cover;\n\t}</style>\n\n<div class=\"ccb_i_center_a\">\n  <p class=\"ccb_lxwm_pa\">您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p>\n</div>",
-                        "mcontent": "\n<style>\n.contact_us {\n    padding: .56rem .62rem .2rem .62rem;\n    font-family: PingFangSC-Regular;\n    font-size: .32rem;\n    color: #222222;\n    letter-spacing: 0;\n}\n\n.contact_us>div {\n    margin: .8rem auto;\n    width: 4.08rem;\n    height: 4.02rem;\n    background-image: url(https://yun.ccb.com/1106/img/ccb_i_lxwm_bga.jpg);\n    background-size: cover;\n}\n</style>\n\n<div class=\"contact_us\">\n    <p>您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p>\n    <div></div>\n</div>\n                        "
+                    "childBlocks":[]
+                },{
+                    "id":"zbyquoiwv5",
+                    "type":"RawHtml",
+                    "data":{
+                        "mod":"rawHtml",
+                        "title":"HTML内容",
+                        "content":"<style>.ccb_i_center_a{margin:.5rem auto;width:100%;height:6.78rem}.ccb_i_center_a .ccb_lxwm_pa{font-family:PingFangSC-Regular;font-size:.32rem;color:#222;letter-spacing:0;background: #fff;word-wrap: break-word;word-break: normal;}.ccb_lxwm_img{width:4.08rem;height:4.02rem;margin:0 auto;background:url(https://yun.ccb.com/1106/img/ccb_i_lxwm_bga.jpg) no-repeat center center;background-size:cover;margin-top: 0.8rem;}</style><div class=\"ccb_i_center_a\"><p class=\"ccb_lxwm_pa\">您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p><p class=\"ccb_lxwm_img\"></p></div>",
+                        "mcontent":"<style>.ccb_i_center_a{margin:.5rem auto;width:100%;height:6.78rem}.ccb_i_center_a .ccb_lxwm_pa{font-family:PingFangSC-Regular;font-size:.32rem;color:#222;letter-spacing:0;background: #fff;word-wrap: break-word;word-break: normal;}.ccb_lxwm_img{width:4.08rem;height:4.02rem;margin:0 auto;background:url(https://yun.ccb.com/1106/img/ccb_i_lxwm_bga.jpg) no-repeat center center;background-size:cover;margin-top: 0.8rem;}</style><div class=\"ccb_i_center_a\"><p class=\"ccb_lxwm_pa\">您可以发送邮件至ccbcloud_support.zh@ccb.com寻求帮助，我们专业的工程师团队将为您提供优质的技术服务。</p><p class=\"ccb_lxwm_img\"></p></div>"
                     }
                 }
             ]
