@@ -36,9 +36,15 @@ export default (props:IProps) => {
                     $('#ccbMask').show();
                     $("#zsImg").attr("src",item.url);
                 }else {
-                    $('#resultArea').show();
+                    console.log($('#ccbMask').css('display')==='block')
+                    if($('#ccbMask').css('display')==='block'){
+                        $('#resultArea').hide();
+                    }else {
+                        $('#resultArea').show();
+                    } 
                 }
             });
+            
         })
         $('#closeImg').click(function(){
             $('#ccbMask').hide();
