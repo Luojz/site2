@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
 import './index.less';
+import certification_person from './certification_person.json'
 
 
 interface IProps {
@@ -22,14 +23,6 @@ export default (props:IProps) => {
     
         });
         // 认证查询相关逻辑代码
-        const certification = [
-            {
-                "name":"苏凡",  
-                "identifier":"CCBCLOUD201901005",  
-                "url":"https://imagecachexxfb.yun.ccb.com/static/thome/certification/img/CCBCLOUD201901005.png" 
-            }
-        ]
-        
         $('.search_btn').click(function(){
             let name = $('#name').val();
             let identifier = $("#identifier").val();
@@ -37,8 +30,7 @@ export default (props:IProps) => {
                 alert("请填写姓名和编号");
                 return;
             }
-            certification.forEach(item => {
-                console.log(name,item.name,identifier)
+            certification_person.forEach((item) => {
                 if(item.name === name && item.identifier === identifier){
                     $('#resultArea').hide();
                     $('#ccbMask').show();
