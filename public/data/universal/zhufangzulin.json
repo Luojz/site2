@@ -12,7 +12,6 @@
                         "title":"住房租赁服务平台",
                         "desc":"要租房，到建行。提供全场景住房租赁综合服务平台",
                         "bgUrl":"//yun.ccb.com/common/images/assist/banner4-new.jpg",
-                        //"mbgUrl":"//yun.ccb.com/common/images/assist/m-banner4-new.png",
                         "mbgUrl":"//localhost:3000/data/universal/m-banner4-new.png",
                         "btn1Title":"服务咨询",
                         "btn1Icon":"default",
