@@ -31,86 +31,72 @@
         *{margin: 0;padding: 0;}
         ul{list-style-type: none;}
 
-        /*-----------------------------------*/
-        .typePage {
-            margin: 0.8rem auto 0;
-        }
-        .con_title {
-            text-align: center;
-            font-size: 0.4rem;
-            color: #333;
-            line-height: 0.56rem;
-            font-family: 'PingFangSC-Regular';
-        }
+        /*平台简介*/
+
         .textP p {
             font-size: 0.28rem;
             color: #333;
             line-height: 1.6;
-            padding-top: 0.48rem;
             word-wrap: break-word;
             word-break: normal;
             text-align: justify;
             width: 6.06rem;
             margin: 0 auto;
         }
-        /*.tabs_js {*/
-            /*border-bottom: 1px solid #E6E7EC;*/
-            /*margin: 0.4rem -0.32rem 0;*/
-            /*text-align: center;*/
-        /*}*/
         .hide {
             display: none;
         }
-        .mb_50 .typePage{
-            margin-top: .2rem !important;
-        }
+        /* 平台架构样式*/
         .tabs_box {
             overflow: hidden;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #E6E7EC;
+        }
+        .tabs_box .tabs_js {
+            text-align: center;
+            margin-top: -0.05rem;
+        }
+
+        .tabs_box ul li.cur {
+            color: #2F88FF;
         }
         .tabs_box ul li.cur {
-            color: #0066b3;
-        }
-        .tabs_box ul li.cur {
-            border-bottom: 2px solid #0066b3;
+            border-bottom: 2px solid #2F88FF;
         }
         .tabs_box ul li {
-            float: left;
-            font-size: .2rem;
-            padding: .1rem .5rem;
+            display: inline-block;
+            font-size: .32rem;
+            padding: 0 0 .15rem;
+            margin: 0 .5rem;
             cursor: pointer;
         }
         .clear {
             display: block;
             clear: both;
-            height: 0px;
-            font-size: 0px;
-            line-height: 0px;
-            margin: 0px;
-            padding: 0px;
-            border-width: 0px;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            margin: 0;
+            padding: 0;
+            border-width: 0;
             border-style: none;
             float: none;
             overflow: hidden;
             zoom: 1;
         }
-        .imgTxtBox {
-            width: calc(100% - 20px);
-            background-size: auto 100% !important;
-        }
         .jg1 {
-            height: 5rem;
+            height: 3.63rem;
             background: url(https://yun.ccb.com/industryPlatform/images/zhufang-jg-1.png) center no-repeat;
         }
         .imgTxtBox {
-            width: 7.19rem;
-            background-size: 6.93rem auto !important;
-            border: .1rem solid #fafafa;
+            background-size: 6.86rem auto !important;
             background-color: #fff;
             cursor: pointer;
+            border: 0 !important;
+            width: auto !important;
+            padding-top: .16rem;
         }
         .jsjg {
-            height: 5rem;
+            height: 3.63rem;
             background: url(https://yun.ccb.com/industryPlatform/images/zhufang-jsjg-new.png) center no-repeat;
         }
         .icon_bg {
@@ -126,25 +112,31 @@
         .xqsj {
             background: url(https://yun.ccb.com/industryPlatform/images/ywtz-xqsj.png) no-repeat center;
         }
-        .cloud_list h4 {
-            font-size: 16px;
-            /* font-weight: normal; */
+        /*业务挑战样式*/
+        #top h4 {
+            font-size: .32rem;
+            line-height: .32rem;
+            font-weight: normal;
             text-align: center;
-            padding-top: 18px;
-            padding-bottom: 10px;
+            padding-top: .2rem;
+            padding-bottom: .16rem;
         }
-        #top ul li p {
-            padding: 0 35px;
-            line-height: 1.3;
+        .cloud_list ul li {
+            padding-top: .48rem;
         }
+        .cloud_list ul li:first-child {
+            padding-top: 0;
+        }
+
         #top p {
-            font-size: 18px;
-            color: #999;
+            font-size: .28rem;
+            color: #9094A5;
+            text-align: justify;
         }
         /* 公共标题样式*/
         .con_title{
             font-size: 0.4rem;
-            line-height: 0.56rem;
+            line-height: 0.4rem;
             color: #222;
             letter-spacing: 0;
             text-align: center;
