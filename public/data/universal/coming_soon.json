@@ -14,7 +14,7 @@
                         "title": "敬请期待",
                         "desc": "更多精彩内容内侧中…",
                         "bgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_k.png",
-                        "mbgUrl": "//yun.ccb.com/1106/img/ccb_i_banner_k.png",
+                        "mbgUrl":"//localhost:3000/data/universal/m_community_banner_background.png",
                         "btn1Title": "",
                         "btn1Icon": "default",
                         "btn1Link": "",
