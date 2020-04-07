@@ -17,7 +17,6 @@ interface IProps {
 }
 
 export default (props:IProps) => {
-    console.log(props.data);
     const data = props.data;
     return (
         <div className="c-hero-section J-pdBanner">
