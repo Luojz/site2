@@ -49,8 +49,7 @@ export default (props:IProps) => {
             </div>
 
             <div className="c-hero-icon-mod">
-                {/*<img src={data.mbgUrl} width="100%" height="100%"/>*/}
-                <img src={require('./m-banner4-new.png')} width="100%" height="100%"/>
+                <img src={data.mbgUrl} width="100%" height="100%"/>
             </div>
 
         </div>
