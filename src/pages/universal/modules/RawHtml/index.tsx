@@ -21,6 +21,36 @@ export default (props:IProps) => {
             $(".tabs_li").eq($(this).index()).removeClass("hide").siblings(".tabs_li").addClass("hide");
     
         });
+        // 认证查询相关逻辑代码
+        const certification = [
+            {
+                "name":"苏凡",  
+                "identifier":"CCBCLOUD201901005",  
+                "url":"https://imagecachexxfb.yun.ccb.com/static/thome/certification/img/CCBCLOUD201901005.png" 
+            }
+        ]
+        
+        $('.search_btn').click(function(){
+            let name = $('#name').val();
+            let identifier = $("#identifier").val();
+            if(name == "" || identifier == ""){
+                alert("请填写姓名和编号");
+                return;
+            }
+            certification.forEach(item => {
+                console.log(name,item.name,identifier)
+                if(item.name === name && item.identifier === identifier){
+                    $('#resultArea').hide();
+                    $('#ccbMask').show();
+                    $("#zsImg").attr("src",item.url);
+                }else {
+                    $('#resultArea').show();
+                }
+            });
+        })
+        $('#closeImg').click(function(){
+            $('#ccbMask').hide();
+        })
     })
 
     return (
