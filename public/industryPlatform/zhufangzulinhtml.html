@@ -9,14 +9,6 @@
         html{font-size: 100px;font-family: 'PingFangSC-Regular';}
         *{margin: 0;padding: 0;}
         ul{list-style-type: none;}
-    </style>
-    <script src="https://yun.ccb.com/common/js/jquery-3.3.1.min.js"></script>
-
-</head>
-<body>
-<div style="width: 6.86rem;margin: 0 auto;font-size: .16rem;">
-    <style>
-
         body{
             font-family: "-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFangSC-Regular,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif";
             -webkit-font-smoothing: antialiased;
@@ -30,7 +22,13 @@
 
         *{margin: 0;padding: 0;}
         ul{list-style-type: none;}
+    </style>
+    <script src="https://yun.ccb.com/common/js/jquery-3.3.1.min.js"></script>
 
+</head>
+<body>
+<div style="width: 6.86rem;margin: 0 auto;font-size: .16rem;">
+    <style>
         /*平台简介*/
 
         .textP p {
@@ -403,14 +401,14 @@
             <div class="clear"></div>
         </div>
     </div>
+    <script>
+        $(".tabs_js li").click(function(){
+            console.log(8);
+            $(this).addClass("cur").siblings().removeClass("cur");
+            $(".tabs_li").eq($(this).index()).removeClass("hide").siblings(".tabs_li").addClass("hide");
+    
+        });
+    </script>
 </div>
-<script>
-    $(".tabs_js li").click(function(){
-        console.log(8);
-        $(this).addClass("cur").siblings().removeClass("cur");
-        $(".tabs_li").eq($(this).index()).removeClass("hide").siblings(".tabs_li").addClass("hide");
-
-    });
-</script>
 </body>
 </html>
