@@ -26,6 +26,7 @@ export default (props:IProps) => {
         });
         // 认证查询相关逻辑代码
         $('.search_btn').click(function(){
+            $('html,body').animate({scrollTop:0},0)
             let name = $('#name').val();
             let identifier = $("#identifier").val();
             if(name == "" || identifier == ""){
