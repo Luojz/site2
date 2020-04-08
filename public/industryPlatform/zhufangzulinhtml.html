@@ -87,7 +87,7 @@
             background: url(https://yun.ccb.com/industryPlatform/images/zhufang-jg-1.png) center no-repeat;
         }
         .imgTxtBox {
-            background-size: 6.86rem auto !important;
+            background-size: 6.06rem auto !important;
             background-color: #fff;
             cursor: pointer;
             border: 0 !important;
@@ -125,7 +125,7 @@
             padding-bottom: .16rem;
         }
         .cloud_list ul li {
-            padding-top: .48rem;
+            padding: .48rem .40rem 0;
         }
         .cloud_list ul li:first-child {
             padding-top: 0;
@@ -138,6 +138,7 @@
         }
         /* 公共标题样式*/
         .con_title{
+            font-weight: bold;
             font-size: 0.4rem;
             line-height: 0.4rem;
             color: #222;
@@ -155,12 +156,6 @@
             text-align: center;
             line-height: .44rem;
             margin: .2rem auto .16rem
-        }
-        .ptys ul li{
-            margin-bottom: .48rem;
-        }
-        .ptys ul li:last-child{
-            margin-bottom: .48rem;
         }
         .ptys ul li .cont_p3{
             width: 1.18rem;
@@ -187,8 +182,8 @@
             width: .88rem;
             height: .88rem;
             margin-right: .28rem;
-            margin-top: .08rem;
-            background-size: .88rem .88rem;
+            margin-top: .04rem;
+            background-size: .78rem .78rem;
         }
         .service_list ul li div:nth-child(2){
             flex: 1;
@@ -211,15 +206,17 @@
         }
 
         /* 客户案例 */
+        .cst_case .bg-fa{background: #FFFFFF;border: .01rem solid #DFE1E5;}
         .cst_case .case_img{
             text-align: center;
+            margin-top: .24rem;
         }
         .cst_case .case_img img{
             width: 1.42rem;
             height: 1.42rem;
         }
         .cst_case .case_content{
-            margin-top: .14rem;
+            margin: .14rem .32rem .32rem;
         }
         .cst_case .case_content p{
             font-size: .24rem;
@@ -237,17 +234,24 @@
         .case_list ul{
             display: flex;
             display: -webkit-flex;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
         .case_list ul li{
-            flex: 1;
+            width: 3.33rem;
+            height: 2rem;
+            margin-bottom: .2rem;
+            box-shadow: 0 .01rem .15rem 0 rgba(0,82,217,0.20);
         }
         .case_list ul li .imgbox{
             text-align: center;
+            height: 100%;
+            background: #fff;
         }
         .case_list ul li .imgbox img{
             width: 2.49rem;
             height:  1.01rem;
+            margin-top: .5rem;
         }
 
     </style>
