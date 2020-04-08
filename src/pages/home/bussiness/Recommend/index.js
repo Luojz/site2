@@ -4,12 +4,13 @@ import Squares from '@/components/Squares'
 import './index.less'
 import mock from './mock.js'
 import { protocol } from '@/config/apis'
+import {replace} from '@/utils/URL'
 
 
 function Slot({ data }) {
     return (
         <a className="item"
-            href={`${protocol}${data.link}`}
+            href={replace(`${protocol}${data.link}`)}
             style={{ backgroundImage: `url(${protocol}${data.imgUrl})` }}
         >
             {data.title}
