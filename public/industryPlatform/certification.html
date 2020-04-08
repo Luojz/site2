@@ -119,6 +119,7 @@
                 border-radius: 0 !important;
                 caret-color:#2F88FF;
                 outline:none;
+                -webkit-appearance: none;
             }
             .ccb_i_center_submit {
                 text-align: center;
@@ -174,6 +175,16 @@
                 font-size: 0.24rem;
 
             }
+            .ccb_i_mask span {
+                outline: 0;
+                border: 0;
+                position: absolute;
+                right: 1.21rem;
+                top: -0.44rem;
+                font-family: PingFangSC-Regular;
+                font-size: 0.26rem;
+                color: #2F88FF;
+            }
             .ccb_i_mask img {
                 width: 6.22rem;
             }
@@ -204,6 +215,7 @@
         </div>
         <div class="ccb_i_mask" id="ccbMask">
             <img src="" alt="" id="zsImg">
+            <span id="closeWord">关闭</span>
             <input type="image" src="/images/universal/close.png" id="closeImg" class="ccb_i_close">
         </div>
     </div>
