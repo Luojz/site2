@@ -5,6 +5,7 @@ import './index.less'
 import mock from './mock.js'
 import purchase from './purchase'
 import { protocol } from '@/config/apis'
+import {replace} from '@/utils/URL'
 
 
 function Parent({ iconUrl, title }) {
@@ -28,9 +29,9 @@ function Children({ children }) {
                     <h3>{title}</h3>
                     <p>
                         <span>{cutStr(desc, 24, '...')}</span>
-                        <a href={`${protocol}${link}`}>详情</a>
+                        <a href={replace(`${protocol}${link}`)}>详情</a>
                     </p>
-                    <a href={`${protocol}${goLink || purchase[link]}`}>{goTitle || '立即申请'}</a>
+                    <a href={replace(`${protocol}${goLink || purchase[link]}`)}>{goTitle || '立即申请'}</a>
                 </li>
             ))}
             <span onClick={() => setFold(true)} style={{ display: children.length > 3 && !fold ? '' : 'none' }}>更多产品</span>

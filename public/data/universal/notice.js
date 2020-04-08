@@ -11,16 +11,16 @@ const data = {
         "root":{
             "id":"root",
             "type":"Root",
-            "data":{"title":"敬请期待"},
+            "data":{"title":"服务公告"},
             "childBlocks":[
                 {
                     "id":"banner",
                     "type":"Banner",
                     "data":{
-                        "title":"敬请期待",
-                        "desc":"更多精彩内容内侧中…",
-                        "bgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_k.png",
-                        "mbgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_k.png",
+                        "title":"服务公告",
+                        "desc":"为您发布最新的服务动态",
+                        "bgUrl":"//yun.ccb.com/common/images/assist/banner3-n.png",
+                        "mbgUrl":"//yun.ccb.com/common/images/assist/banner3-n.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",

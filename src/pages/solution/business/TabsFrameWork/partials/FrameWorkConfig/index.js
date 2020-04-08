@@ -3,7 +3,7 @@ import "./index.less";
 
 
 export default ({ data }) => (
-  <div className="solution-tabsIndustry-frameWorkConfig">
+  <div className="solution-tabsFramework-frameWorkConfig">
     <h3>{data.title}</h3>
     <ul>
       {data.list.map(({title, desc}) => (

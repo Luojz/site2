@@ -7,13 +7,13 @@ import Icon from '@/components/Icon'
 export default ({ data }) => {
   const [current, setCurrent] = useState(0);
   return (
-    <section id="solution-tabsIndustry">
-      <h3 className="solution-tabsIndustry-title">{data.title}</h3>
-      <ul className="solution-tabsIndustry-container">
+    <section id="solution-tabsFramework">
+      <h3 className="solution-tabsFramework-title">{data.title}</h3>
+      <ul className="solution-tabsFramework-container">
         {data.tabs.map(({ title, iconUrl }, idx) => (
           <li key={title}>
             <h4
-              className="solution-tabsIndustry-container-summary"
+              className="solution-tabsFramework-container-summary"
               onClick={() => setCurrent(current === idx ? -1 : idx)}
               style={{color: current === idx ? '#2F88FF' : '#333'}}
             >
@@ -21,11 +21,11 @@ export default ({ data }) => {
               <Icon src={current === idx ? '/icons/arrow-up.png' : '/icons/arrow-down.png'} />
             </h4>
             <div
-              className="solution-tabsIndustry-container-content"
+              className="solution-tabsFramework-container-content"
               style={{ display: current === idx ? "block" : "none" }}
             >
               <img
-                className="solution-tabsIndustry-container-content-image"
+                className="solution-tabsFramework-container-content-image"
                 src={`${protocol}${iconUrl}`}
               />
               {adapter(data.children[idx]).map(
