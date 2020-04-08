@@ -52,6 +52,9 @@ export default (props:IProps) => {
         $('#closeImg').click(function(){
             $('#ccbMask').hide();
         })
+        $('#closeWord').click(function(){
+            $('#ccbMask').hide();
+        })
     })
 
     return (
