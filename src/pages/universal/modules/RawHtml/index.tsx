@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
 import './index.less';
+import './style/community.less';
+import './style/partner.less';
 import certification_person from './certification_person.json'
 
 
