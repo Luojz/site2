@@ -44,9 +44,12 @@
 <body>
     <div style="width: 6.86rem;margin: 0 auto;font-size: .16rem;">
         <style>
+            .J-pdBanner{
+                display:none
+            }
             .ccb_i_center_a {
                 margin: 0.5rem auto;
-                height: 6.7rem;
+                height: 9rem;
             }
             .ccb_i_center_search {
                 margin: 0.90rem auto;
@@ -99,8 +102,9 @@
                 padding-left: 0.55rem;
             }
             .ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dd {
-                width: 4.47rem;
-                float: right;
+                width: 3.4rem;
+                float: left;
+                margin-left:0.24rem;
             }
             .ccb_i_center_a .ccb_i_center_search .ccb_i_center_form .ccb_i_center_input dt span {
                 color: #ff0000;
@@ -109,9 +113,12 @@
                 height: 0.6rem;
                 line-height: 0.6rem;
                 padding-left: 0.03rem;
-                width: 4.47rem;
+                width: 3.8rem;
                 border: 1px solid #2F88FF;
                 font-size: .28rem;
+                border-radius: 0 !important;
+                caret-color:#2F88FF;
+                outline:none;
             }
             .ccb_i_center_submit {
                 text-align: center;
@@ -126,15 +133,49 @@
                 font-size: 0.28rem;
                 line-height: 0.3rem;
                 background-color: #2F88FF;
+                border-radius: 0 !important;
                 color: #fff;
                 border: 0;
                 cursor: pointer;
             }
             .ccb_i_close {
-                width: 0.32rem;
-                height: auto;
-                outline: none;
+                width: .48rem;
+                height: 0.48rem;
+                outline: 0;
                 border: 0;
+                position: absolute;
+                right: .65rem;
+                top: -0.5rem;
+
+            }
+            .ccb_i_mask {
+                position: absolute;
+                z-index: 1000;
+                top: 1rem;
+                margin: 0.8rem auto 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                background-color: rgba(0, 0, 0, 0);
+                text-align: center;
+                display: none;
+            }
+            .ccb_result_area{
+                width: 110%;
+                margin-left: -0.32rem;
+                background-color: #F6F7FB;
+                text-align: center;
+                padding-top: 0.19rem;
+                padding-bottom: 0.17rem;
+                line-height: 0.44rem;
+                letter-spacing: 0.02rem;
+                display: none;
+                color: #F73838;
+                font-size: 0.24rem;
+
+            }
+            .ccb_i_mask img {
+                width: 6.22rem;
             }
         </style>
         <div class="ccb_i_center_a">
@@ -152,7 +193,7 @@
                             <dd><input class="input_txt" type="text" id="identifier"></dd>
                         </dl>
                         <div class="ccb_i_center_submit">
-                            <input type="button" class="search_btn" value="查询" onclick="searchCertification()">
+                            <input type="button" class="search_btn" value="查询">
                         </div>
                     </div>
                 </div>
@@ -163,7 +204,7 @@
         </div>
         <div class="ccb_i_mask" id="ccbMask">
             <img src="" alt="" id="zsImg">
-            <input type="image" src="" id="closeImg" class="ccb_i_close" onclick="closeMask()">
+            <input type="image" src="/images/universal/close.png" id="closeImg" class="ccb_i_close">
         </div>
     </div>
 </body>

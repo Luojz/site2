@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
 import './index.less';
+import certification_person from './certification_person.json'
 
 
 interface IProps {
@@ -21,6 +22,33 @@ export default (props:IProps) => {
             $(".tabs_li").eq($(this).index()).removeClass("hide").siblings(".tabs_li").addClass("hide");
     
         });
+        // 认证查询相关逻辑代码
+        $('.search_btn').click(function(){
+            let name = $('#name').val();
+            let identifier = $("#identifier").val();
+            if(name == "" || identifier == ""){
+                alert("请填写姓名和编号");
+                return;
+            }
+            certification_person.forEach((item) => {
+                if(item.name === name && item.identifier === identifier){
+                    $('#resultArea').hide();
+                    $('#ccbMask').show();
+                    $("#zsImg").attr("src",item.url);
+                }else {
+                    console.log($('#ccbMask').css('display')==='block')
+                    if($('#ccbMask').css('display')==='block'){
+                        $('#resultArea').hide();
+                    }else {
+                        $('#resultArea').show();
+                    } 
+                }
+            });
+            
+        })
+        $('#closeImg').click(function(){
+            $('#ccbMask').hide();
+        })
     })
 
     return (
