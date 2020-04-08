@@ -37,12 +37,14 @@ export default (props:IProps) => {
                 if(item.name === name && item.identifier === identifier){
                     $('#resultArea').hide();
                     $('#ccbMask').show();
+                    $(".ccb_i_center_a").css("height",'9rem');
                     $("#zsImg").attr("src",item.url);
                 }else {
                     console.log($('#ccbMask').css('display')==='block')
                     if($('#ccbMask').css('display')==='block'){
                         $('#resultArea').hide();
                     }else {
+                        $(".ccb_i_center_a").css("height",'auto');
                         $('#resultArea').show();
                     } 
                 }
@@ -50,9 +52,11 @@ export default (props:IProps) => {
             
         })
         $('#closeImg').click(function(){
+            $(".ccb_i_center_a").css("height",'auto');
             $('#ccbMask').hide();
         })
         $('#closeWord').click(function(){
+            $(".ccb_i_center_a").css("height",'auto');
             $('#ccbMask').hide();
         })
     })
