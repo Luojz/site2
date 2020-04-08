@@ -20,7 +20,7 @@ const data = {
                         "title":"联系我们",
                         "desc":"我们共同进步，期待您的建议和垂询",
                         "bgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_u.png",
-                        "mbgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_u.png",
+                        "mbgUrl":"/images/banner/contact_us.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",
