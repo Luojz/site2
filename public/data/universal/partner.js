@@ -20,7 +20,7 @@ const data = {
                         "title":"合作伙伴招募计划",
                         "desc":"成为建行云合作伙伴，共同成长。",
                         "bgUrl":"/images/universal/community.png",
-                        "mbgUrl":"/images/universal/community.png",
+                        "mbgUrl":"../images/universal/community.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",
