@@ -84,13 +84,13 @@ export default () => {
                     ))}
             </ul>
             <div className="pagination">
-                <span className="prev" onClick={methods.prev}>ᐸ</span>
+                <span className="prev" onClick={methods.prev}><Icon src="/icons/arrow-left.png" width=".24rem" height=".24rem" /></span>
                 <span className="pageNums">
                     <input type="text" onChange={methods.handleInputChange} value={curr} />
                     <span className="slug">/</span>
                     <span>{computed.pageNums}</span>
                 </span>
-                <span className="next" onClick={methods.next}>ᐳ</span>
+                <span className="next" onClick={methods.next}><Icon src="/icons/arrow-right.png" width=".24rem" height=".24rem" /></span>
             </div>
         </section>
     )

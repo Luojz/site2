@@ -1,20 +1,20 @@
 #notice {
     >.notice-title {
-        margin-top: .8rem;
-        display: flex;
+        margin-top     : .8rem;
+        display        : flex;
         justify-content: space-around;
-        font-family: PingFangSC-Regular;
-        font-size: .32rem;
-        color: #222222;
-        letter-spacing: 0;
+        font-family    : PingFangSC-Regular;
+        font-size      : .32rem;
+        color          : #222222;
+        letter-spacing : 0;
 
         >li {
             padding-bottom: .28rem;
         }
 
         >li.active {
-            color: #2F88FF;
-            border-bottom: 2px solid;
+            color        : #2F88FF;
+            border-bottom: .02rem solid;
         }
     }
 
@@ -25,50 +25,47 @@
             font-size     : .32rem;
             color         : #222222;
             letter-spacing: 0;
-            border-bottom : 2px solid #E6E7EC;
+            border-bottom : .02rem solid #E6E7EC;
         }
 
         >li:first-of-type {
-            border-top : 2px solid #E6E7EC;
+            border-top: .02rem solid #E6E7EC;
         }
 
         >li:hover {
-            color: #0066b3;
-            background: #fff;
-            box-shadow: 0 .1rem .40rem 0 rgba(0, 0, 0, 0.1);
-            border-radius: 2px;
+            color        : #0066b3;
+            background   : #fff;
+            box-shadow   : 0 .1rem .40rem 0 rgba(0, 0, 0, 0.1);
+            border-radius: .02rem;
         }
     }
+
     >.pagination {
-        margin: .64rem auto 1rem;
-        text-align: center;
-        font-family: PingFangSC-Regular;
-        font-size: .24rem;
-        color: #333333;
+        margin        : .64rem auto 1rem;
+        text-align    : center;
+        font-family   : PingFangSC-Regular;
+        font-size     : .24rem;
+        color         : #333333;
         letter-spacing: 0;
-        line-height: .40rem;
+        line-height   : .40rem;
 
         .prev,
         .next {
-            width: .24rem;
-            height: .24rem;
-            color: #666;
-        }
-
-        .prev:hover,
-        .next:hover {
-            color: blue;
+            display       : inline-block;
+            vertical-align: middle;
         }
 
         .pageNums {
             margin: auto .48rem;
+
             >input {
-                width: 1.12rem;
-                height: .52rem;
+                width     : 1.12rem;
+                height    : .52rem;
                 text-align: center;
                 background: #FFFFFF;
-                border: 2px solid #DADFE3;
+                border    : .02rem solid #DADFE3;
             }
+
             .slug {
                 padding: 0 .24rem;
             }
