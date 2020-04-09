@@ -20,7 +20,7 @@ const data = {
                         "title":"建云社区",
                         "desc":"荟萃群英，共享精彩",
                         "bgUrl":"//yun.ccb.com/1106/img/community_banner_background.png",
-                        "mbgUrl":"//yun.ccb.com/1106/img/community_banner_background.png",
+                        "mbgUrl":"/images/universal/community.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",
