@@ -20,7 +20,7 @@ const data = {
                         "title":"服务公告",
                         "desc":"为您发布最新的服务动态",
                         "bgUrl":"//yun.ccb.com/common/images/assist/banner3-n.png",
-                        "mbgUrl":"//yun.ccb.com/common/images/assist/banner3-n.png",
+                        "mbgUrl":"/images/banner/notice.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",
