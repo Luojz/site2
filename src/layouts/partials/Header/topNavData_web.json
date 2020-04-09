@@ -673,7 +673,7 @@
                         "title":"服务公告",
                         "slug":"hybridCloud",
                         "type":"menuItem",
-                        "link":"https://yun.ccb.com/notice/notice.html",
+                        "link":"http://niezongxia.iask.in:58447/universal/notice",
                         "weight":10,
                         "visible":1,
                         "status":1,
