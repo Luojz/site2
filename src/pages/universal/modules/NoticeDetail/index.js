@@ -9,7 +9,7 @@ export default () => {
     const [data, setData] = useState({ title: '', content: '' })
 
     useEffect(() => {
-        asyncData(`${api}/${window.location.search.split('=')[1]}.json`).then(res => setData(res.data))
+        asyncData(`${api}/${window.location.search.split('=')[1].split('&')[0]}.json`).then(res => setData(res.data))
     }, [])
 
     return (
