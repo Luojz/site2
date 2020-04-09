@@ -20,7 +20,7 @@ const data = {
                         "title":"敬请期待",
                         "desc":"更多精彩内容内侧中…",
                         "bgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_k.png",
-                        "mbgUrl":"/images/banner/coming_soon.png",
+                        "mbgUrl":"//localhost:3000/images/banner/coming_soon.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",
