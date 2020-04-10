@@ -55,7 +55,7 @@ class Menu extends Component {
                                             </div>
                                             :
                                             <div className="m-tit-level-1 J-qcMenuTitle noafter">
-                                                <a href={item.link}>{item.title}</a>
+                                                <a href={item.link.replace('//yun.ccb.com', '//localhost:3000')}>{item.title}</a>
                                             </div>
                                     }
 
@@ -69,13 +69,7 @@ class Menu extends Component {
                                                             {/*<a href={item3.link.replace('//yun.ccb.com', 'http://niezongxia.iask.in:58447')}>{item3.title}</a>*/}
                                                             {item2.children && item2.children.map((item3, index3)=>
                                                                 <div className="m-tit-level-3 J-qcMenuTitle" key={index3}>
-                                                                    {
-                                                                        item3.title !== '服务公告'?
-                                                                            <a href={item3.link.replace('//yun.ccb.com', '//localhost:3000')}>{item3.title}</a>
-                                                                            :
-                                                                            <a href={item3.link}>{item3.title}</a>
-                                                                    }
-
+                                                                    <a href={item3.link.replace('//yun.ccb.com', '//localhost:3000')}>{item3.title}</a>
                                                                 </div>
                                                             )}
                                                         </div>
