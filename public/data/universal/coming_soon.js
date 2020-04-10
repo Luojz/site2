@@ -20,7 +20,7 @@ const data = {
                         "title":"敬请期待",
                         "desc":"更多精彩内容内侧中…",
                         "bgUrl":"//yun.ccb.com/1106/img/ccb_i_banner_k.png",
-                        "mbgUrl":"//localhost:3000/images/banner/coming_soon.png",
+                        "mbgUrl":"/images/banner/coming_soon.png",
                         "btn1Title":"",
                         "btn1Icon":"default",
                         "btn1Link":"",
@@ -42,7 +42,7 @@ const data = {
     padding: .56rem .62rem .2rem .62rem;
     font-family: PingFangSC-Regular;
     font-size: .32rem;
-    color: #222222;
+    color: #222;
     letter-spacing: 0;
 }
 
@@ -50,7 +50,7 @@ const data = {
     margin: .44rem auto;
     width: 3.28rem;
     height: 3.35rem;
-    background-image: url(https://yun.ccb.com/1106/img/ccb_i_jqqd_bga.jpg);
+    background-image: url(/images/universal/coming_soon_1.png);
     background-size: cover;
 }
 </style>
