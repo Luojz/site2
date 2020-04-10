@@ -19,7 +19,8 @@ interface IProps {
 export default (props:IProps) => {
     const data = props.data;
     return (
-        <div className="c-hero-section J-pdBanner">
+        <div className="product-body">
+            <div className="c-hero-section J-pdBanner">
             <div className="c-hero-section-body">
                 <div className="c-hero-section-inner">
                     <div className="c-hero-section-ct">
@@ -29,21 +30,21 @@ export default (props:IProps) => {
                         <div className="c-hero-section-des">
                             <p>{data.desc}</p>
                         </div>
-                        <div className="c-hero-section-btn">
-                            {
-                                data.btn1Link !== "" &&
-                                <a href={data.btn1Link} className="c-btn buy">
-                                    {data.btn1Title}
-                                </a>
-                            }
-                            {
-                                data.btn2Link !== "" &&
-                                <a href={data.btn2Link} className="c-btn buy">
-                                    {data.btn2Title}
-                                </a>
-                            }
-                        </div>
                     </div>
+                </div>
+                <div className="c-hero-section-btn">
+                    {
+                        data.btn1Link !== "" &&
+                        <a href={data.btn1Link} className="c-btn buy">
+                            {data.btn1Title}
+                        </a>
+                    }
+                    {
+                        data.btn2Link !== "" &&
+                        <a href={data.btn2Link} className="c-btn buy">
+                            {data.btn2Title}
+                        </a>
+                    }
                 </div>
             </div>
 
@@ -51,6 +52,7 @@ export default (props:IProps) => {
                 <img src={data.mbgUrl} width="100%" height="100%"/>
             </div>
 
+        </div>
         </div>
     )
 }
