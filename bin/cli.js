@@ -4,7 +4,7 @@ const path = require('path')
 const mkdirp = require('mkdirp')
 
 const params = process.argv.slice(2)
-const last = '2020-04-01T00:00:00.000Z'
+const last = new Date('2020-04-01T00:00:00.000Z')
 const raw = '/tmp'
 const lapse = 1000 * 5
 const separator = '\n'
@@ -19,7 +19,7 @@ function modify(src, last) {
             const filepath = path.resolve(src, filename)
             const stat = fs.statSync(filepath)
             if (stat.isFile()) {
-                if (new Date(stat.mtime) > new Date(last)) {    
+                if (stat.mtime > last) {  
                     const type = stat.mtimeMs > stat.birthtimeMs + lapse ? '~' : '+'
                     filepaths.push({filepath, type})
                 }
