@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp')
 const params = process.argv.slice(2)
 const last = '2020-04-01T00:00:00.000Z'
 const lapse = 1000 * 5
-const raw = `${__dirname}/../tmp`
+const raw = `${__dirname}/../tmp` // 存放物料包路径
 const separator = '\n'
 
 
@@ -55,11 +55,11 @@ function deploy(params, last) {
                         commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
                         break
                     case '~':
-                        commands.push(`mv ${filepath} bak_${filepath}`)
+                        commands.push(`mv ${filepath} ${filepath}_bak`)
                         commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
                         break
                     case '-':
-                        commands.push(`mv ${filepath} bak_${filepath}`)
+                        commands.push(`mv ${filepath} ${filepath}_bak`)
                         break
                     default:
                         break
