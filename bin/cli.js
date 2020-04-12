@@ -5,9 +5,11 @@ const mkdirp = require('mkdirp')
 
 const params = process.argv.slice(2)
 const last = '2020-04-01T00:00:00.000Z'
+const raw = '/tmp'
 const lapse = 1000 * 5
-const raw = '/tmp' // 存放物料包路径
 const separator = '\n'
+
+const dst = (filepath) => process.env.OS === 'Windows_NT' ? filepath.replace('\\', '\\tmp\\') : filepath.replace('/', `${raw}/`)
 
 
 function modify(src, last) {
@@ -36,7 +38,7 @@ function pack(params) {
         modify(src, last)
             .forEach(({filepath, type}) => {
                 if (type !== '-') {
-                    commands.push(`cp -rf ${filepath} ${filepath.replace('/', raw)}`)
+                    commands.push(`cp -rf ${filepath} ${dst(filepath)}`)
                 }
             })
         return commands.join(separator)
@@ -52,11 +54,11 @@ function deploy(params, last) {
             .forEach(({filepath, type}) => {
                 switch (type) {
                     case '+':
-                        commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
+                        commands.push(`cp -rf ${dst(filepath)} ${filepath}`)
                         break
                     case '~':
                         commands.push(`mv ${filepath} ${filepath}_bak`)
-                        commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
+                        commands.push(`cp -rf ${dst(filepath)} ${filepath}`)
                         break
                     case '-':
                         commands.push(`mv ${filepath} ${filepath}_bak`)
