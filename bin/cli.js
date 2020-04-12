@@ -36,7 +36,7 @@ function pack(params) {
         modify(src, last)
             .forEach(({filepath, type}) => {
                 if (type !== '-') {
-                    commands.push(`cp -rf ${filepath} ${filepath.replace('/', raw)}`)
+                    commands.push(`cp -rf ${filepath} ${filepath.replace('/', '/tmp')}`)
                 }
             })
         return commands.join(separator)
@@ -52,11 +52,11 @@ function deploy(params, last) {
             .forEach(({filepath, type}) => {
                 switch (type) {
                     case '+':
-                        commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
+                        commands.push(`cp -rf ${filepath.replace('/', '/tmp')} ${filepath}`)
                         break
                     case '~':
                         commands.push(`mv ${filepath} ${filepath}_bak`)
-                        commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
+                        commands.push(`cp -rf ${filepath.replace('/', '/tmp')} ${filepath}`)
                         break
                     case '-':
                         commands.push(`mv ${filepath} ${filepath}_bak`)
