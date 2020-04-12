@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp')
 const params = process.argv.slice(2)
 const last = '2020-04-01T00:00:00.000Z'
 const lapse = 1000 * 5
-const raw = `${__dirname}/../tmp` // 存放物料包路径
+const raw = '/tmp' // 存放物料包路径
 const separator = '\n'
 
 
@@ -36,12 +36,12 @@ function pack(params) {
         modify(src, last)
             .forEach(({filepath, type}) => {
                 if (type !== '-') {
-                    commands.push(`cp -rf ${filepath} ${filepath.replace('/', '/tmp')}`)
+                    commands.push(`cp -rf ${filepath} ${filepath.replace('/', raw)}`)
                 }
             })
         return commands.join(separator)
     }).join(separator)
-    fs.writeFileSync(`${raw}/pack.sh`, content)
+    fs.writeFileSync(`${__dirname}/../tmp/pack.sh`, content)
 }
 
 
@@ -52,11 +52,11 @@ function deploy(params, last) {
             .forEach(({filepath, type}) => {
                 switch (type) {
                     case '+':
-                        commands.push(`cp -rf ${filepath.replace('/', '/tmp')} ${filepath}`)
+                        commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
                         break
                     case '~':
                         commands.push(`mv ${filepath} ${filepath}_bak`)
-                        commands.push(`cp -rf ${filepath.replace('/', '/tmp')} ${filepath}`)
+                        commands.push(`cp -rf ${filepath.replace('/', raw)} ${filepath}`)
                         break
                     case '-':
                         commands.push(`mv ${filepath} ${filepath}_bak`)
@@ -67,7 +67,7 @@ function deploy(params, last) {
             })
         return commands.join(separator)
     }).join(separator)
-    fs.writeFileSync(`${raw}/deploy.sh`, content)
+    fs.writeFileSync(`${__dirname}/../tmp/deploy.sh`, content)
 }
 
 // 命令行参数 追踪文件
