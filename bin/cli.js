@@ -1,4 +1,4 @@
-// createAt 2020-04-12 自动化打包部署
+// createAt 2020-04-12 自动化打包部署 node cli path
 const fs = require('fs')
 const path = require('path')
 const mkdirp = require('mkdirp')
