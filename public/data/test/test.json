@@ -1,0 +1,35 @@
+{
+    "block": {
+        "root": {
+            "id": "root",
+            "type": "Root",
+            "data": {},
+            "childBlocks": [
+                {
+                    "type": "Banner",
+                    "data": {}
+                },
+                {
+                    "type": "Test",
+                    "data": {}
+                },
+                {
+                    "type": "OtherTest",
+                    "data": {
+                        "content": {}
+                    },
+                    "childBlocks": [
+                        {
+                            "type": "Sec1",
+                            "data": {}
+                        },
+                        {
+                            "type": "Sec2",
+                            "data": {}
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

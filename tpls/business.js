@@ -24,7 +24,7 @@ import adapter from './adapter';
 export default ({ data }) => {
     return (
         <section id="${id}">
-            {adapter(data).map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
+            {adapter(data.childBlocks).map(({ id, type, Component, data }) => <Component data={data} key={id || type} />)}
         </section>
     );
 }`
