@@ -17,14 +17,18 @@ function run(raw) {
 
         business.map(component => {
             if (typeof component === 'string') {
-                fs.writeFile(`${relative}/business/${component}.js`, businessTpl(page, component), console.log)
+                mkdirp(`${relative}/business/${component}`, (err) => {
+                    fs.writeFile(`${relative}/business/${component}/index.js`, businessTpl(page, component), console.log)
+                })
             } else {
                 mkdirp(`${relative}/business/${component.name}/partials`, (err) => {
                     fs.writeFile(`${relative}/business/${component.name}/index.js`, businessTpl(page, component.name, component.partials), console.log)
                     fs.writeFile(`${relative}/business/${component.name}/adapter.js`, adapterTpl(component.partials), console.log)
                     
                     component.partials.map(partial => {
-                        fs.writeFile(`${relative}/business/${component.name}/partials/${partial}.js`, componentTpl(h(page, component.name, partial)), console.log)
+                        mkdirp(`${relative}/business/${component.name}/partials/${partial}`, (err) => {
+                            fs.writeFile(`${relative}/business/${component.name}/partials/${partial}/index.js`, componentTpl(h(page, component.name, partial)), console.log)
+                        })
                     })
                 })
             }
