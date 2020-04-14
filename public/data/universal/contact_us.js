@@ -50,7 +50,7 @@ const data = {
     margin: .8rem auto;
     width: 4.08rem;
     height: 4.02rem;
-    background-image: url(https://yun.ccb.com/1106/img/ccb_i_lxwm_bga.jpg);
+    background-image: url(/images/universal/contact_us_1.jpg);
     background-size: cover;
 }
 </style>
