@@ -1,6 +1,8 @@
 const LINE = '/api'
 const TEST = '/data'
 
-export const baseURL = process.env.NODE_ENV === 'production' ? LINE : TEST
+export const isDev = process.env.NODE_ENV !== 'production'
 
-export const protocol = 'https:' // 'https:' // process.env.NODE_ENV === 'production' ? '' : 'http:'
+export const baseURL = isDev ? TEST : LINE
+
+export const protocol = '' // isDev ? 'http:' : ''

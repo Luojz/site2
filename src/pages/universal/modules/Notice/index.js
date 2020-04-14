@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './index.less'
 import { asyncData } from '@/plugins/axios'
 import Icon from '@/components/Icon'
+import { isDev } from '@/config/apis'
 
 const categories = {
     ALL: '全部',
@@ -9,7 +10,7 @@ const categories = {
     SERVICE: '服务公告',
 }
 
-const api = '/universal/notices.json'
+const api = isDev ? '/universal/notices.json' : '/notice/getForPage'
 
 const SIZE = 10
 
@@ -88,7 +89,7 @@ export default () => {
                 <span className="pageNums">
                     <input type="text" onChange={methods.handleInputChange} value={curr} />
                     <span className="slug">/</span>
-                    <span>{computed.pageNums}</span>
+                    <span>{computed.pageNums || 1}</span>
                 </span>
                 <span className="next" onClick={methods.next}><Icon src="/icons/arrow-right.png" width=".24rem" height=".24rem" /></span>
             </div>
