@@ -27,6 +27,7 @@ export default ({ data }) => {
               <img
                 className="solution-tabsFramework-container-content-image"
                 src={`${protocol}${iconUrl}`}
+                style={{display: iconUrl ? 'inline-block' : 'none'}}
               />
               {adapter(data.children[idx]).map(
                 ({ id, type, Component, data }) => (

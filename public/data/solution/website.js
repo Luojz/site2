@@ -138,7 +138,12 @@ const data = {
                                     type: 'FrameWorkIntro',
                                     data: {
                                         title: '架构介绍',
-                                        content: '日均访问量低于1万 需要一定的安全防护措施 '
+                                        // content: '日均访问量低于1万 需要一定的安全防护措施 '
+                                        content: `<style> .scene-content{line-height: 30px;}
+                                        .scene-content li{margin-bottom: 10px;}
+                                        .scene-content h3{color: #666;}
+                                        .scene-content p{color: #999;} </style>
+                                        <ul class="scene-content"> <li> <h3>痛点：</h3> <p>系统建设周期长，建设成本高；现有系统无法满足业务发展需要；金融监管日益趋严。</p> </li> <li> <h3>解决方案：</h3> <p>建设银行可以为中小银行提供科技基础设施平台，使其能够在平台上自主完成开发、测试、运维、灾备等全生命周期管理。 针对中小银行在某一具体应用领域的“痛点”，通过适当的二次改造，满足应用需求。</p> </li> </ul>`
                                     }
                                 },
                                 {
