@@ -5,7 +5,8 @@ import './index.less';
 const Banner = ({data = mock}) => {
     console.log("banner11 data: ", data)
     return (
-        <div className="c-hero-section J-pdBanner">
+        <div className="solution-body">
+            <div className="c-hero-section J-pdBanner">
             <div className="c-hero-section-body">
                 <div className="c-hero-section-inner">
                     <div className="c-hero-section-ct">
@@ -15,6 +16,8 @@ const Banner = ({data = mock}) => {
                         <div className="c-hero-section-des">
                             <p>{data.desc}</p>
                         </div>
+                        </div>
+                </div>
                         <div className="c-hero-section-btn">
                             <a style={{display:(data.btn1Title)?'inline-block':'none'}}href={data.btn1Link} className="c-btn buy">
                                 {data.btn1Title}
@@ -23,8 +26,7 @@ const Banner = ({data = mock}) => {
                                 {data.btn2Title}
                             </a>
                         </div>
-                    </div>
-                </div>
+                    
             </div>
 
             <div className="c-hero-icon-mod">
@@ -32,6 +34,7 @@ const Banner = ({data = mock}) => {
                 <img src={require('./m_solution_banner.png')} width="100%" height="100%"/>
             </div>
 
+        </div>
         </div>
     )
 }
