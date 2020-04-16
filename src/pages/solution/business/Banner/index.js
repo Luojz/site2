@@ -16,8 +16,11 @@ const Banner = ({data = mock}) => {
                             <p>{data.desc}</p>
                         </div>
                         <div className="c-hero-section-btn">
-                            <a href={data.btn1Link} className="c-btn buy">
+                            <a style={{display:(data.btn1Title)?'inline-block':'none'}}href={data.btn1Link} className="c-btn buy">
                                 {data.btn1Title}
+                            </a>
+                            <a style={{display:(data.btn2Title)?'inline-block':'none'}}href={data.btn2Link} className="c-btn p-weak-btn">
+                                {data.btn2Title}
                             </a>
                         </div>
                     </div>
