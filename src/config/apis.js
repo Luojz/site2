@@ -5,4 +5,4 @@ export const isDev = process.env.NODE_ENV !== 'production'
 
 export const baseURL = isDev ? TEST : LINE
 
-export const protocol = 'https:' // isDev ? 'http:' : ''
+export const protocol = 'https:'//'https:' // isDev ? 'http:' : ''

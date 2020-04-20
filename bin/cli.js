@@ -43,7 +43,7 @@ function pack(params) {
             })
         return commands.join(separator)
     }).join(separator)
-    fs.writeFileSync(`${__dirname}/../tmp/pack.sh`, content)
+    mkdirp(`${__dirname}/../tmp`, err => fs.writeFileSync(`${__dirname}/../tmp/pack.sh`, content))
 }
 
 
@@ -69,7 +69,7 @@ function deploy(params, last) {
             })
         return commands.join(separator)
     }).join(separator)
-    fs.writeFileSync(`${__dirname}/../tmp/deploy.sh`, content)
+    mkdirp(`${__dirname}/../tmp`, err => fs.writeFileSync(`${__dirname}/../tmp/deploy.sh`, content))
 }
 
 // 命令行参数 追踪文件

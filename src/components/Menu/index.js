@@ -9,7 +9,7 @@ function MenuItem({ data, open }) {
     return (
         <details open={open}>
             <summary>
-                <a href={data.link || 'javascript;;'}>{data.title}</a>
+                <a href={data.link || 'javascript:;'}>{data.title}</a>
                 <i className="icon-arrow" />
             </summary>
             <List data={data.children} />
@@ -26,7 +26,7 @@ function List({ data }) {
                 <li key={idx} onClick={() => setTimeout(setCurrent, 0, idx)}>
                     {menuItem.children && menuItem.children.length > 0
                         ? <MenuItem data={menuItem} open={current === idx ? 'open' : ''} />
-                        : <a href={menuItem.link || 'javascript;;'}>{menuItem.title}</a>
+                        : <a href={menuItem.link || 'javascript:;'}>{menuItem.title}</a>
                     }
                 </li>
             ))}
