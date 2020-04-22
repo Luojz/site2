@@ -1,6 +1,8 @@
 import React from 'react';
 import mock from './mock.js';
 import './index.less';
+import {replace} from '@/utils/URL'
+import { protocol } from '@/config/apis'
 
 const Banner = ({data = mock}) => {
     console.log("banner11 data: ", data)
@@ -19,10 +21,10 @@ const Banner = ({data = mock}) => {
                         </div>
                 </div>
                         <div className="c-hero-section-btn">
-                            <a style={{display:(data.btn1Title)?'inline-block':'none'}}href={data.btn1Link} className="c-btn buy">
+                            <a style={{display:(data.btn1Title)?'inline-block':'none'}}href={replace(`${protocol}${data.btn1Link}`)} className="c-btn buy">
                                 {data.btn1Title}
                             </a>
-                            <a style={{display:(data.btn2Title)?'inline-block':'none'}}href={data.btn2Link} className="c-btn p-weak-btn">
+                            <a style={{display:(data.btn2Title)?'inline-block':'none'}}href={replace(`${protocol}${data.btn2Link}`)} className="c-btn p-weak-btn">
                                 {data.btn2Title}
                             </a>
                         </div>

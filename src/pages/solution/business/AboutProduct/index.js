@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./index.less";
 import { protocol } from "@/config/apis";
 import Icon from "@/components/Icon";
+import {replace} from '@/utils/URL'
 
 function List({ data }) {
     const [fold, setFold] = useState(false)
@@ -9,7 +10,7 @@ function List({ data }) {
         <ul style={{ justifyContent:data.list.length>4 ? 'flex-start':'center'}}>
             {data.list.map(({iconUrl, title, moreUrl},idx) => (
                 <li key={idx} style={{ display: idx < 8 || fold ? 'block' : 'none', margin:(data.list.length <4 && data.list.length>1)?'0 0.2rem':'0'}}>
-                    <a href={`${protocol}${moreUrl}`}>
+                    <a href={replace(`${protocol}${moreUrl}`)}>
                         <img src={`${protocol}${iconUrl}`} />
                         <span>{title}</span>
                     </a>
