@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { replace } from '../../../../../utils/URL';
 import '../index.less';
 
 interface IProps {
@@ -63,7 +63,7 @@ export default (props:IProps) => {
                             list.map((item,index)=>{
                                 return (
                                     <li key={index}>
-                                        <a href={item.linkUrl}>
+                                        <a href={replace(item.linkUrl)}>
                                             <img src={item.iconUrl} alt=""/>
                                             {item.linkText}
                                         </a>
