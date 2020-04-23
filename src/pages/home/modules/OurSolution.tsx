@@ -4,6 +4,7 @@ import solutionIntro from "./solutionIntro";
 import ModuleTitle from "../common/ModuleTitle";
 import OurSolutionChild from "./OurSolutionChild";
 import { protocol } from '../../../config/apis';
+import { replace } from '../../../utils/URL';
 import "./solution.less";
 
 interface IProps {
@@ -40,7 +41,7 @@ const OurSolution = ({ data = mock}:IProps) => {
                         <li key={index} onClick={()=>show(index)} style={{"borderBottom":index===showId && isShow ? "0":".02rem solid #e6e7ec"}}>
                             <div className="our-solution-hd">
                                 <img src={`${protocol}${item.hoverIconUrl}`} alt=""/>
-                                <span style={{"color":index===showId && isShow ? "#2f88ff":"#9094a5"}}>{item.title}</span>
+                                <div><a href={replace(item.cardUrl)} style={{"color":index===showId && isShow ? "#2f88ff":"#9094a5"}}>{item.title}</a></div>
                                 <i className={index===showId && isShow ?"closeIntro":"showIntro"}></i>
                             </div>
                             <div className="our-solution-bd" style={{"display":index===showId && isShow ?"block":"none"}} onClick={(e)=>e.stopPropagation()}>

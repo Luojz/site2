@@ -1,11 +1,14 @@
 import React from 'react';
 import mock from './mock.js';
 import './index.less';
+import {replace} from '@/utils/URL'
+import { protocol } from '@/config/apis'
 
 const Banner = ({data = mock}) => {
     console.log("banner11 data: ", data)
     return (
-        <div className="c-hero-section J-pdBanner">
+        <div className="solution-body">
+            <div className="c-hero-section J-pdBanner">
             <div className="c-hero-section-body">
                 <div className="c-hero-section-inner">
                     <div className="c-hero-section-ct">
@@ -15,13 +18,17 @@ const Banner = ({data = mock}) => {
                         <div className="c-hero-section-des">
                             <p>{data.desc}</p>
                         </div>
+                        </div>
+                </div>
                         <div className="c-hero-section-btn">
-                            <a href={data.btn1Link} className="c-btn buy">
+                            <a style={{display:(data.btn1Title)?'inline-block':'none'}}href={replace(`${protocol}${data.btn1Link}`)} className="c-btn buy">
                                 {data.btn1Title}
                             </a>
+                            <a style={{display:(data.btn2Title)?'inline-block':'none'}}href={replace(`${protocol}${data.btn2Link}`)} className="c-btn p-weak-btn">
+                                {data.btn2Title}
+                            </a>
                         </div>
-                    </div>
-                </div>
+                    
             </div>
 
             <div className="c-hero-icon-mod">
@@ -29,6 +36,7 @@ const Banner = ({data = mock}) => {
                 <img src={require('./m_solution_banner.png')} width="100%" height="100%"/>
             </div>
 
+        </div>
         </div>
     )
 }

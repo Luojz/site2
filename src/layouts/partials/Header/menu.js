@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import './index.less'
+import { protocol } from '@/config/apis'
+import {replace} from '@/utils/URL'
 const topMenuData = require('./topNavData.json');
 const $ = require('jquery');
+
 
 class Menu extends Component {
     constructor(props) {

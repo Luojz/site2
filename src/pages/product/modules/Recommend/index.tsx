@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { replace } from '../../../../utils/URL';
 import Title from '../../../../components/Title/index';
 import './index.less';
 
@@ -27,7 +27,7 @@ export default (props:IProps) => {
                     data.list.map((item,index)=>{
                         return (
                             <li key={index} style={{ margin:(data.list.length <4 && data.list.length>1)?'0 0.2rem':'0'}}>
-                                <a href={item.linkUrl}>
+                                <a href={replace(item.linkUrl)}>
                                     <img src={item.imgUrl} alt=""/>
                                     <p>{item.title}</p>
                                 </a>
