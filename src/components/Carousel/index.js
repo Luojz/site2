@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './index.less'
-import { INTERVAL } from '@/constants/TIME'
+import { INTERVAL } from '../../constants/TIME'
 import mock from './mock.js'
 
 

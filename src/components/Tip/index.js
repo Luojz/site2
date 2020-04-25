@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { INTERVAL } from '@/constants/TIME.js'
+import { INTERVAL } from '@/constants/TIME'
 import './index.less'
 
 

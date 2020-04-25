@@ -21,5 +21,11 @@
   },
   "include": [
     "src", "mock"
-  ]
+  ],
+  "baseUrl": "./",
+  "paths": {
+    "@/*": [
+      "src/*"
+    ]
+  }
 }
