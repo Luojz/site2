@@ -6,7 +6,7 @@ export default [
             { title: '联系我们', link: '//yun.ccb.com/contactUs/contact_us.html' },
             { title: '设计咨询', link: '//yun.ccb.com/contactUs/contact_us.html' },
             { title: '专业维护', link: '//yun.ccb.com/contactUs/contact_us.html' },
-            { title: '服务公告', link: '//yun.ccb.com/notice/notice.html' },
+            { title: '服务公告', link: '//yun.ccb.com/announce' },
         ]
     },
     {

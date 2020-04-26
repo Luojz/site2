@@ -673,7 +673,7 @@
                         "title":"服务公告",
                         "slug":"hybridCloud",
                         "type":"menuItem",
-                        "link":"//yun.ccb.com/universal/notice",
+                        "link":"//yun.ccb.com/announce",
                         "weight":10,
                         "visible":1,
                         "status":1,
